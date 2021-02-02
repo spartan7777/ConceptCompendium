@@ -1,0 +1,40 @@
+Tosan Ogedengbe
+Enterprise Java Spring 2021: Weekly Reflection - Time Logs
+
+Week 1
+1/26/2021 - 2/1/2021 - 8 hours
+
+
+RELEVANT ITEMS:
+1. Watched All Week 2 Videos
+2. Completed all Week 2 Activities
+3. Worked through Week 2 Exercise
+4. Started working on Week 3 Videos
+5. Started preparing Individual Project documentation for Checkpoint 1
+
+
+ACCOMPLISHMENTS:  
+Completed all of the Week 2 videos. Completed all of the Week 2 activities with no issues. Did encounter a git conflict and was able ot handle that very well. Made sure that no work was lost for anyone else who added materials to git at that time. Watched all the Week 2 videos, and started watching several of the week 3 videos. Started to review my files and items for my individual project - The Concept Compendium. Also provided information in thew appropriate ReadMe file about my Professional Development Activity for this semester. 
+
+
+SETBACKS:  
+Had a time management issue and underestimated how long it would take me to complete the Week 2 exercise. It also seemed as though I failed to add the TimeLog to my files so that they would be available for review. Had to do that late. I had a major setback with creating the method in the exercise that would allow for serching the database by last name. I think I could have solved this eventually (as I will need to for my individual porject) but I just did not give myself enough time to do that for the excercise submission. 
+
+
+NEXT WEEK'S PLAN:
+Complete the Week 3 videos and start on the Week 3 assignments and exercises so that once I am in class I can get any coaching that I will need. 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
