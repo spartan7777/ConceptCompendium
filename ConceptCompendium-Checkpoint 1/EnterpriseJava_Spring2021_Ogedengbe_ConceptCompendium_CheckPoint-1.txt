@@ -23,7 +23,7 @@ User Stories:
 2. As a user of the Concept Compendium I need to be able to see my ideas in simple collections:
 	- The application will allow users to review all of their ideas based on several criteria that are controlled by the user. 
 	- These criteria will be: 
-		Genre.
+		Genre. (Stretch Goal - will not be in this iteration of the project).
 		Category (set idea categories that exist within the application).
 		Keywords (unique descriptors created by the users).
 
@@ -46,6 +46,23 @@ User Stories:
 		Totals in selected genres.
 		Totals in selected categories within genres.
 
+7. As a user of the Concept Compendium I would like to have an account/log in:
+	- The application will require a sign up for an account to be able to use it.
+	- The application will require a log in to the account to be able to create and catalog ideas.
+
+8. As a user of the Concept Compendium I would like to be able to log out:
+	- The application will allow users to log out after a session.
+
+9. As a user of the Concept Compendium I would like to have protection for my ideas against unspecified access/tampering: 
+	- The application will allow for different levels of access to the catalog to protect the contents. 
+	- All of these levels require an account in the application.
+	- Ideation Level: This allows users at this level to create, update and delete their own ideas in the application.  
+	- Inspection Level: This allows users at this level to only be able to view ideas in the application. 
+
+10. As a user of the Concept Compendium I would like to be able to have Admin rights: (Stretch Goal - will not be in this iteration of the project).
+	- The application will allow for another high level of access to the catalog. 
+	- There will now be an Administrator Level that can access all user accounts in the application. 
+	- This level can create, update and delete ideas throughout the application. 
 
 
 
