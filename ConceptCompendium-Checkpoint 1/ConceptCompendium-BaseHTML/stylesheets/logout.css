@@ -1,0 +1,136 @@
+header, footer, nav, section {
+        display: block;   
+}
+
+body {
+    padding: .5em 1em 1em 1.45em; 
+    background: url("../images/outerspace.jpg") no-repeat center center fixed;
+    background-size: 120%;
+    background-position: center top;
+    margin-top: 25px;
+}
+
+h1 {    
+    text-align: center;
+    font-variant: small-caps;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    border: 0;
+    font-weight: bold;
+    font-size: 125pt;
+    color:  #ffffff;
+    text-shadow: 4px 4px 2px #000000; 
+    font-family: 'Audiowide', cursive;
+ }
+ 
+ h2 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 50pt;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;     
+}
+
+ h3 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 50pt;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;     
+}
+   
+.topBusiness {
+    color: #ffffff;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.topBusiness a:link {
+     color: #ffffff;
+ }
+ 
+.topBusiness a:hover {
+     color: #ffffff;
+     text-shadow: 6px 6px 6px #666699;    
+ } 
+
+a:visited {
+    color: #ffffff;
+}
+
+.catalogLabels {
+    font-family: 'Audiowide', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;   
+    font-size: 20px; 
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;    
+    margin-left: 10px;    
+    margin-right: 25px;
+}
+
+.catalogButtons {
+    border-style: inset;
+    border-width: 5px;
+    border-color: #332600; 
+    font-size: 22px;
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;    
+    height: 55px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
+#username {
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 200px;
+    font-family: garamond;
+    font-size: 18px;
+
+}
+
+#password {
+     margin-left: 10px;
+     margin-right: 5px;
+     width: 200px;
+     font-family: garamond;
+     font-size: 18px;
+}
+
+p {
+    width: auto;
+    text-align: left;
+    vertical-align: top;
+    font-family: 'Audiowide', cursive;
+    font-size: 14pt;
+    font-weight: bold;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;      
+}
+
+#fieldset {
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+Tosan Ogedengbe
+Enterprise Java Spring 2020: Individual Project Plan
+
+PROJECT NAME: Concept Compendium
+
+
+PLAN STEPS:
+
+1. CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:
+This step is the genesis of why the project needs to exist. Create several problems that the application is going to solve and be sure that the project final result can actually do that.
+
+
+2. ENGINEER THE BASIC MATERIALS NEEDED FOR THE PROJECT:
+The Concept Compendium was built once before using HTML and PHP. This version will utilize Java with HTML. So, the application’s' main webpages will need to be collected, stripped of the unnecessary PHP code and made ready to accept Java code so as to become functional JSPs. 
+
+
+3. DIAGRAM THE WORKFLOW FOR THESE PAGES:
+Once these HTML pages (not full JSPs yet) are all ready and adequately de-coded, create a flowchart using these to indicate what page takes a user to what page (and why if needed). This will help me determine if all the pages I have are necessary and if they are serving a proper function. Any pages that are not doing that may be able to be removed or have its functionality combined with others to simplify and make the application more efficient. 
+
+
+4. ANNOTATE IDEAS FOR THE CODE NEEDED IN EACH PAGE ACCORDING TO ITS FUNCTION: 
+In this step, I will look at each page and in simple note form explain what functions need to exist on this page. The plan with this is to make sure I have each page's functionality covered in its entirety, and that I can get a rough idea of the classes and methods that would need to exist in each page. The main reason for this step is to alleviate some nervousness that I have with this project, and to help make taking that first step a little less daunting. If I have an idea of what to code into each page, I can more easily draw on my knowledge or find what I need to help the code needed to get written. 
+* I would like to have this part of the project looked at and discussed with the Instructor if possible. 
+
+
+5. CREATE THE DATABASE RESOURCES NEEDED FOR THE APPLICATION:
+At this step, take a good look at what is needed and decide on the tables needed, their names, contents etc. By class parameters, there will need to be a USER and ROLE table regardless. The extra work here is to determine what additional tables are needed based on what this application will do, and what it needs to be able to do just that. Once this is decided and known, create these tables and be sure they are correct and function. 
+* I would like to have this part of the project looked at and discussed with the Instructor if possible. 
+
+
+6. BUILD JAVA CLASSES:
+Based on the MVC Design Pattern that is being used, certain concrete classes and DAO classes need to be built in order to facilitate communication between the application and the recently built database. So, this step is where these classes are created, built and properly annotated for Hibernate. 
+* I would like to have this part of the project looked at and discussed with the Instructor if possible. 
+
+
+7. CREATE THE JSPs: 
+Once the core Java classes are built and verified, the Java code needed in each HTML page will be added to turn these into JSPs. This step should involve a lot of checking to make sure pages are indeed speaking with each other and handling the given variables as needed.
+* I would like to have this part of the project looked at and discussed with the Instructor if possible. 
+
+
+8. REVIEW & REFINE:
+This is the last step that I can project at this time, but it will be the biggest. Do all that is needed to make sure the Java Concrete Classes, DAO, and JSPs actually communicate and do what they are required to do. It is in this step that any additional project requirements will be added and tested to make sure they work and meet the provided specifications. 
+
+
