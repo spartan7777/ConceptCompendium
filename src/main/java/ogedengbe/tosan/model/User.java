@@ -16,22 +16,23 @@ import java.time.temporal.ChronoUnit;
 @Entity(name = "User")
 @Table(name = "user")
 public class User {
+    @Id
+    @Column(name = "user_id")
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
+    private int userId;
+
     @Column(name = "first_name")
     private String firstName;
 
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "user_name")
+    @Column(name = "username")
     private String userName;
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
-    @GenericGenerator(name = "native", strategy = "native")
-    private int id;
-
-    @Column(name = "date_of_birth")
-    private LocalDate dateOfBirth;
+    @Column(name = "password")
+    private String password;
 
 
     /**
@@ -42,22 +43,38 @@ public class User {
 
     /**
      * Instantiates a new User.
-     *
-     * @param firstName     the first name
-     * @param lastName      the last name
-     * @param userName      the user name
-     * @param dateOfBirth   the date of birth
+     * @param userId      the user id
+     * @param firstName   the first name
+     * @param lastName    the last name
+     * @param userName    the user name
+     * @param password    the password
      */
-    public User(String firstName, String lastName, String userName, LocalDate dateOfBirth) {
+    public User(int userId, String firstName, String lastName, String userName, String password) {
+        this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
-        this.dateOfBirth = dateOfBirth;
+        this.password = password;
+    }
+
+    /**
+     * Gets id.
+     * @return the id
+     */
+    public int getId() {
+        return userId;
+    }
+
+    /**
+     * Sets id.
+     * @param id the id
+     */
+    public void setId(int id) {
+        this.userId = id;
     }
 
     /**
      * Gets first name.
-     *
      * @return the first name
      */
     public String getFirstName() {
@@ -66,7 +83,6 @@ public class User {
 
     /**
      * Sets first name.
-     *
      * @param firstName the first name
      */
     public void setFirstName(String firstName) {
@@ -75,7 +91,6 @@ public class User {
 
     /**
      * Gets last name.
-     *
      * @return the last name
      */
     public String getLastName() {
@@ -84,7 +99,6 @@ public class User {
 
     /**
      * Sets last name.
-     *
      * @param lastName the last name
      */
     public void setLastName(String lastName) {
@@ -93,7 +107,6 @@ public class User {
 
     /**
      * Gets user name.
-     *
      * @return the user name
      */
     public String getUserName() {
@@ -102,7 +115,6 @@ public class User {
 
     /**
      * Sets user name.
-     *
      * @param userName the user name
      */
     public void setUserName(String userName) {
@@ -110,43 +122,29 @@ public class User {
     }
 
     /**
-     * Gets id.
-     *
-     * @return the id
+     * Gets password.
+     * @return the password
      */
-    public int getId() {
-        return id;
+    public String getPassword() {
+        return password;
     }
 
     /**
-     * Sets id.
-     *
-     * @param id the id
+     * Sets password.
+     * @param password the password
      */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    public int getAge() {
-        return (int)ChronoUnit.YEARS.between(dateOfBirth, LocalDate.now());
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "firstName='" + firstName + '\'' +
+                "id=" + userId +
+                ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", userName='" + userName + '\'' +
-                ", id=" + id +
-                ", dateOfBirth=" + dateOfBirth +
-                ", age=" + getAge() +
+                ", password=" + password +
                 '}';
     }
+}
