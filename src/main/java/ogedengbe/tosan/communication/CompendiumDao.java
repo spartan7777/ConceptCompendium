@@ -65,45 +65,6 @@ public class CompendiumDao {
     }
 
     /**
-     * update user
-     * @param user  User to be inserted or updated
-     */
-    public void saveOrUpdate(User user) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.saveOrUpdate(user);
-        transactionOne.commit();
-        sessionOne.close();
-    }
-
-    /**
-     * update user
-     * @param user  User to be inserted or updated
-     * @return id of the inserted user
-     */
-    public int insert(User user) {
-        int id = 0;
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        id = (int)sessionOne.save(user);
-        transactionOne.commit();
-        sessionOne.close();
-        return id;
-    }
-
-    /**
-     * Delete a user
-     * @param user User to be deleted
-     */
-    public void delete(User user) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.delete(user);
-        transactionOne.commit();
-        sessionOne.close();
-    }
-
-    /**
      * Get user by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
      * @param propertyName entity property to search by
@@ -140,6 +101,45 @@ public class CompendiumDao {
         List<User> users = sessionOne.createQuery( queryOne ).getResultList();
         sessionOne.close();
         return users;
+    }
+
+    /**
+     * create user
+     * @param user  User to be created
+     * @return id of the created user
+     */
+    public int create(User user) {
+        int id = 0;
+        Session sessionOne = sessionFactoryOne.openSession();
+        Transaction transactionOne = sessionOne.beginTransaction();
+        id = (int)sessionOne.save(user);
+        transactionOne.commit();
+        sessionOne.close();
+        return id;
+    }
+
+    /**
+     * update user
+     * @param user  User to be updated
+     */
+    public void saveOrUpdate(User user) {
+        Session sessionOne = sessionFactoryOne.openSession();
+        Transaction transactionOne = sessionOne.beginTransaction();
+        sessionOne.saveOrUpdate(user);
+        transactionOne.commit();
+        sessionOne.close();
+    }
+
+    /**
+     * Delete a user
+     * @param user User to be deleted
+     */
+    public void delete(User user) {
+        Session sessionOne = sessionFactoryOne.openSession();
+        Transaction transactionOne = sessionOne.beginTransaction();
+        sessionOne.delete(user);
+        transactionOne.commit();
+        sessionOne.close();
     }
 
 }

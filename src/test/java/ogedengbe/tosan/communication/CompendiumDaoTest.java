@@ -62,7 +62,7 @@ class CompendiumDaoTest {
     @Test
     void insertSuccess() {
         User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
-        int userId = daoOne.insert(newUser);
+        int userId = daoOne.create(newUser);
         assertNotEquals(0,userId);
         User insertedUser = daoOne.getUsersById(userId);
         assertEquals("Bruce", insertedUser.getFirstName());
