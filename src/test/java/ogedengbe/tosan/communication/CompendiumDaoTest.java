@@ -53,7 +53,7 @@ class CompendiumDaoTest {
     void getByIdSuccess() {
         User retrievedUser = daoOne.getUsersById(3);
         assertNotNull(retrievedUser);
-        assertEquals("Barney", retrievedUser.getFirstName());
+        assertEquals("Tony", retrievedUser.getFirstName());
     }
 
     /**
@@ -66,16 +66,12 @@ class CompendiumDaoTest {
         assertNotEquals(0,userId);
         User insertedUser = daoOne.getUsersById(userId);
         assertEquals("Bruce", insertedUser.getFirstName());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
     }
 
     /**
      * Verify successful delete of user
      */
     @Test
-    @Ignore
     void deleteSuccess() {
         daoOne.delete(daoOne.getUsersById(3));
         assertNull(daoOne.getUsersById(3));
@@ -99,9 +95,9 @@ class CompendiumDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = daoOne.getByPropertyLike("lastName", "Curry");
+        List<User> users = daoOne.getByPropertyEqual("lastName", "Vader");
         assertEquals(1, users.size());
-        assertEquals(3, users.get(0).getId());
+        assertEquals(6, users.get(0).getId());
     }
 
     /**
@@ -109,8 +105,8 @@ class CompendiumDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = daoOne.getByPropertyLike("lastName", "c");
-        assertEquals(3, users.size());
+        List<User> users = daoOne.getByPropertyLike("firstName", "t");
+        assertEquals(4, users.size());
     }
 }
 
