@@ -1,0 +1,34 @@
+Tosan Ogedengbe
+Enterprise Java Spring 2021: Weekly Reflection - Time Logs
+
+Week 5
+2/15/2021 - 2/21/2021 - 23 hours
+
+
+RELEVANT ITEMS:
+1. Watched all Week 4 Videos
+2. Completed all Week 4 Readings
+3. Completed the Week 4 Activity
+4. Worked through and completed the Week 4 Exercise using the Concept Compendium
+5. Began watching Week 5 Videos
+6. Started the Week 5 Readings
+7. Created all of the database tables for the Concept Compendium
+8. Created all of the DAOs for the Concept Compendium
+9. Started the creation of the Java classes for the Concept Compendium
+10. Practiced coding several MVC webapps using tutorial videos
+11. Began to gather facts on game engines and ideas for how to explain and present them for my Professional Development Activity on Amazon Lumberyard
+
+
+ACCOMPLISHMENTS:  
+Did a lot of research after the DAO reading to see what would work best for my project. Things in the outside reading I did were very clear and I learned a lot from them. Found that a single DAO would work for me based on what I need the DAO to do, rather than create a DAO for each table or entity - which was where I was going. Worked through the Hibernate Demo and learned a lot about how Hibernate works and got a little more insight on how all of these things Java Classes, DAOs and Databases all connect and work together using Hibernate and other ORMs like it. 
+Worked on practice coding for MVC apps using Java in order to get a better grasp on how to code my project based on what I want it to do. Coded along with several tutorial videos through YouTube. 
+Videos: https://www.youtube.com/watch?v=B-N5X90qizQ
+	https://www.youtube.com/watch?v=dTVVa2gfht8
+	https://www.youtube.com/watch?v=1IsL6g2ixak
+After spending a lot of time looking over code and trying to find errors in my Unit Test for Week 4 - I reached out for a little help. Once I got some additional insight to the potential problem, I was able to chase it down idea by idea until I found what seemed to be the issue....conflicting table names in two separate databases that were both being referenced by the same program. Once I made this change - everything worked. I now know to be more consistent when creating databases (big help when I am doing my own project), and I have learned to get more comfortable reaching out into a group environment. I found a lot of similar issues out there that I tried when doing my own troubleshooting. While these were not solutions to my problem....I was set on some different tracks to look for solutions that I would not have reached on my own. 
+
+
+SETBACKS:  
+Needed to put a stop to my research on MVC until later on in order to get some work done on my Professional Development Activity and the work overdue for Week 4 and Week 5. Had some issues getting Unit Tests to pass after completing the Hibernate Demo. Received some strange error messages that I was able to understand, but could still not narrow things down and troubleshoot effectively. Needed to reach out on this after spending a little over an hour trying to find the errors and backtrack over all the coding I had done to see if the error could be eliminated. It turns out, the error was my fault in a case of bad annotations for Hibernate. While it was a little demoralizing for such a small thing to cause So MANY issues - but it was refreshing to have this happen in this way so that I could learn from it and open my eyes to the fact that anything at all can cause a problem in a program, and I need to be very diligent when creating and troubleshooting code.
+
+
