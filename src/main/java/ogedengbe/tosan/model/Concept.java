@@ -42,7 +42,7 @@ public class Concept {
     }
 
     /**
-     * Instantiates a new User.
+     * Instantiates a new Concept.
      * @param conceptId     the concept id
      * @param conceptName   the concept name
      * @param keywordOne    the concept's first keyword

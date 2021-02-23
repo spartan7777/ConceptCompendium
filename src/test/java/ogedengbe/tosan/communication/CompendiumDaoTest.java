@@ -1,5 +1,6 @@
 package ogedengbe.tosan.communication;
 
+import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
 import ogedengbe.tosan.test.util.Database;
 import org.junit.Ignore;
@@ -67,6 +68,30 @@ class CompendiumDaoTest {
         User insertedUser = daoOne.getUsersById(userId);
         assertEquals("Bruce", insertedUser.getFirstName());
     }
+
+    /**
+     * Verify successful insert of a user and concept
+     */
+    @Test
+    void insertWithConceptSuccess() {
+        User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
+        Concept testConcept
+
+        int userId = daoOne.create(newUser);
+        assertNotEquals(0,userId);
+        User insertedUser = daoOne.getUsersById(userId);
+        assertEquals("Bruce", insertedUser.getFirstName());
+    }
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Verify successful delete of user
