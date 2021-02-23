@@ -1,0 +1,161 @@
+header, footer, nav, section {
+        display: block;   
+}
+
+body {
+    padding: .5em 1em 1em 1.45em; 
+    background: url("../images/outerspace-records.jpg") no-repeat center center fixed;
+    background-size: 100%;
+    background-position: center top;
+    margin-top: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 70pt;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;      
+}
+
+.topBusiness {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;   
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.topBusiness a:link {
+     color: #ffffff;
+}
+ 
+.topBusiness a:hover {
+     color: #ffffff;
+     text-shadow: 6px 6px 6px #000000;    
+} 
+
+.catalogLabels {
+    font-family: 'Audiowide', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;   
+    font-size: 20px; 
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 10px;    
+    margin-left: 10px;    
+    margin-right: 25px;
+}
+
+.catalogButtons {
+    border-style: inset;
+    border-width: 5px;
+    border-color: #332600; 
+    font-size: 22px;
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;    
+    height: 55px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
+#idea_name {
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 200px;
+
+}
+
+#idea_keyword_one {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+#idea_keyword_two {
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+#idea_category {
+     margin-left: 10px;
+     margin-right: 5px;
+     display: inline;
+}
+
+#idea_description {
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 30.5em;
+    width: 24em;
+    font-family: garamond;
+    text-align: left;  
+    vertical-align: text-top;
+}
+
+th {
+    width: auto;
+    text-align: center;
+    vertical-align: top;
+    font-family: 'Audiowide', cursive;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15pt;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;       
+}
+
+td {
+    font-family: garamond;
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 5px;
+    vertical-align: top;
+    color: #ffffff;
+    text-shadow: 4px 2px 2px #000000;  
+    text-align: center;
+}
+
+p {
+    width: auto;
+    text-align: left;
+    vertical-align: top;
+    font-family: 'Audiowide', cursive;
+    font-size: 14pt;
+    font-weight: bold;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;      
+}
+
+a {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;   
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

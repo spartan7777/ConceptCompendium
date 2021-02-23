@@ -12,7 +12,7 @@ import java.io.IOException;
 
 /**
  * A simple servlet to welcome the user.
- * @author pwaite
+ * @author Tosan Ogedengbe
  */
 
 @WebServlet(

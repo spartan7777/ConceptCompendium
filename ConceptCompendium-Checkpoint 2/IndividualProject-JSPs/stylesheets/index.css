@@ -1,0 +1,94 @@
+header, footer, nav, section {
+        display: block;   
+}
+
+body {
+    padding: .5em 1em 1em 1.45em; 
+    background: url("../images/outerspace.jpg") no-repeat center center fixed;
+    background-size: 120%;
+    background-position: center top;
+    margin-top: 25px;
+}
+
+h1 {    
+    text-align: center;
+    font-variant: small-caps;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    border: 0;
+    font-weight: bold;
+    font-size: 125pt;
+    color:  #ffffff;
+    text-shadow: 4px 4px 2px #000000; 
+    font-family: 'Audiowide', cursive;
+ }
+ 
+ h2 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 50pt;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;     
+}
+
+ h3 {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 50pt;
+    color:  #ffffff;
+    text-shadow: 4px 2px 2px #000000;     
+}
+   
+.topBusiness {
+    color: #ffffff;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.topBusiness a:link {
+     color: #ffffff;
+ }
+ 
+.topBusiness a:hover {
+     color: #ffffff;
+     text-shadow: 6px 6px 6px #666699;    
+ } 
+
+a:visited {
+    color: #ffffff;
+}
+
+#introText {
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 15pt;
+    color:  #ffffff;
+	text-shadow: 4px 2px 2px #000000; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,16 +1,13 @@
 package ogedengbe.tosan.model;
 
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A class to represent a user.
- *
- * @author pwaite
+ * @author Tosan Ogedengbe
  */
 
 @Entity(name = "User")
@@ -33,6 +30,9 @@ public class User {
 
     @Column(name = "password")
     private String password;
+
+    @OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Concept> conceptSet = new HashSet<>();
 
 
     /**
@@ -135,6 +135,22 @@ public class User {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * Gets concepts.
+     * @return the concepts
+     */
+    public Set<Concept> getConceptSet() {
+        return conceptSet;
+    }
+
+    /**
+     * Sets concepts.
+     * @return conceptSet the concepts
+     */
+    public void setConceptSet(Set<Concept> conceptSet) {
+        this.conceptSet = conceptSet;
     }
 
     @Override
