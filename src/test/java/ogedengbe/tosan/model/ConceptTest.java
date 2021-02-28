@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity(name = "Concept")
 @Table(name = "concept")
 
-public class Concept {
+public class ConceptTest {
     @Id
     @Column(name = "concept_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -169,5 +169,6 @@ public class Concept {
                 '}';
     }
 }
+
 
 

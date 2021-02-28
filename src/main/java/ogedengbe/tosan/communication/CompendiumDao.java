@@ -84,6 +84,7 @@ public class CompendiumDao {
         return users;
     }
 
+
     /**
      * Get user by property (like)
      * sample usage: getByPropertyLike("lastname", "C")
@@ -105,7 +106,7 @@ public class CompendiumDao {
     }
 
     /**
-     * create a user
+     * create user
      * @param user  User to be created
      * @return id of the created user
      */
@@ -120,8 +121,8 @@ public class CompendiumDao {
     }
 
     /**
-     * update a user
-     * @param user  User to be updated
+     * update user
+     * @param user  User to be inserted or updated
      */
     public void saveOrUpdate(User user) {
         Session sessionOne = sessionFactoryOne.openSession();
@@ -139,46 +140,6 @@ public class CompendiumDao {
         Session sessionOne = sessionFactoryOne.openSession();
         Transaction transactionOne = sessionOne.beginTransaction();
         sessionOne.delete(user);
-        transactionOne.commit();
-        sessionOne.close();
-    }
-
-
-    /**
-     * create a concept
-     * @param concept  Concept to be created
-     * @return id of the created concept
-     */
-    public int create(Concept concept) {
-        int id = 0;
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        id = (int)sessionOne.save(id);
-        transactionOne.commit();
-        sessionOne.close();
-        return id;
-    }
-
-    /**
-     * update a concept
-     * @param concept Concept to be updated
-     */
-    public void saveOrUpdate(Concept concept) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.saveOrUpdate(concept);
-        transactionOne.commit();
-        sessionOne.close();
-    }
-
-    /**
-     * Delete a concept
-     * @param concept Concept to be deleted
-     */
-    public void delete(Concept concept) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.delete(concept);
         transactionOne.commit();
         sessionOne.close();
     }
