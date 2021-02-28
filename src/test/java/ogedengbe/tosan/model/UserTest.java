@@ -12,7 +12,7 @@ import java.util.Set;
 
 @Entity(name = "User")
 @Table(name = "user")
-public class User {
+public class UserTest {
     @Id
     @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")

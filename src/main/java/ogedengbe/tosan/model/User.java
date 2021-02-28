@@ -153,6 +153,24 @@ public class User {
         this.conceptSet = conceptSet;
     }
 
+    /**
+     * Add concepts.
+     * @param newConcept the concept
+     */
+    public void addConcept(Concept newConcept) {
+        conceptSet.add(newConcept);
+        newConcept.setUserId(this);
+    }
+
+    /**
+     * Remove concepts.
+     * @param newConcept the concept
+     */
+    public void removeConcept(Concept newConcept) {
+        conceptSet.remove(newConcept);
+        newConcept.setUserId(null);
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -163,4 +181,5 @@ public class User {
                 ", password=" + password +
                 '}';
     }
+
 }

@@ -1,6 +1,7 @@
 package ogedengbe.tosan.communication;
 
 import ogedengbe.tosan.model.Concept;
+import ogedengbe.tosan.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -13,7 +14,7 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public class ConceptDao {
+public class UserDao {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactoryOne = SessionFactoryProvider.getSessionFactory();
@@ -21,93 +22,95 @@ public class ConceptDao {
     /**
      * Gets a list of all concepts
      * @ return all the concepts
+     * @return
      */
-    public List<Concept> getAllConcepts() {
+    public List<User> getAllUsers() {
         Session sessionOne = sessionFactoryOne.openSession();
         CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<Concept> queryOne = builderOne.createQuery(Concept.class);
-        Root<Concept> rootOne = queryOne.from(Concept.class);
-        List<Concept> concepts = sessionOne.createQuery(queryOne).getResultList();
-        sessionOne.close();
-        return concepts;
-    }
-
-    /**
-     * Gets concepts by name
-     * @param conceptName the name to search for
-     * @return the concepts that are found
-     */
-    public List<Concept> getConceptsByName(String conceptName) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<Concept> queryOne = builderOne.createQuery(Concept.class);
-        Root<Concept> rootOne = queryOne.from(Concept.class);
-        Expression<String> propertyPath = rootOne.get("lastName");
-        queryOne.where(builderOne.like(propertyPath, "%" + conceptName + "%"));
-        List<Concept> concepts = sessionOne.createQuery(queryOne).getResultList();
+        CriteriaQuery<User> queryOne = builderOne.createQuery(User.class);
+        Root<User> rootOne = queryOne.from(User.class);
+        List<User> users = sessionOne.createQuery(queryOne).getResultList();
         sessionOne.close();
         //logger.info("Here is the select all statement " + concepts);
-        return concepts;
+        return users;
     }
 
     /**
-     * Gets concept by Id
-     * @param id the concept id to search for
-     * @return the result concept
+     * Gets users by name
+     * @param lastName the name to search for
+     * @return the users that are found
      */
-    public Concept getConceptsById(int id) {
+    public List<User> getUsersByLastName(String lastName) {
         Session sessionOne = sessionFactoryOne.openSession();
-        Concept concept = sessionOne.get(Concept.class, id);
+        CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
+        CriteriaQuery<User> queryOne = builderOne.createQuery(User.class);
+        Root<User> rootOne = queryOne.from(User.class);
+        Expression<String> propertyPath = rootOne.get("lastName");
+        queryOne.where(builderOne.like(propertyPath, "%" + lastName + "%"));
+        List<User> users = sessionOne.createQuery(queryOne).getResultList();
+        sessionOne.close();
+        //logger.info("Here is the select all statement " + concepts);
+        return users;
+    }
+
+    /**
+     * Gets user by Id
+     * @param id the user id to search for
+     * @return the result user
+     */
+    public User getUsersById(int id) {
+        Session sessionOne = sessionFactoryOne.openSession();
+        User user = sessionOne.get(User.class, id);
         sessionOne.close();
         //logger.info("Here is the select all statement " + concept);
-        return concept;
+        return user;
     }
 
     /**
-     * Get concept by property (exact match)
+     * Get user by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
-     * @param propertyName entity property to search by
+     * @param propertyName user property to search by
      * @param value value of the property to search for
-     * @return list of concepts meeting the criteria
+     * @return list of users meeting the criteria
      */
-    public List<Concept> getByPropertyEqual(String propertyName, String value) {
+    public List<User> getByPropertyEqual(String propertyName, String value) {
         Session sessionOne = sessionFactoryOne.openSession();
-        logger.debug("Searching for concept with " + propertyName + " = " + value);
+        logger.debug("Searching for user with " + propertyName + " = " + value);
         CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<Concept> queryOne = builderOne.createQuery( Concept.class );
-        Root<Concept> rootOne = queryOne.from( Concept.class );
+        CriteriaQuery<User> queryOne = builderOne.createQuery( User.class );
+        Root<User> rootOne = queryOne.from( User.class );
         queryOne.select(rootOne).where(builderOne.equal(rootOne.get(propertyName), value));
-        List<Concept> concepts = sessionOne.createQuery( queryOne ).getResultList();
+        List<User> users = sessionOne.createQuery( queryOne ).getResultList();
         sessionOne.close();
-        return concepts;
+        return users;
     }
 
     /**
-     * Get concept by property (like)
+     * Get user by property (like)
      * sample usage: getByPropertyLike("lastname", "C")
-     * @param propertyName entity property to search by
+     * @param propertyName user property to search by
      * @param value value of the property to search for
-     * @return list of concepts meeting the criteria
+     * @return list of users meeting the criteria
      */
-    public List<Concept> getByPropertyLike(String propertyName, String value) {
+    public List<User> getByPropertyLike(String propertyName, String value) {
         Session sessionOne = sessionFactoryOne.openSession();
-        logger.debug("Searching for concept with {} = {}",  propertyName, value);
+        logger.debug("Searching for user with {} = {}",  propertyName, value);
         CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<Concept> queryOne = builderOne.createQuery( Concept.class );
-        Root<Concept> rootOne = queryOne.from( Concept.class );
+        CriteriaQuery<User> queryOne = builderOne.createQuery( User.class );
+        Root<User> rootOne = queryOne.from( User.class );
         Expression<String> propertyPath = rootOne.get(propertyName);
         queryOne.where(builderOne.like(propertyPath, "%" + value + "%"));
-        List<Concept> concepts = sessionOne.createQuery( queryOne ).getResultList();
+        List<User> users = sessionOne.createQuery( queryOne ).getResultList();
         sessionOne.close();
-        return concepts;
+        return users;
     }
 
     /**
-     * create a concept
-     * @param concept  Concept to be created
-     * @return id of the created concept
+     * create a user
+     * @param user user to be created
+     * @return id of the created user
      */
-    public int create(Concept concept) {
+    public int create(User user) {
         int id = 0;
         Session sessionOne = sessionFactoryOne.openSession();
         Transaction transactionOne = sessionOne.beginTransaction();
@@ -118,25 +121,25 @@ public class ConceptDao {
     }
 
     /**
-     * update a concept
-     * @param concept Concept to be updated
+     * update a user
+     * @param user User to be updated
      */
-    public void saveOrUpdate(Concept concept) {
+    public void saveOrUpdate(User user) {
         Session sessionOne = sessionFactoryOne.openSession();
         Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.saveOrUpdate(concept);
+        sessionOne.saveOrUpdate(user);
         transactionOne.commit();
         sessionOne.close();
     }
 
     /**
-     * Delete a concept
-     * @param concept Concept to be deleted
+     * Delete a user
+     * @param user User to be deleted
      */
-    public void delete(Concept concept) {
+    public void delete(User user) {
         Session sessionOne = sessionFactoryOne.openSession();
         Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.delete(concept);
+        sessionOne.delete(user);
         transactionOne.commit();
         sessionOne.close();
     }
