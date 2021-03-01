@@ -40,7 +40,7 @@ public class ConceptTest {
     /**
      * Instantiates a new Concept.
      */
-    public Concept() {
+    public ConceptTest() {
     }
 
     /**
@@ -52,7 +52,7 @@ public class ConceptTest {
      * @param category      the concept category
      * @param description   the concept description
      */
-    public Concept(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
+    public ConceptTest(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
         this.conceptId = conceptId;
         this.conceptName = conceptName;
         this.keywordOne = keywordOne;

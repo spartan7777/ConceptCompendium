@@ -81,7 +81,7 @@ class UserDaoTest {
         String category = "Weapon";
         String description = "Energy blade used by Jedi Knights";
 
-        Concept newConcept = new Concept(conceptId, userId, conceptName, keywordOne, keywordTwo, category, description);
+        Concept newConcept = new Concept(conceptId, conceptName, keywordOne, keywordTwo, category, description);
 
         newUser.addConcept(newConcept);
 

@@ -2,6 +2,7 @@ package ogedengbe.tosan.communication;
 
 import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.Concept;
+import ogedengbe.tosan.model.User;
 import ogedengbe.tosan.test.util.Database;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -47,7 +48,7 @@ public class ConceptDaoTest {
         @Test
         void getAllConceptsSuccess() {
         List<Concept> concepts = daoOne.getAllConcepts();
-        assertEquals(6, concepts.size());
+        assertEquals(7, concepts.size());
     }
 
         /**
@@ -57,7 +58,7 @@ public class ConceptDaoTest {
         void getConceptsByIdSuccess() {
         Concept retrievedConcept = daoOne.getConceptsById(3);
         assertNotNull(retrievedConcept);
-        assertEquals("Tony", retrievedConcept.getConceptId());
+        assertEquals("Sarif Industries", retrievedConcept.getConceptName());
     }
 
         /**
@@ -118,11 +119,17 @@ public class ConceptDaoTest {
          */
         @Test
         void insertSuccess() {
-        Concept newConcept = new Concept(9, 4, "Lightsaber", "Jedi", "Sacred", "Weapon", "Energy blade used by Jedi Knights");
-        int conceptId = daoOne.create(newConcept);
-        assertNotEquals(0, conceptId);
-        Concept insertedConcept = daoOne.getConceptsById(conceptId);
-        assertEquals("Bruce", insertedConcept.getConceptName());
+            UserDao userDao = new UserDao();
+            User user = userDao.getUsersById(1);
+            Concept newConcept = new Concept(9, "Lightsaber", "Jedi", "Sacred", "Weapon", "Energy blade used by Jedi Knights");
+
+            int conceptId = daoOne.create(newConcept);
+
+            assertNotEquals(0, conceptId);
+            Concept insertedConcept = daoOne.getConceptsById(conceptId);
+            assertNotNull(insertedConcept.getConceptName());
+            assertEquals("Lightsaber", insertedConcept.getConceptName());
+            assertEquals(7, insertedConcept.getConceptId());
     }
 
         /**

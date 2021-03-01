@@ -38,7 +38,7 @@ public class UserTest {
     /**
      * Instantiates a new User.
      */
-    public User() {
+    public UserTest() {
     }
 
     /**
@@ -49,7 +49,7 @@ public class UserTest {
      * @param userName    the user name
      * @param password    the password
      */
-    public User(int userId, String firstName, String lastName, String userName, String password) {
+    public UserTest(int userId, String firstName, String lastName, String userName, String password) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
