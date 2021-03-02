@@ -26,9 +26,9 @@ public class SearchUser extends HttpServlet {
         //UserData userData = new UserData();
         CompendiumDao userDaoOne = new CompendiumDao();
         if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", userDaoOne.getUsersByLastName(req.getParameter("searchTerm")));
+            req.setAttribute("users", userDaoOne.getByPropertyEqual(req.getParameter("searchTerm")));
         } else {
-            req.setAttribute("users", userDaoOne.getAllUsers());
+            req.setAttribute("users", userDaoOne.getAll());
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");

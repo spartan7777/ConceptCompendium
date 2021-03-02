@@ -1,11 +1,8 @@
 package ogedengbe.tosan.communication;
 
-import ogedengbe.tosan.model.Concept;
-import ogedengbe.tosan.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -14,134 +11,140 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public class CompendiumDao {
 
+public class CompendiumDao<T> {
+    private Class<T> type;
     private final Logger logger = LogManager.getLogger(this.getClass());
-    SessionFactory sessionFactoryOne = SessionFactoryProvider.getSessionFactory();
 
     /**
-     * Gets a list of all users
-     * @ return all the users
+     * Instantiates a new Compendium dao.
+     *
+     * @param type the entity type, for example, User.
      */
-    public List<User> getAllUsers() {
-        Session sessionOne = sessionFactoryOne.openSession();
-        CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<User> queryOne = builderOne.createQuery(User.class);
-        Root<User> rootOne = queryOne.from(User.class);
-        List<User> users = sessionOne.createQuery(queryOne).getResultList();
-        sessionOne.close();
-        //logger.info("Here is the select all statement " + users);
-        return users;
+    public CompendiumDao(Class<T> type) {
+        this.type = type;
     }
 
     /**
-     * Gets users by last name
-     * @param lastName the last name to search for
-     * @return the users that are found
+     * Gets an entity by id
+     * @param id entity id to search by
+     * @return a entity
      */
-    public List<User> getUsersByLastName(String lastName) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<User> queryOne = builderOne.createQuery(User.class);
-        Root<User> rootOne = queryOne.from(User.class);
-        Expression<String> propertyPath = rootOne.get("lastName");
-        queryOne.where(builderOne.like(propertyPath, "%" + lastName + "%"));
-        List<User> users = sessionOne.createQuery(queryOne).getResultList();
-        sessionOne.close();
-        //logger.info("Here is the select all statement " + users);
-        return users;
+    public <T>T getById(int id) {
+        Session session = getSession();
+        T entity = (T)session.get(type, id);
+        session.close();
+        return entity;
     }
 
     /**
-     * Gets users by Id
-     * @param id the user id to search for
-     * @return the result user
+     * Creates the entity.
+     *
+     * @param entity entity to be created
+     * @return id of the created entity
      */
-    public User getUsersById(int id) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        User user = sessionOne.get(User.class, id);
-        sessionOne.close();
-        //logger.info("Here is the select all statement " + user);
-        return user;
-    }
-
-    /**
-     * Get user by property (exact match)
-     * sample usage: getByPropertyEqual("lastname", "Curry")
-     * @param propertyName entity property to search by
-     * @param value value of the property to search for
-     * @return list of users meeting the criteria
-     */
-    public List<User> getByPropertyEqual(String propertyName, String value) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        logger.debug("Searching for user with " + propertyName + " = " + value);
-        CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<User> queryOne = builderOne.createQuery( User.class );
-        Root<User> rootOne = queryOne.from( User.class );
-        queryOne.select(rootOne).where(builderOne.equal(rootOne.get(propertyName), value));
-        List<User> users = sessionOne.createQuery( queryOne ).getResultList();
-        sessionOne.close();
-        return users;
-    }
-
-
-    /**
-     * Get user by property (like)
-     * sample usage: getByPropertyLike("lastname", "C")
-     * @param propertyName entity property to search by
-     * @param value value of the property to search for
-     * @return list of users meeting the criteria
-     */
-    public List<User> getByPropertyLike(String propertyName, String value) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        logger.debug("Searching for user with {} = {}",  propertyName, value);
-        CriteriaBuilder builderOne = sessionOne.getCriteriaBuilder();
-        CriteriaQuery<User> queryOne = builderOne.createQuery( User.class );
-        Root<User> rootOne = queryOne.from( User.class );
-        Expression<String> propertyPath = rootOne.get(propertyName);
-        queryOne.where(builderOne.like(propertyPath, "%" + value + "%"));
-        List<User> users = sessionOne.createQuery( queryOne ).getResultList();
-        sessionOne.close();
-        return users;
-    }
-
-    /**
-     * create user
-     * @param user  User to be created
-     * @return id of the created user
-     */
-    public int create(User user) {
+    public int create(T entity) {
         int id = 0;
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        id = (int)sessionOne.save(user);
-        transactionOne.commit();
-        sessionOne.close();
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(entity);
+        transaction.commit();
+        session.close();
         return id;
     }
 
     /**
-     * update user
-     * @param user  User to be inserted or updated
+     * Updates the entity.
+     *
+     * @param entity entity to be updated
      */
-    public void saveOrUpdate(User user) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.saveOrUpdate(user);
-        transactionOne.commit();
-        sessionOne.close();
+    public void saveOrUpdate(T entity) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        session.saveOrUpdate(entity);
+        transaction.commit();
+        session.close();
     }
 
     /**
-     * Delete a user
-     * @param user User to be deleted
+     * Deletes the entity.
+     *
+     * @param entity entity to be deleted
      */
-    public void delete(User user) {
-        Session sessionOne = sessionFactoryOne.openSession();
-        Transaction transactionOne = sessionOne.beginTransaction();
-        sessionOne.delete(user);
-        transactionOne.commit();
-        sessionOne.close();
+    public void delete(T entity) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(entity);
+        transaction.commit();
+        session.close();
+    }
+
+    /**
+     * Gets all entities
+     *
+     * @return the all entities
+     */
+    public List<T> getAll() {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        List<T> list = session.createQuery(query).getResultList();
+        session.close();
+        return list;
+
+    }
+
+    /** Get order by property (exact match)
+     * sample usage: getByPropertyEqual("lastName", "Curry")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of orders meeting the criteria search
+     */
+    public List<T> getByPropertyEqual(String propertyName, String value) {
+        Session session = getSession();
+
+        logger.debug("Searching for order with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery( type );
+        Root<T> root = query.from(type );
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<T> entities = session.createQuery( query ).getResultList();
+        session.close();
+        return entities;
+    }
+
+    /** Get order by property (like)
+     * sample usage: getByPropertyLike("lastName", "Curry")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of orders meeting the criteria search
+     */
+    public List<T> getByPropertyLike(String propertyName, String value) {
+        Session session = getSession();
+
+        logger.debug("Searching for order with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery( type );
+        Root<T> root = query.from(type );
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        Expression<String> propertyPath = root.get(propertyName);
+        List<T> entities = session.createQuery( query ).getResultList();
+        session.close();
+        return entities;
+    }
+
+    /**
+     * Returns an open session from the SessionFactory
+     * @return session
+     */
+    private Session getSession() {
+        return SessionFactoryProvider.getSessionFactory().openSession();
+
     }
 
 
