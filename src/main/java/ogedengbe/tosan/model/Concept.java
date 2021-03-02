@@ -35,8 +35,7 @@ public class Concept {
     private String description;
 
     @ManyToOne
-    private User userOne;
-    //private User userId;
+    private User user;
 
     /**
      * Instantiates a new Concept.
@@ -46,15 +45,16 @@ public class Concept {
 
     /**
      * Instantiates a new Concept.
+     * @param user          the user
      * @param conceptId     the concept id
-
      * @param conceptName   the concept name
      * @param keywordOne    the concept first keyword
      * @param keywordTwo    the concept second keyword
      * @param category      the concept category
      * @param description   the concept description
      */
-    public Concept(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
+    public Concept(User user, int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
+        this.user = user;
         this.conceptId = conceptId;
         //this.userId = userId;
         this.conceptName = conceptName;
@@ -161,13 +161,13 @@ public class Concept {
     }
 
 
-    //public void setUserId(User userId) {
-     //   this.userId = userId;
-    //}
+    public void setUser(User user) {
+       this.user = user;
+    }
 
-    //public User getUserId() {
-      //  return userId;
-    //}
+    public User getUser() {
+       return user;
+    }
 
     @Override
     public String toString() {

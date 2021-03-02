@@ -54,7 +54,7 @@ class CompendiumDaoTest {
      */
    @Test
    void getByIdSuccess() {
-       User retrievedUser = dao.getById(3);
+       Object retrievedUser = dao.getById(3);
        assertNotNull(retrievedUser);
        assertEquals("Tony", retrievedUser.getFirstName());
    }
@@ -67,7 +67,7 @@ class CompendiumDaoTest {
        User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
        int userId = dao.create(newUser);
        assertNotEquals(0,userId);
-       User insertedUser = dao.getById(userId);
+       insertedUser = dao.getById(userId);
        assertEquals("Bruce", insertedUser.getFirstName());
    }
 
@@ -81,7 +81,7 @@ class CompendiumDaoTest {
 
       int userId = dao.create(newUser);
       assertNotEquals(0,userId);
-      User insertedUser = dao.getById(userId);
+      insertedUser = dao.getById(userId);
       assertEquals("Bruce", insertedUser.getFirstName());
     }
 

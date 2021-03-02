@@ -25,12 +25,16 @@ public class CompendiumDao<T> {
         this.type = type;
     }
 
+    public CompendiumDao() {
+
+    }
+
     /**
      * Gets an entity by id
      * @param id entity id to search by
      * @return a entity
      */
-    public <T>T getById(int id) {
+    public <T> T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
         session.close();
