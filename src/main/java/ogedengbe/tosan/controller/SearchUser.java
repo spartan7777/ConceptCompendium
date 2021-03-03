@@ -11,7 +11,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
+ * A simple servlet to provide user search results.
  * @author Tosan Ogedengbe
  */
 
@@ -20,18 +20,19 @@ import java.io.IOException;
 )
 
 public class SearchUser extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         //UserData userData = new UserData();
         CompendiumDao userDaoOne = new CompendiumDao();
         if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", userDaoOne.getByPropertyEqual(req.getParameter("searchTerm")));
+            req.setAttribute("users", userDaoOne.getByPropertyEqual(req.getParameter("propertyName"), req.getParameter("searchTerm")));
         } else {
             req.setAttribute("users", userDaoOne.getAll());
         }
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchresults.jsp");
         dispatcher.forward(req, resp);
     }
 }

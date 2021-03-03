@@ -45,7 +45,6 @@ public class Concept {
 
     /**
      * Instantiates a new Concept.
-     * @param user          the user
      * @param conceptId     the concept id
      * @param conceptName   the concept name
      * @param keywordOne    the concept first keyword
@@ -53,7 +52,7 @@ public class Concept {
      * @param category      the concept category
      * @param description   the concept description
      */
-    public Concept(User user, int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
+    public Concept(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
         this.user = user;
         this.conceptId = conceptId;
         //this.userId = userId;

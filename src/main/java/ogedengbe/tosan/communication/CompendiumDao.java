@@ -34,7 +34,7 @@ public class CompendiumDao<T> {
      * @param id entity id to search by
      * @return a entity
      */
-    public <T> T getById(int id) {
+    public <T>T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
         session.close();
@@ -92,7 +92,7 @@ public class CompendiumDao<T> {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
-        Root<T> root = query.from(type);
+        //Root<T> root = query.from(type);
         List<T> list = session.createQuery(query).getResultList();
         session.close();
         return list;
@@ -136,7 +136,7 @@ public class CompendiumDao<T> {
         CriteriaQuery<T> query = builder.createQuery( type );
         Root<T> root = query.from(type );
         query.select(root).where(builder.equal(root.get(propertyName), value));
-        Expression<String> propertyPath = root.get(propertyName);
+        //Expression<String> propertyPath = root.get(propertyName);
         List<T> entities = session.createQuery( query ).getResultList();
         session.close();
         return entities;

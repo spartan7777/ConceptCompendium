@@ -3,11 +3,9 @@ package ogedengbe.tosan.communication;
 import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
 import ogedengbe.tosan.test.util.Database;
-import org.junit.Ignore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,6 +30,26 @@ class CompendiumDaoTest {
     }
 
     /**
+     * Verifies a user is returned correctly based on id search
+     */
+    @Test
+    void getUserByIdSuccess() {
+        User retrievedUser = (User)dao.getById(3);
+        assertNotNull(retrievedUser);
+        assertEquals("Tony", retrievedUser.getFirstName());
+    }
+
+    /**
+     * Verifies a concept is returned correctly based on id search
+     */
+    @Test
+    void getConceptByIdSuccess() {
+        Concept retrievedConcept = (Concept)dao.getById(3);
+        assertNotNull(retrievedConcept);
+        assertEquals("Tony", retrievedConcept.getConceptName());
+    }
+
+    /**
      * Verifies gets all users successfully.
      */
    @Test
@@ -41,35 +59,91 @@ class CompendiumDaoTest {
    }
 
     /**
+     * Verifies gets all concepts successfully.
+     */
+   @Test
+    void getAllConceptsSuccess() {
+        List<Concept> conceptSet = dao.getAll();
+        assertEquals(6, conceptSet.size());
+    }
+
+    /**
      * Verifies gets users by last name successfully.
      */
    @Test
    void getUsersByLastNameSuccess() {
-       List<User> users = dao.getByPropertyLike("c");
+       List<User> users = dao.getByPropertyLike("lastName", "c");
        assertEquals(0, users.size());
    }
 
     /**
-     * Verifies a user is returned correctly based on id search
+     * Verifies gets concepts by name successfully.
      */
-   @Test
-   void getByIdSuccess() {
-       Object retrievedUser = dao.getById(3);
-       assertNotNull(retrievedUser);
-       assertEquals("Tony", retrievedUser.getFirstName());
-   }
+    @Test
+    void getConceptsByNameSuccess() {
+        List<Concept> conceptSet = dao.getByPropertyLike("conceptName", "c");
+        assertEquals(0, conceptSet.size());
+    }
+
+    /**
+     * Verifies gets concepts by keyword one successfully.
+     */
+    @Test
+    void getConceptsByKeywordOneSuccess() {
+        List<Concept> conceptSet = dao.getByPropertyLike("keywordOne", "c");
+        assertEquals(0, conceptSet.size());
+    }
+
+    /**
+     * Verifies gets concepts by keyword two successfully.
+     */
+    @Test
+    void getConceptsByKeywordTwoSuccess() {
+        List<Concept> conceptSet = dao.getByPropertyLike("keywordTwo", "c");
+        assertEquals(0, conceptSet.size());
+    }
+
+    /**
+     * Verifies gets concepts by category successfully.
+     */
+    @Test
+    void getConceptsByCategorySuccess() {
+        List<Concept> conceptSet = dao.getByPropertyLike("category", "c");
+        assertEquals(0, conceptSet.size());
+    }
+
+    /**
+     * Verifies gets concepts by description successfully.
+     */
+    @Test
+    void getConceptsByDescriptionSuccess() {
+        List<Concept> conceptSet = dao.getByPropertyLike("description", "c");
+        assertEquals(0, conceptSet.size());
+    }
 
     /**
      * Verify successful insert of a user
      */
    @Test
-   void insertSuccess() {
+   void insertUserSuccess() {
        User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
        int userId = dao.create(newUser);
        assertNotEquals(0,userId);
-       insertedUser = dao.getById(userId);
+       User insertedUser = dao.getById(userId);
        assertEquals("Bruce", insertedUser.getFirstName());
    }
+
+    /**
+     * Verify successful insert of a concept
+     */
+    @Test
+    void insertConceptSuccess() {
+        Concept newConcept = new Concept(7, "Bruce", "Banner", "bbanner", "hulksecret7", "here is desc");
+        int conceptId = dao.create(newConcept);
+        assertNotEquals(0,conceptId);
+        Concept insertedConcept = dao.getById(conceptId);
+        assertEquals("Bruce", insertedConcept.getConceptName());
+    }
 
     /**
      * Verify successful insert of a user and concept
@@ -84,6 +158,8 @@ class CompendiumDaoTest {
       insertedUser = dao.getById(userId);
       assertEquals("Bruce", insertedUser.getFirstName());
     }
+
+    
 
     /**
      * Verify successful delete of user
