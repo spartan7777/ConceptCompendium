@@ -21,9 +21,10 @@
 
         <section>
 
-    
+
             <p>Please enter your username and desired password to create an account.</p>
-            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <form method="post" action="account.html">
+                <div class="formset">
                 <fieldset id="fieldset">
                 <label class="catalogLabels">Username:</label>
                     <input type="text" id="username" name="username" value=""/><br />
@@ -36,13 +37,19 @@
                 <label class="catalogLabels">Password Retype:</label>
                     <input type="password" id="password2" name="password2" /><br />
                 </fieldset>
+                </div>
                     <br />
-                    <input type="submit" class="catalogButtons" value="Sign Up" name="submit" />
+                <input type="submit" class="catalogButtons" value="Sign Up" name="submit" />
             </form>
-        
+
+            <form method="post" action="index.html">
+                <input type="submit" class="catalogButtons" value="Quit" name="submit" />
+            </form>
+
+
         </section>
-        
+
     </body>
-    
+
 </html>
 

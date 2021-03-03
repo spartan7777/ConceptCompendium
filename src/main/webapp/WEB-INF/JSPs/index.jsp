@@ -41,8 +41,19 @@
             ideas in any category you wish.<br /><br />
             After all, the ideas are yours.........<br /><br />
             </p>
-            
-            
+        </section>
+
+        <section>
+            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <fieldset id="fieldset">
+                    <label class="catalogLabels">Username:</label>
+                    <input type="text" id="username" name="username" value=""/><br />
+                    <label class="catalogLabels">Password:</label>
+                    <input type="password" id="password" name="password" />
+                </fieldset>
+                <br />
+                <input type="submit" class="catalogButtons" value="Log In" name="submit" />
+            </form>
         </section>
         
     </body>

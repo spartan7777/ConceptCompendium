@@ -92,6 +92,19 @@ a:visited {
     margin-bottom: 20px;
 }
 
+.catalogButtonsTwo {
+    border-style: inset;
+    border-width: 5px;
+    border-color: #332600;
+    font-size: 22px;
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;
+    height: 55px;
+    margin-top: -10px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
 #username {
     margin-left: 10px;
     margin-right: 15px;

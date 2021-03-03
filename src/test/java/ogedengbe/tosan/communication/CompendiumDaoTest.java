@@ -159,22 +159,32 @@ class CompendiumDaoTest {
       assertEquals("Bruce", insertedUser.getFirstName());
     }
 
-    
+
 
     /**
      * Verify successful delete of user
      */
    @Test
-   void deleteSuccess() {
-       dao.delete(dao.getById(3));
+   void deleteUserSuccess() {
+       User deletedUser = (User)dao.getById(3);
+       deletedUser.delete(dao.getById(3));
        assertNull(dao.getById(3));
    }
+
+    /**
+     * Verify successful delete of a concept
+     */
+    @Test
+    void deleteConceptSuccess() {
+        dao.delete(dao.getById(3));
+        assertNull(dao.getById(3));
+    }
 
     /**
      * Verify successful update of user
      */
    @Test
-   void updateSuccess() {
+   void updateUserSuccess() {
        String newLastName = "Davis";
        User userToUpdate = dao.getById(3);
        userToUpdate.setLastName(newLastName);
@@ -182,6 +192,19 @@ class CompendiumDaoTest {
        User retrievedUser = dao.getById(3);
        assertEquals(newLastName, retrievedUser.getLastName());
    }
+
+    /**
+     * Verify successful update of concept
+     */
+    @Test
+    void updateConceptSuccess() {
+        String newLastName = "Davis";
+        User userToUpdate = dao.getById(3);
+        userToUpdate.setLastName(newLastName);
+        dao.saveOrUpdate(userToUpdate);
+        User retrievedUser = dao.getById(3);
+        assertEquals(newLastName, retrievedUser.getLastName());
+    }
 
     /**
      * Verify successful get by property (equal match)

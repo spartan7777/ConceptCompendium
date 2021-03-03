@@ -21,7 +21,7 @@
         <section>
 
         
-            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <form method="post" action="passed.html">
                 <fieldset id="fieldset">
             <label class="catalogLabels">Username:</label>
                 <input type="text" id="username" name="username" value=""/><br />
@@ -31,7 +31,9 @@
                 <br />
                 <input type="submit" class="catalogButtons" value="Log In" name="submit" />
             </form>
-
+            <form method="post" action="index.html">
+                <input type="submit" class="catalogButtonsTwo" value="Quit" name="submit" />
+            </form>
             
         </section>
         
