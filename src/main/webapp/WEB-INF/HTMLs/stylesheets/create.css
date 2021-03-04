@@ -65,6 +65,8 @@ a:visited {
     font-weight: bold;    
     height: 55px;
     margin-bottom: 20px;
+    margin-top: -10px;
+    width: 200px;
 }
 
 #idea_name {

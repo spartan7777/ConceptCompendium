@@ -24,7 +24,7 @@
                 -->
             
             <br />
-            <form enctype="multipart/form-data" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <form enctype="multipart/form-data" method="post" action="records.html">
                 <br />
             <label class="catalogLabels">Name:</label>
                 <input type="text" id="idea_name" name="idea_name" maxlength="100" value="" /><br />
@@ -48,7 +48,17 @@
                 <textarea id="idea_description" name="idea_description" maxlength="2500" value=""></textarea>
                 <br /> 
                 <br />
+                <br />
                 <input type="submit" class="catalogButtons" value="Log Idea" name="submit" />
+            </form>
+            <form method="post" action="search.html">
+                <input type="submit" class="catalogButtons" value="Search" name="submit" />
+            </form>
+            <form method="post" action="list.html">
+                <input type="submit" class="catalogButtons" value="List" name="submit" />
+            </form>
+            <form method="post" action="logout.html">
+                <input type="submit" class="catalogButtons" value="Log Out" name="submit" />
             </form>
 
         </section>

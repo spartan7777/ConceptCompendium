@@ -90,6 +90,8 @@ a:visited {
     height: 55px;
     margin-left: 12px;
     margin-bottom: 20px;
+    margin-top: -10px;
+    width: 200px;
 }
 
 #username {
