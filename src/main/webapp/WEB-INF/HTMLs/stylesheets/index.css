@@ -90,9 +90,21 @@ a:visited {
     height: 55px;
     margin-left: 12px;
     margin-bottom: 10px;
+    width: 250px;
 }
 
-
+#catalogButtonsTwo {
+    border-style: inset;
+    border-width: 5px;
+    border-color: #332600;
+    font-size: 22px;
+    font-family: 'Audiowide', cursive;
+    font-weight: bold;
+    height: 55px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    width: 250px;
+}
 
 
 
