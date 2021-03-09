@@ -15,7 +15,7 @@
     
         <header>
             <h1>CONCEPT COMPENDIUM</h1>
-            <h2>Administration Page: Make Admin Changes Here</h2>
+            <h2>Administration Page: Make Administrative Changes Here</h2>
         </header>
         
         <section>
