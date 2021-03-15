@@ -1,0 +1,63 @@
+Tosan Ogedengbe
+Enterprise Java Spring 2021: Weekly Reflection - Time Logs
+
+Week 8
+3/8/2021 - 3/14/2021 - 52 hours
+
+
+RELEVANT ITEMS:
+1. Watched all Week 7 Videos
+2. Completed all Week 7 Readings
+3. Watched all Week 8 Videos
+4. Completed all Week 8 Readings
+5. Coded along with the Week 7 demo to complete the Week 7 exercise
+6. Completed the deployment of the Week 7 exercise with Tomcat
+7. Worked through more MVC and Java application building YouTube tutorials to gain a better understanding of how MVC works, and how to properly code my project. Worked on recoding my project from the ground up using some of the techniques that I found in these tutorials. 
+8. Did some additional work on the slides and the visual components for my Professional Development Activity presentation on Amazon Lumberyard
+
+
+ACCOMPLISHMENTS:  
+Did a lot of research on MVC and java web application coding to see if I could find a thought process out there that I could really understand and take a lot of inspiration from. There were a lot of different methods out there, some were helpful and some were not. I did pick up some things about Helper Classes and found that I liked how they kept things a bit more segmented for me. It broke up the Controller a bit and made them a bit easier to grasp. I did some practice and tried some work with these to see if I could get them to work for me. 
+Coded and studied along with several tutorial videos through YouTube. 
+Videos: https://www.youtube.com/watch?v=ZxDC_ixhcvU
+	https://www.youtube.com/watch?v=SVnX6lgPSZE&list=PL3NrzZBjk6m-f1DCcgxr_y7oFI21vqqNK&index=5
+	https://www.youtube.com/watch?v=SVnX6lgPSZE&list=PL3NrzZBjk6m-f1DCcgxr_y7oFI21vqqNK&index=6
+	https://www.youtube.com/watch?v=ERjvzhvYWhY&list=PL3NrzZBjk6m-f1DCcgxr_y7oFI21vqqNK&index=7
+	https://www.youtube.com/watch?v=ERjvzhvYWhY&list=PL3NrzZBjk6m-f1DCcgxr_y7oFI21vqqNK&index=8
+	https://www.youtube.com/watch?v=ui01Li4vqDc
+	https://www.youtube.com/watch?v=-3m2_wHWXf4
+	https://www.youtube.com/watch?v=B-N5X90qizQ
+	https://www.youtube.com/watch?v=WXmTxgDg52o
+	https://www.youtube.com/watch?v=Vvnliarkw48
+	https://www.youtube.com/watch?v=rQWWonF_60Q
+
+Searched online for a better understanding of the Controller part of the MVC setup and found some additional notes. These did help me formulate a better understanding of what the controller does, and how to set one up. I also needed to do a little more research to find out about how to make a button launch the controller. 
+Links: 	https://www.oracle.com/technical-resources/articles/javase/application-design-with-mvc.html
+	https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+	https://stackoverflow.com/questions/58070607/how-to-set-a-button-onclick-event-and-link-to-thymeleaf-controller
+	https://link-intersystems.com/blog/2013/07/20/the-mvc-pattern-implemented-with-java-swing/
+	https://stackoverflow.com/questions/14723812/how-do-i-call-a-specific-java-method-on-a-click-submit-event-of-a-	specific-butto
+
+
+SETBACKS:  
+I found myself struggling to get a real deep understanding of how the code for this application was going to work. I knew what I wanted it to do, and I knew for the most part where to put stuff, but I struggled with the why part of all of it. I knew how to figure out how to get that to work (or at least try to get it to make sense) but I found a major setback has been where that code goes, why it goes there and how to make sure it talks to all of the other pieces of my application. I am going to have to take a step back and really look at this. This may be a major setback as far as time goes - but I will have to find a way to make it work. There were some struggles with the Week 7 exercise as well, but only in that I failed to get a user to have their admin rights recognized and was not able to figure out why. 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
