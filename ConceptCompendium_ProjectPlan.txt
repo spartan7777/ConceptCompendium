@@ -36,7 +36,7 @@ Week 6: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 1:
 Week 7: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 2:
 [x] Complete creating the Java classes for the project				(Moved to Week 8)
 [x] Complete creating the Java classes and DAO					(Moved to Week 8)
-[x] Complete creating all necessary unit tests for each Java class			(Moved to Week 10)
+[x] Complete creating all necessary unit tests for each Java class		(Moved to Week 10)
 [x] Weekly Journal Entries								
 
 Week 8: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 1:
