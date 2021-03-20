@@ -136,7 +136,7 @@ public class CompendiumDao<T> {
         CriteriaQuery<T> query = builder.createQuery( type );
         Root<T> root = query.from(type );
         query.select(root).where(builder.equal(root.get(propertyName), value));
-        //Expression<String> propertyPath = root.get(propertyName);
+        Expression<String> propertyPath = root.get(propertyName);
         List<T> entities = session.createQuery( query ).getResultList();
         session.close();
         return entities;

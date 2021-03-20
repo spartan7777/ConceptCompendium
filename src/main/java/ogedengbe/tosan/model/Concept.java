@@ -55,7 +55,6 @@ public class Concept {
     public Concept(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
         this.user = user;
         this.conceptId = conceptId;
-        //this.userId = userId;
         this.conceptName = conceptName;
         this.keywordOne = keywordOne;
         this.keywordTwo = keywordTwo;
