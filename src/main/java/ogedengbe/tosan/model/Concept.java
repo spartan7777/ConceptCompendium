@@ -53,7 +53,6 @@ public class Concept {
      * @param description   the concept description
      */
     public Concept(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
-        this.user = user;
         this.conceptId = conceptId;
         this.conceptName = conceptName;
         this.keywordOne = keywordOne;
@@ -157,7 +156,6 @@ public class Concept {
     public void setDescription(String description) {
         this.description = description;
     }
-
 
     public void setUser(User user) {
        this.user = user;

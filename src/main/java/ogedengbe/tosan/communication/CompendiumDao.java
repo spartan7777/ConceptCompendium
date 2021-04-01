@@ -92,7 +92,7 @@ public class CompendiumDao<T> {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
-        //Root<T> root = query.from(type);
+        Root<T> root = query.from(type);
         List<T> list = session.createQuery(query).getResultList();
         session.close();
         return list;

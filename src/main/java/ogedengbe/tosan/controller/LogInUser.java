@@ -1,7 +1,5 @@
 package ogedengbe.tosan.controller;
 
-import ogedengbe.tosan.communication.CompendiumDao;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,29 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A simple servlet to provide concept search results.
- * @author Tosan Ogedengbe
+ * Servlet implementation class for LogInUser
  */
 
-@WebServlet(
-        urlPatterns = {"/searchConcept"}
-)
-
-public class LogInUser extends HttpServlet {
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        //UserData userData = new UserData();
-        CompendiumDao conceptDaoOne = new CompendiumDao();
-        if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", conceptDaoOne.getByPropertyEqual(req.getParameter("propertyName"), req.getParameter("searchTerm")));
-        } else {
-            req.setAttribute("users", conceptDaoOne.getAll());
-        }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/create.jsp");
-        dispatcher.forward(req, resp);
-    }
-}
+//The log in page.
+//Here, code will check to see if the log in credentials are correct.
+//If they are - the controller will send the user to a success page. If they are not, the user will be sent to a failure page.
+//Will add in code for checking the database for the user name and password for each user here.
+//Will possibly use Tomcat Authentication in thios controller
 

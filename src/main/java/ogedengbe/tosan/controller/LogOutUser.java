@@ -1,39 +1,36 @@
 package ogedengbe.tosan.controller;
 
-import ogedengbe.tosan.communication.CompendiumDao;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * A simple servlet to provide concept search results.
- * @author Tosan Ogedengbe
+ * Servlet implementation class for LogOutUser
  */
 
 @WebServlet(
-        urlPatterns = {"/searchConcept"}
+        urlPatterns = {"/logOutUser"}
 )
+
+//The log out page.
+//Here, code will close the session, and sing the user out of the applciation.
+//Will add in code for closing the database.
 
 public class LogOutUser extends HttpServlet {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest requestOne, HttpServletResponse responseOne) throws ServletException, IOException {
+        HttpSession session = requestOne.getSession(false);
+        if (session != null) {
+            session.removeAttribute("user");
 
-        //UserData userData = new UserData();
-        CompendiumDao conceptDaoOne = new CompendiumDao();
-        if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", conceptDaoOne.getByPropertyEqual(req.getParameter("propertyName"), req.getParameter("searchTerm")));
-        } else {
-            req.setAttribute("users", conceptDaoOne.getAll());
+            RequestDispatcher dispatcherOne = requestOne.getRequestDispatcher("/index.jsp");
+            dispatcherOne.forward(requestOne, responseOne);
         }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/create.jsp");
-        dispatcher.forward(req, resp);
     }
 }
 

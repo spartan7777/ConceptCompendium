@@ -1,6 +1,5 @@
 package ogedengbe.tosan.controller;
 
-import ogedengbe.tosan.communication.CompendiumDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,28 +10,22 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A simple servlet to provide concept search results.
- * @author Tosan Ogedengbe
+ * A servlet to edit a concept.
+ * @author tosan ogedengbe
  */
 
 @WebServlet(
-        urlPatterns = {"/searchConcept"}
+        urlPatterns = {"/editConcept"}
 )
+
+//Here we are getting the user to the edit page where they can enter new details for editing.
+//There will be some code here to get the user to the proper page when the edit button is used to invoke this controller.
 
 public class EditConcept extends HttpServlet {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest requestOne, HttpServletResponse responseOne) throws ServletException, IOException {
 
-        //UserData userData = new UserData();
-        CompendiumDao conceptDaoOne = new CompendiumDao();
-        if (req.getParameter("submit").equals("search")) {
-            req.setAttribute("users", conceptDaoOne.getByPropertyEqual(req.getParameter("propertyName"), req.getParameter("searchTerm")));
-        } else {
-            req.setAttribute("users", conceptDaoOne.getAll());
-        }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchresults.jsp");
-        dispatcher.forward(req, resp);
+        RequestDispatcher dispatcherOne = requestOne.getRequestDispatcher("/edit.jsp");
+        dispatcherOne.forward(requestOne, responseOne);
     }
 }

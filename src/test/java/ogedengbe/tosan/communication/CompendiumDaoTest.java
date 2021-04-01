@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * The type ConcpetUser dao test.
+ * The type CompendiumDao test.
  */
 
 
@@ -129,7 +129,7 @@ class CompendiumDaoTest {
        User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
        int userId = dao.create(newUser);
        assertNotEquals(0,userId);
-       User insertedUser = dao.getById(userId);
+       User insertedUser = (User) dao.getById(userId);
        assertEquals("Bruce", insertedUser.getFirstName());
    }
 
@@ -141,7 +141,7 @@ class CompendiumDaoTest {
         Concept newConcept = new Concept(7, "Bruce", "Banner", "bbanner", "hulksecret7", "here is desc");
         int conceptId = dao.create(newConcept);
         assertNotEquals(0,conceptId);
-        Concept insertedConcept = dao.getById(conceptId);
+        Concept insertedConcept = (Concept) dao.getById(conceptId);
         assertEquals("Bruce", insertedConcept.getConceptName());
     }
 
@@ -155,7 +155,7 @@ class CompendiumDaoTest {
 
       int userId = dao.create(newUser);
       assertNotEquals(0,userId);
-      insertedUser = dao.getById(userId);
+      User insertedUser = (User) dao.getById(userId);
       assertEquals("Bruce", insertedUser.getFirstName());
     }
 
@@ -166,7 +166,7 @@ class CompendiumDaoTest {
      */
    @Test
    void deleteUserSuccess() {
-       User deletedUser = (User)dao.getById(3);
+       User deletedUser = dao.getById(3);
        deletedUser.delete(dao.getById(3));
        assertNull(dao.getById(3));
    }
@@ -186,10 +186,10 @@ class CompendiumDaoTest {
    @Test
    void updateUserSuccess() {
        String newLastName = "Davis";
-       User userToUpdate = dao.getById(3);
+       User userToUpdate = (User) dao.getById(3);
        userToUpdate.setLastName(newLastName);
        dao.saveOrUpdate(userToUpdate);
-       User retrievedUser = dao.getById(3);
+       User retrievedUser = (User) dao.getById(3);
        assertEquals(newLastName, retrievedUser.getLastName());
    }
 
@@ -199,10 +199,10 @@ class CompendiumDaoTest {
     @Test
     void updateConceptSuccess() {
         String newLastName = "Davis";
-        User userToUpdate = dao.getById(3);
+        User userToUpdate = (User) dao.getById(3);
         userToUpdate.setLastName(newLastName);
         dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(3);
+        User retrievedUser = (User) dao.getById(3);
         assertEquals(newLastName, retrievedUser.getLastName());
     }
 
