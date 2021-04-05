@@ -63,7 +63,7 @@ public class CreateConcept extends HttpServlet {
 
             } else {
 
-                daoOne.create(conceptOne);
+                daoOne.insert(conceptOne);
 
                 requestOne.setAttribute("concept", conceptOne);
 

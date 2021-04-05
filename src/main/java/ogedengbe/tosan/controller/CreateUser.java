@@ -87,7 +87,7 @@ public class CreateUser extends HttpServlet {
 
         } else {
 
-            daoOne.create(userOne);
+            daoOne.insert(userOne);
             requestOne.setAttribute("user", userOne);
 
         }
