@@ -35,7 +35,7 @@ public class ConceptTest {
     private String description;
 
     @ManyToOne
-    private User userOne;
+    private User user;
 
     /**
      * Instantiates a new Concept.

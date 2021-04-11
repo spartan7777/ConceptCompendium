@@ -1,0 +1,58 @@
+Tosan Ogedengbe
+Enterprise Java Spring 2021: Weekly Reflection - Time Logs
+
+Week 12
+4/5/2021 - 4/10/2021 - 52 hours
+
+
+RELEVANT ITEMS:
+1. Completed three team meetings for the ReST Devs Team Project.
+	i. Meeting on 4/5:
+		a. Troubleshooting
+		b. Discussion on progress, and clarification on project scope
+		c. Further division of task and responsibilities
+		d. Established a second meeting for the week
+	ii. Meeting on 4/6:
+		a. Breakout room during class period
+		b. Further development on the documentation for the project
+		c. Discussion and iteration on the test classes
+	iii. Meeting on 4/8:
+		a. Discussed project status.
+		b. Talked about some additions to parameters for easy result sorting.
+		c. Did a walkthrough demo to see the project in action.
+2. Completed the Test Classes for the ReST Devs Team Project.
+3. Completed the base Documentation (text and HTML pages) for the ReST Devs Team Project.
+4. Updated the ReST Devs Team Project Documentation using information obtained in the demo and weekly team meetings.
+5. Completed a reworking of the ReST Devs Team Journal and updated it to reflect recent information for the week. 
+6. Provided Feedback for the Professional Development Activities from the most recent class.
+7. Reviewed Week 4 and 5 materials in order to continue to refactor code for the Concept Compendium.
+
+
+
+ACCOMPLISHMENTS:  
+Got a lot taken care of on the Team Project. Was able to complete many items assigned to me, as well as handle all documentaiton ofr the project. Team Journals were recorded and updated to reflect all weekly activities and changed to be a trop down living document rather than a file of daily entries. I completed the documentation for the team project by creating a site with html pages all dedicated to documenting a different aspect of the project. The aspects were: Overview, User Guide, Examples and Resources. I was able to utilize data and information I gathered from team members and their ideas of the project, what it is, what it does and why it exists to write the text for the documentation pages as well. Did a lot of rework on test classes as well in order to get these top pass so that the team project could move forward. 
+
+
+
+SETBACKS: 
+I am still having issues with getting my code and tests. This is after I rebuilt the entire java class structure from the ground up for this project. I moved onwards to programming other aspects of the project and will need to come back to this at a later time. The major setback at this time will be the time left to complete the project and how mush time I may have lost due to not having the courage to code forward and learn (and consult past materials) as I go instead of trying to rationalize, rehearse and understand everything first.  
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
