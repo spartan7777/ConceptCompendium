@@ -16,12 +16,22 @@ RELEVANT ITEMS:
 
 
 ACCOMPLISHMENTS:  
-I took a lot of time to read and watch all the videos I needed for the Week 13 materials as well as the Extra Credit for (SOAP and Custom Tags). I was able to complete the week 13 exercise to a point and had to leave it at that. 
+I took a lot of time to read and watch all the videos I needed for the Week 13 materials as well as the Extra Credit for (SOAP and Custom Tags). 
+I was able to complete the week 13 exercise to a point and had to leave it at that. 
 
 
 
 SETBACKS:   
-Time. I dont have a lot of it left. Family obligations and taking care of family members became a sudden priority that I had to accommodate. I continue to use what time I can find to study and learn the material for other assignments and extra credit. That continues to leave my individual project even further behind. Despit all of that, I also found that I struggled a bit too much with the assignment for Week 13. I am not sure why it seemed harder that it needed to be, but I could not get the Producer and the Listener to have a conversation. I got a message there and back, but was probably more lucky than anything in getting that to happen. I did a lot of research online and looked at a lot of tutorial vidoes, but nothing came close to making things easier. It was a bit discouraging to not be able to figure this one out at this point, but I had to let it go after several hours across two days trying to figure it out. After all of that, the extra credit has not been started yet. When I was able to work on the Concept Compendium once again to get back on trck, I was getting a SQL Integrity Error that indiated my databases may have been improperly created. Now egins work on finding out if I can fix them, or if creating a new database would make more sense. 
+Time. I dont have a lot of it left. Family obligations and taking care of family members became a sudden priority that I had to accommodate. 
+I continue to use what time I can find to study and learn the material for other assignments and extra credit. 
+That continues to leave my individual project even further behind. Despit all of that, I also found that I struggled a bit too much with the assignment for Week 13. 
+I am not sure why it seemed harder that it needed to be, but I could not get the Producer and the Listener to have a conversation. 
+I got a message there and back, but was probably more luck than anything else I did in getting that to happen. 
+I did a lot of research online and looked at a lot of tutorial vidoes, but nothing came close to making things easier. 
+It was a bit discouraging to not be able to figure this one out at this point, but I had to let it go after several hours across two days trying to figure it out.
+After all of that, the extra credit has not been started yet. I was able to start work on the Concept Compendium once again.
+When I did that, my method tests were providing SQL Integrity Errors that indiated my databases may have been improperly created. 
+Now begins work on finding out if I can fix them, or if creating a new database would make more sense. 
 
 
  
