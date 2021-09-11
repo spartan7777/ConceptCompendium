@@ -6,44 +6,44 @@ Enterprise Java Fall 2021 - Individual Project - Project Plan
 **DETAILED PROJECT PLAN:** *GOALS and MILESTONES*
 
 **WEEK 1: CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:**  
- Create Problem Statement							
+ Create Problem Statement
 
  List User Stories and what functions the application will contain						
 
- Create Project Plan								
+ Create Project Plan	
 
 **WEEK 2: ENGINEER THE BASIC MATERIALS NEEDED FOR THE PROJECT:**  
- Create project repository on GitHub						
- Create project structure in IntelliJ						
+ Create project repository on GitHub	
+ Create project structure in IntelliJ	
 
 **WEEK 3: DIAGRAM THE WORKFLOW FOR THE PROJECT:**   
- Begin to Refactor the HTML Pages for application				
- Begin Document Design Flow for the application using text and pictures		
- Prepare for Checkpoint 1							
+ Begin to Refactor the HTML Pages for application
+ Begin Document Design Flow for the application using text and pictures
+ Prepare for Checkpoint 1
 
 **WEEK 4: BUILD FOR BASIC MATERIALS FOR THE PROJECT:**  
- Complete Refactor of HTML Pages for application				
- Complete Refactor of CSS Pages for application					
+ Complete Refactor of HTML Pages for application
+ Complete Refactor of CSS Pages for application
  Complete Document Design Flow for the application using text and pictures  	
  Complete Checkpoint 1
 
 **WEEK 5: CREATE THE DATABASE RESOURCES NEEDED FOR THE APPLICATION:**  
- Determine the data needed and what column names will be needed		
- Create the project database							
- Weekly Journal Entries								
+ Determine the data needed and what column names will be needed
+ Create the project database	
+ Weekly Journal Entries	
 
 **WEEK 6: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 1:**  
- Design the project to follow the MVC design pattern				
- Determine the necessary Java classes for the project				
- Create these Java classes and DAO						
- Create all necessary unit tests for each Java class				
- Weekly Journal Entries								
+ Design the project to follow the MVC design pattern
+ Determine the necessary Java classes for the project
+ Create these Java classes and DAO	
+ Create all necessary unit tests for each Java class
+ Weekly Journal Entries
 
 **WEEK 7: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 2:**  
- Complete creating the Java classes for the project				
- Complete creating the Java classes and DAO					
- Complete creating all necessary unit tests for each Java class		
- Weekly Journal Entries								
+ Complete creating the Java classes for the project  
+ Complete creating the Java classes and DAO	
+ Complete creating all necessary unit tests for each Java class
+ Weekly Journal Entries	
 
 **WEEK 8: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 1:**  
 	Complete creating the Java classes for the project  
