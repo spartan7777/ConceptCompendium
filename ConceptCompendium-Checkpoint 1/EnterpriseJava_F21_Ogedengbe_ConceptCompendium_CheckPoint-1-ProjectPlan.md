@@ -3,6 +3,8 @@ Enterprise Java Fall 2021 - Individual Project - Project Plan
 
 PROJECT NAME: Concept Compendium
 
+DETAILED PROJECT PLAN: GOALS and MILESTONES
+
 WEEK 1: CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:  
  Create Problem Statement							
  List User Stories and what functions the application will contain						
