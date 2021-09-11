@@ -7,7 +7,9 @@ Enterprise Java Fall 2021 - Individual Project - Project Plan
 
 **WEEK 1: CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:**  
  Create Problem Statement							
+
  List User Stories and what functions the application will contain						
+
  Create Project Plan								
 
 **WEEK 2: ENGINEER THE BASIC MATERIALS NEEDED FOR THE PROJECT:**  
