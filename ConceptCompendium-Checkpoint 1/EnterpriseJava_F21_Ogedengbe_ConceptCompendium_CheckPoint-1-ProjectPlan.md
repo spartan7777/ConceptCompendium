@@ -1,7 +1,5 @@
 Tosan Ogedengbe
-Enterprise Java Fall 2021:
-
-Individual Project Plan
+Enterprise Java Fall 2021 - Individual Project - Project Plan
 
 PROJECT NAME: Concept Compendium
 

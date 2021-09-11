@@ -1,5 +1,5 @@
 Tosan Ogedengbe
-Enterprise Java: Fall 2021 - Individual Project - CheckPoint 1
+Enterprise Java: Fall 2021 - Individual Project - Problem Statements/User Stories
 
 Project Name: The Concept Compendium
 
