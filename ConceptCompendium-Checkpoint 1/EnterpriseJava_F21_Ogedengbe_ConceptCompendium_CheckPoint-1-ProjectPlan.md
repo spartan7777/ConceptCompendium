@@ -5,16 +5,10 @@ Enterprise Java Fall 2021 - Individual Project - Project Plan
 
 **DETAILED PROJECT PLAN:** *GOALS and MILESTONES*
 
-**WEEK 1: CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:**  
- Create Problem Statement
-
- List User Stories and what functions the application will contain						
-
- Create Project Plan	
+**WEEK 1: CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:**   Create Problem Statement   List User Stories and what functions the application will contain   Create Project Plan	
 
 **WEEK 2: ENGINEER THE BASIC MATERIALS NEEDED FOR THE PROJECT:**  
- Create project repository on GitHub	
- Create project structure in IntelliJ	
+ Create project repository on GitHub   Create project structure in IntelliJ	
 
 **WEEK 3: DIAGRAM THE WORKFLOW FOR THE PROJECT:**   
  Begin to Refactor the HTML Pages for application
