@@ -12,6 +12,7 @@ The use of paper notes and books to contain ideas such as these does work, but t
 
 
 ADDITONAL ITEMS:  Screenshot ideas for The Concept Compendium
+* Please see Design Notes for screen designs *
 
 
 USER STORIES:
