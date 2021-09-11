@@ -11,9 +11,9 @@ DETAILS AND WORKFLOW:
 The use of paper notes and books to contain ideas such as these does work, but these methods make referencing older ideas and comparing ideas against one another in real time somewhat clumsy and difficult. This application attempts to solve those problems. The application is going to provide a place for users to record ideas in their most raw form. Beyond that, the application will allow users to pull all of these ideas together based on common traits or on very specific unique ones that will allow these ideas to be reviewed, updated and cross referenced with one another. Having such control over these cataloged ideas will allow creators to provide further expansion on certain ideas when needed, as well as provide a framework to avoid excessive repetition. 
 
 
-ADDITONAL ITEMS:
-
+ADDITONAL ITEMS:   
 Screenshot ideas for The Concept Compendium
+
 
 
 USER STORIES:
