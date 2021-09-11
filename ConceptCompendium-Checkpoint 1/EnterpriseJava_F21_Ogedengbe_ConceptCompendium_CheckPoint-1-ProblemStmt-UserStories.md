@@ -16,7 +16,6 @@ The use of paper notes and books to contain ideas such as these does work, but t
 
 
 **USER STORIES:**
-
 1. As a user of the Concept Compendium I need to be able to record all of my ideas in a secure place:
 	- The application will contain different accounts for users to keep their ideas and concepts safe from unwelcome eyes.  
 	
