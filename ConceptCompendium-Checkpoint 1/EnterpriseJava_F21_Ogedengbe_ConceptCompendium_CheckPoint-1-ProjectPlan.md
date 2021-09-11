@@ -1,89 +1,89 @@
-TOSAN OGEDENGBE
+**TOSAN OGEDENGBE**
 Enterprise Java Fall 2021 - Individual Project - Project Plan
 
-PROJECT NAME: Concept Compendium
+**PROJECT NAME:** Concept Compendium
 
-DETAILED PROJECT PLAN: GOALS and MILESTONES
+**DETAILED PROJECT PLAN:** *GOALS and MILESTONES*
 
-WEEK 1: CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:  
+**WEEK 1: CREATE AND DOCUMENT THE PROBLEM STATEMENTS & USER STORIES:**  
  Create Problem Statement							
  List User Stories and what functions the application will contain						
  Create Project Plan								
 
-WEEK 2: ENGINEER THE BASIC MATERIALS NEEDED FOR THE PROJECT:  
+**WEEK 2: ENGINEER THE BASIC MATERIALS NEEDED FOR THE PROJECT:**  
  Create project repository on GitHub						
  Create project structure in IntelliJ						
 
-WEEK 3: DIAGRAM THE WORKFLOW FOR THE PROJECT:  
+**WEEK 3: DIAGRAM THE WORKFLOW FOR THE PROJECT:**   
  Begin to Refactor the HTML Pages for application				
  Begin Document Design Flow for the application using text and pictures		
  Prepare for Checkpoint 1							
 
-WEEK 4: BUILD FOR BASIC MATERIALS FOR THE PROJECT:  
+**WEEK 4: BUILD FOR BASIC MATERIALS FOR THE PROJECT:**  
  Complete Refactor of HTML Pages for application				
  Complete Refactor of CSS Pages for application					
  Complete Document Design Flow for the application using text and pictures  	
  Complete Checkpoint 1
 
-WEEK 5: CREATE THE DATABASE RESOURCES NEEDED FOR THE APPLICATION:  
+**WEEK 5: CREATE THE DATABASE RESOURCES NEEDED FOR THE APPLICATION:**  
  Determine the data needed and what column names will be needed		
  Create the project database							
  Weekly Journal Entries								
 
-WEEK 6: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 1:  
+**WEEK 6: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 1:**  
  Design the project to follow the MVC design pattern				
  Determine the necessary Java classes for the project				
  Create these Java classes and DAO						
  Create all necessary unit tests for each Java class				
  Weekly Journal Entries								
 
-WEEK 7: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 2:  
+**WEEK 7: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 2:**  
  Complete creating the Java classes for the project				
  Complete creating the Java classes and DAO					
  Complete creating all necessary unit tests for each Java class		
  Weekly Journal Entries								
 
-WEEK 8: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 1:  
+**WEEK 8: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 1:**  
 	Complete creating the Java classes for the project  
 	Complete creating the Java classes and DAO  
 	Complete creating all necessary unit tests for each Java class  
 	Design the project to follow the MVC design pattern  
 	Weekly Journal Entries
 
-WEEK 9: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 2:  
+**WEEK 9: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 2:**  
 	Design the project to follow the MVC design pattern  
 	Complete work on all HTML page conversion to JSPs  
 	Complete adding and verify button functionality for these JSPs  
 	Weekly Journal Entries
 
-WEEK 10: REFINE JAVA COMPONENT FUNCTIONALITY:  
+**WEEK 10: REFINE JAVA COMPONENT FUNCTIONALITY:**  
 	Review and refine code contained in all JSPs  
 	Review and refine code contained in all Java classes  
 	Verify code functionality   
 	Complete creating all necessary unit tests for each Java class  
 	Weekly Journal Entries  
 
-WEEK 11: REVIEW & REFINE APPLICATION 1:  
+**WEEK 11: REVIEW & REFINE APPLICATION 1:**  
 	Test Project Code/Review and Fix issues  
 	Weekly Journal Entries
 
-WEEK 12: REVIEW & REFINE APPLICATION 2:  
+**WEEK 12: REVIEW & REFINE APPLICATION 2:**  
 	Test Project Code/Review and Fix issues  
 	Weekly Journal Entries
 
-WEEK 13: REVIEW & REFINE APPLICATION 3:  
+**WEEK 13: REVIEW & REFINE APPLICATION 3:**  
 	Test Project Code/Review and Fix issues  
 	Weekly Journal Entries
 
-WEEK 14: REVIEW & REFINE APPLICATION 4:  
+**WEEK 14: REVIEW & REFINE APPLICATION 4:**  
 	Test Project Code/Review and Fix issues  
 	Weekly Journal Entries
 
-WEEK 15: REVIEW & REFINE APPLICATION 5:  
+**WEEK 15: REVIEW & REFINE APPLICATION 5:**  
 	Test Project Code/Review and Fix issues  
 	Weekly Journal Entries
 
-WEEK 16: CLOSE PROJECT:  
+**WEEK 16: CLOSE PROJECT:**  
 	Final Presentation   
 	Create video, add video link to readme.md  
 	Finalize all documentation  
