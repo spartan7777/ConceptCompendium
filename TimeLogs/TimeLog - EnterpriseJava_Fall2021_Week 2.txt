@@ -12,7 +12,8 @@ RELEVANT ITEMS:
 
 
 ACCOMPLISHMENTS:  
-Completed the rest of the Week 1 set up for IntelliJ, Git and the Git repositories. Completed all of the Week 2 videos. Started to review my files and items for my individual project - The Concept Compendium. 
+Completed the rest of the Week 1 set up for IntelliJ, Git and the Git repositories. Completed all of the Week 2 videos. Started to review my files and items for my
+individual project - The Concept Compendium. 
 
 
 
@@ -22,7 +23,8 @@ Nothing yet......
 
 
 NEXT WEEK'S PLAN:
-Complete the Week 2 and 3 videos and start on the Week 2 and 3 assignments and exercises. Be sure to adequately judge if I need to turn anything in, or make sure that any questions I have are asked and taken care of in the course meeting time. Start working on the coding for The Concept Compendium.
+Complete the Week 2 and 3 videos and start on the Week 2 and 3 assignments and exercises. Be sure to adequately judge if I need to turn anything in, or make sure that any 
+questions I have are asked and taken care of in the course meeting time. Start working on the coding for The Concept Compendium.
 
 
 
