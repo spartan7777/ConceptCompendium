@@ -11,27 +11,27 @@ Enterprise Java Fall 2021 - Individual Project - Project Plan
 [x]    Create Project Plan  
 
 **WEEK 2: ENGINEER THE BASIC MATERIALS NEEDED FOR THE PROJECT:**  
-    Create project repository on GitHub  
-    Create project structure in IntelliJ  
-	Weekly Journal Entries  
+[x]    Create project repository on GitHub  
+[x]    Create project structure in IntelliJ  
+[x]	Weekly Journal Entries  
 
 **WEEK 3: DIAGRAM THE WORKFLOW FOR THE PROJECT:**   
-   Begin to Refactor the HTML Pages for application  
-	Begin Document Design Flow for the application using text and pictures  
-	Prepare for Checkpoint 1  
-	Weekly Journal Entries
+[x]   Begin to Refactor the HTML Pages for application  
+[x]	Begin Document Design Flow for the application using text and pictures  
+[x]	Prepare for Checkpoint 1  
+[x]	Weekly Journal Entries
 
 **WEEK 4: BUILD FOR BASIC MATERIALS FOR THE PROJECT:**  
-	Complete Refactor of HTML Pages for application  
-	Complete Refactor of CSS Pages for application  
-	Complete Document Design Flow for the application using text and pictures  
-	Complete Checkpoint 1  
-	Weekly Journal Entries
+[x]	Complete Refactor of HTML Pages for application  
+[x]	Complete Refactor of CSS Pages for application  
+[x]	Complete Document Design Flow for the application using text and pictures  
+[x]	Complete Checkpoint 1  
+[x]	Weekly Journal Entries
 
 **WEEK 5: CREATE THE DATABASE RESOURCES NEEDED FOR THE APPLICATION:**  
-	Determine the data needed and what column names will be needed  
-	Create the project database  
-	Weekly Journal Entries
+[x]	Determine the data needed and what column names will be needed  
+[x]	Create the project database  
+[x]	Weekly Journal Entries
 
 **WEEK 6: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 1:**  
 	Complete creating the Java classes for the project  
