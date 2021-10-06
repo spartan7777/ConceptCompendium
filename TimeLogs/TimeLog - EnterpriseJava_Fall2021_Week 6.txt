@@ -1,0 +1,33 @@
+Tosan Ogedengbe
+Enterprise Java Fall 2021: Weekly Reflection - Time Logs
+
+Week 6
+9/30/2021 - 10/6/2021 - 16 hours
+
+
+RELEVANT ITEMS:
+1. Completed all Week 2 Videos
+2. Completed all Week 3 Videos
+3. Completed all Week 4 Videos
+4. Completed all Week 5 Videos
+5. Completed all Week 6 Videos
+7. Reviewed all Week 6 Readings
+8. Added additional POJO classes that comprise the Model layer for the Concept Compendium
+9. Added additional Java classes that comprise the Controller layer for the Concept Compendium
+10. Created code stubs for all of the JSPs that comprise the View layer of the Concept Compendium
+
+
+ACCOMPLISHMENTS:  
+Got a lot done on my project by getting the main code for some of the necessary classes completed. Bergan to get work done on the annotation for the database to
+illustrate the different relationships between the tables and establish them in Hibernate for the Concept Compendium. Was able to get this material completed and have a 
+good understanding of what was done. 
+
+
+
+SETBACKS:  
+I had a large one this week. I was still dealing with my illness that set me back several days. Once Paula had to check on me to find out if I was ok, or able to complete
+the course, I needed to devise a plan to overcome these recent setbacks. I will need to cover all of the missed material in good time to get back on track. I am 
+determined to take care of this so that this attempt at this class will be successful. 
+
+
+
