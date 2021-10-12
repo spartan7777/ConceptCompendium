@@ -2,7 +2,6 @@ package ogedengbe.tosan.persistence;
 
 import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
-import ogedengbe.tosan.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
