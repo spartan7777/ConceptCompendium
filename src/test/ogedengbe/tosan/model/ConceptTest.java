@@ -31,6 +31,9 @@ public class ConceptTest {
     @Column(name = "category")
     private String category;
 
+    @Column(name = "category_id")
+    private int categoryId;
+
     @Column(name = "description")
     private String description;
 
@@ -50,14 +53,16 @@ public class ConceptTest {
      * @param keywordOne    the concept first keyword
      * @param keywordTwo    the concept second keyword
      * @param category      the concept category
+     * @param categoryId    the concept category id
      * @param description   the concept description
      */
-    public ConceptTest(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, String description) {
+    public ConceptTest(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, int categoryId, String description) {
         this.conceptId = conceptId;
         this.conceptName = conceptName;
         this.keywordOne = keywordOne;
         this.keywordTwo = keywordTwo;
         this.category = category;
+        this.categoryId = categoryId;
         this.description = description;
     }
 
@@ -157,14 +162,23 @@ public class ConceptTest {
         this.description = description;
     }
 
+    public void setUser(User user) {
+        this.userOne = userOne;
+    }
+
+    public User getUser() {
+        return userOne;
+    }
+
     @Override
     public String toString() {
-        return "Concept{" +
+        return "ConceptTest{" +
                 "id=" + conceptId +
                 ", Concept Name='" + conceptName + '\'' +
                 ", Keyword One='" + keywordOne + '\'' +
                 ", Keyword Two='" + keywordTwo + '\'' +
                 ", Category='" + category + '\'' +
+                ", Category Id='" + categoryId + '\''+
                 ", Description=" + description +
                 '}';
     }

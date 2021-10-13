@@ -12,6 +12,7 @@ import java.util.Set;
 
 @Entity(name = "User")
 @Table(name = "user")
+
 public class UserTest {
     @Id
     @Column(name = "user_id")
@@ -155,7 +156,7 @@ public class UserTest {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserTest{" +
                 "id=" + userId +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

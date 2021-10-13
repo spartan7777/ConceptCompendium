@@ -71,7 +71,6 @@ public class User {
      * @param userId the user id
      */
     public void setId(int userId) {
-
         this.userId = userId;
     }
 
@@ -80,7 +79,6 @@ public class User {
      * @return the first name
      */
     public String getFirstName() {
-
         return firstName;
     }
 
@@ -89,7 +87,6 @@ public class User {
      * @param firstName the first name
      */
     public void setFirstName(String firstName) {
-
         this.firstName = firstName;
     }
 
@@ -98,7 +95,6 @@ public class User {
      * @return the last name
      */
     public String getLastName() {
-
         return lastName;
     }
 
@@ -107,7 +103,6 @@ public class User {
      * @param lastName the last name
      */
     public void setLastName(String lastName) {
-
         this.lastName = lastName;
     }
 
@@ -116,7 +111,6 @@ public class User {
      * @return the user name
      */
     public String getUserName() {
-
         return userName;
     }
 
@@ -125,7 +119,6 @@ public class User {
      * @param userName the user name
      */
     public void setUserName(String userName) {
-
         this.userName = userName;
     }
 
@@ -134,7 +127,6 @@ public class User {
      * @return the password
      */
     public String getPassword() {
-
         return password;
     }
 
@@ -143,7 +135,6 @@ public class User {
      * @param password the password
      */
     public void setPassword(String password) {
-
         this.password = password;
     }
 
@@ -152,7 +143,6 @@ public class User {
      * @return the concepts
      */
     public Set<Concept> getConceptSet() {
-
         return conceptSet;
     }
 
@@ -161,7 +151,6 @@ public class User {
      * @param conceptSet the concepts
      */
     public void setConceptSet(Set<Concept> conceptSet) {
-
         this.conceptSet = conceptSet;
     }
 

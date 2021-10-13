@@ -12,6 +12,7 @@ import java.util.Set;
 
 @Entity(name = "Role")
 @Table(name = "role")
+
 public class Role {
     @Id
     @Column(name = "role_id")
