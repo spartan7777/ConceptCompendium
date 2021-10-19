@@ -191,7 +191,7 @@ class CompendiumDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<T> resultSet = dao.getByPropertyEqual("lastName", "Vader");
+        List<User> resultSet = dao.getByPropertyEqual("lastName", "Vader");
         assertEquals(1, resultSet.size());
         assertEquals(6, resultSet.get(0).getById());
     }
