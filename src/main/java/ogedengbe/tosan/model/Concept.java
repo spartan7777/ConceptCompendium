@@ -22,12 +22,6 @@ public class Concept {
     @Column(name = "name")
     private String conceptName;
 
-    @Column(name = "keyword_one")
-    private String keywordOne;
-
-    @Column(name = "keyword_two")
-    private String keywordTwo;
-
     @Column(name = "category")
     private String category;
 
@@ -50,8 +44,6 @@ public class Concept {
      * Instantiates a new Concept.
      * @param conceptId     the concept id
      * @param conceptName   the concept name
-     * @param keywordOne    the concept first keyword
-     * @param keywordTwo    the concept second keyword
      * @param category      the concept category
      * @param categoryId    the concept category id
      * @param description   the concept description
@@ -60,8 +52,6 @@ public class Concept {
         this.userOne = userOne;
         this.conceptId = conceptId;
         this.conceptName = conceptName;
-        this.keywordOne = keywordOne;
-        this.keywordTwo = keywordTwo;
         this.category = category;
         this.categoryId = categoryId;
         this.description = description;
@@ -97,38 +87,6 @@ public class Concept {
      */
     public void setConceptName(String conceptName) {
         this.conceptName = conceptName;
-    }
-
-    /**
-     * Gets keyword one.
-     * @return keyword one
-     */
-    public String getKeywordOne() {
-        return keywordOne;
-    }
-
-    /**
-     * Sets keyword one.
-     * @param keywordOne keyword one
-     */
-    public void setKeywordOne(String keywordOne) {
-        this.keywordOne = keywordOne;
-    }
-
-    /**
-     * Gets keyword two.
-     * @return keyword two
-     */
-    public String getKeywordTwo() {
-        return keywordTwo;
-    }
-
-    /**
-     * Sets keyword two.
-     * @param keywordTwo keyword two
-     */
-    public void setKeywordTwo(String keywordTwo) {
-        this.keywordTwo = keywordTwo;
     }
 
     /**
@@ -177,8 +135,6 @@ public class Concept {
         return "Concept{" +
                 "id=" + conceptId +
                 ", Concept Name='" + conceptName + '\'' +
-                ", Keyword One='" + keywordOne + '\'' +
-                ", Keyword Two='" + keywordTwo + '\'' +
                 ", Category='" + category + '\'' +
                 ", Category Id='" + categoryId + '\''+
                 ", Description=" + description +
