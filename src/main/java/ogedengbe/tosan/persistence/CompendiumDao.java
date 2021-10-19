@@ -101,27 +101,11 @@ public class CompendiumDao<T> {
         return (List<User>) entities;
     }
 
-
-//    /**
-//     * Creates an entity
-//     * @param entity entity to be created or inserted
-//     * @return id of the inserted entity
-//     */
-//  public void insert(T entity) {
-//        Session sessionOne = getSession();
-//        Transaction transactionOne = sessionOne.beginTransaction();
-//        int id = (int) sessionOne.save(entity);
-//        transactionOne.commit();
-//        sessionOne.close();
-//    }
-
-
     /**
      * Updates an entity
      * @param entity User to be inserted or updated
-     * @return
      */
-    public int saveOrUpdate(T entity) {
+    public void saveOrUpdate(T entity) {
         Session sessionOne = getSession();
         Transaction transactionOne = sessionOne.beginTransaction();
         sessionOne.saveOrUpdate(entity);

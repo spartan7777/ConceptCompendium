@@ -23,7 +23,7 @@ class CompendiumDaoTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new CompendiumDao();
+    //    dao = new CompendiumDao();
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -58,6 +58,14 @@ class CompendiumDaoTest {
         assertEquals(0, users.size());
     }
 
+    /**
+     * Verifies gets concepts by id successfully.
+     */
+    @Test
+    void getConceptByIdSuccess() {
+        Concept retrievedConcept = (Concept) dao.getById(21);
+        assertEquals("", retrievedConcept.getConceptName());
+    }
 
     /**
      * Verifies gets concepts by name successfully.
@@ -68,27 +76,6 @@ class CompendiumDaoTest {
         assertEquals(0, conceptSet.size());
     }
 
-
-    /**
-     * Verifies gets concepts by keyword one successfully.
-     */
-    @Test
-    void getConceptsByKeywordOneSuccess() {
-        List<Concept> conceptSet = dao.getByPropertyLike("keywordOne", "c");
-        assertEquals(0, conceptSet.size());
-    }
-
-
-    /**
-     * Verifies gets concepts by keyword two successfully.
-     */
-    @Test
-    void getConceptsByKeywordTwoSuccess() {
-        List<Concept> conceptSet = dao.getByPropertyLike("keywordTwo", "c");
-        assertEquals(0, conceptSet.size());
-    }
-
-
     /**
      * Verifies gets concepts by category successfully.
      */
@@ -97,7 +84,6 @@ class CompendiumDaoTest {
         List<Concept> conceptSet = dao.getByPropertyLike("category", "c");
         assertEquals(0, conceptSet.size());
     }
-
 
     /**
      * Verifies gets concepts by description successfully.
@@ -153,9 +139,9 @@ class CompendiumDaoTest {
      */
     @Test
     void deleteUserSuccess() {
-        User deletedUser = dao.getById(3);
-        deletedUser.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        User deletedUser = (User) dao.getById(16);
+        dao.delete(dao.getById(16));
+        assertNull(dao.getById(16));
     }
 
 
@@ -164,8 +150,9 @@ class CompendiumDaoTest {
      */
     @Test
     void deleteConceptSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        Concept deletedConcept = (Concept) dao.getById(31);
+        dao.delete(dao.getById(31));
+        assertNull(dao.getById(31));
     }
 
 
@@ -204,7 +191,7 @@ class CompendiumDaoTest {
     void getByPropertyEqualSuccess() {
         List<User> users = dao.getByPropertyEqual("lastName", "Vader");
         assertEquals(1, users.size());
-        assertEquals(6, users.get(0).getId());
+        assertEquals(6, users.get(0).getById());
     }
 
 
