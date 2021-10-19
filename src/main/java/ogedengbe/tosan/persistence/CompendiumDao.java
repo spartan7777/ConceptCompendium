@@ -4,6 +4,7 @@ import ogedengbe.tosan.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -21,6 +22,7 @@ import java.util.List;
 public class CompendiumDao<T> {
     private Class<T> type;
     private final Logger logger = LogManager.getLogger(this.getClass());
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
      * Instantiates a new Generic Compendium Dao.
@@ -29,6 +31,7 @@ public class CompendiumDao<T> {
     public CompendiumDao(Class<T> type) {
         this.type = type;
     }
+
 
     /**
      * Gets an entity by the id
@@ -99,6 +102,20 @@ public class CompendiumDao<T> {
         List<T> entities = sessionOne.createQuery( queryOne ).getResultList();
         sessionOne.close();
         return (List<User>) entities;
+    }
+
+    /**
+     * creates a user
+     * @param entity entity to be inserted
+     */
+    public int insert(T entity) {
+        int id = 0;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(entity);
+        transaction.commit();
+        session.close();
+        return id;
     }
 
     /**

@@ -2,6 +2,7 @@ package ogedengbe.tosan.persistence;
 
 import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
+import ogedengbe.tosan.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -23,7 +24,8 @@ class CompendiumDaoTest {
      */
     @BeforeEach
     void setUp() {
-    //    dao = new CompendiumDao();
+        dao = new CompendiumDao();
+
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -100,7 +102,7 @@ class CompendiumDaoTest {
     @Test
     void insertUserSuccess() {
         User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
-        int userId = dao.saveOrUpdate(newUser);
+        int userId = dao.insert(newUser);
         assertNotEquals(0,userId);
         User insertedUser = (User) dao.getById(userId);
         assertEquals("Bruce", insertedUser.getFirstName());
@@ -112,8 +114,8 @@ class CompendiumDaoTest {
      */
     @Test
     void insertConceptSuccess() {
-        Concept newConcept = new Concept(7, "Bruce", "Banner", "bbanner", "hulksecret7", "here is desc");
-        int conceptId = dao.saveOrUpdate(newConcept);
+        Concept newConcept = new Concept(7, 7, "Bruce", "Weapons", 4, "here is desc");
+        int conceptId = dao.insert(newConcept);
         assertNotEquals(0,conceptId);
         Concept insertedConcept = (Concept) dao.getById(conceptId);
         assertEquals("Bruce", insertedConcept.getConceptName());
@@ -127,7 +129,7 @@ class CompendiumDaoTest {
         User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
         Concept testConcept;
 
-        int userId = dao.saveOrUpdate(newUser);
+        int userId = dao.insert(newUser);
         assertNotEquals(0,userId);
         User insertedUser = (User) dao.getById(userId);
         assertEquals("Bruce", insertedUser.getFirstName());
@@ -189,9 +191,9 @@ class CompendiumDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyEqual("lastName", "Vader");
-        assertEquals(1, users.size());
-        assertEquals(6, users.get(0).getById());
+        List<T> resultSet = dao.getByPropertyEqual("lastName", "Vader");
+        assertEquals(1, resultSet.size());
+        assertEquals(6, resultSet.get(0).getById());
     }
 
 

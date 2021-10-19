@@ -48,7 +48,7 @@ public class Concept {
      * @param categoryId    the concept category id
      * @param description   the concept description
      */
-    public Concept(int conceptId, String conceptName, String keywordOne, String keywordTwo, String category, int categoryId, String description) {
+    public Concept(int conceptId, int userId, String conceptName, String category, int categoryId, String description) {
         this.userOne = userOne;
         this.conceptId = conceptId;
         this.conceptName = conceptName;
