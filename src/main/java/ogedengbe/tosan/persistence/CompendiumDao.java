@@ -32,6 +32,10 @@ public class CompendiumDao<T> {
         this.type = type;
     }
 
+    public CompendiumDao() {
+
+    }
+
 
     /**
      * Gets an entity by the id
