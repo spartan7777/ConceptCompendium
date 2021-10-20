@@ -127,13 +127,18 @@ class CompendiumDaoTest {
      */
     @Test
     void insertWithConceptSuccess() {
-        User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
-        Concept testConcept;
+        User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
+        String conceptDescription = "Concept 1";
+
+        Concept concept = new Concept(17, 7, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
+
+        newUser.addConcept(concept);
 
         int userId = dao.insert(newUser);
         assertNotEquals(0,userId);
         User insertedUser = (User) dao.getById(userId);
-        assertEquals("Bruce", insertedUser.getFirstName());
+        assertEquals("Peter", insertedUser.getFirstName());
+        assertEquals(17, insertedUser.getConceptSet().size());
     }
 
 
@@ -153,9 +158,9 @@ class CompendiumDaoTest {
      */
     @Test
     void deleteConceptSuccess() {
-        Concept deletedConcept = (Concept) dao.getById(31);
-        dao.delete(dao.getById(31));
-        assertNull(dao.getById(31));
+        Concept deletedConcept = (Concept) dao.getById(6);
+        dao.delete(dao.getById(6));
+        assertNull(dao.getById(6));
     }
 
 

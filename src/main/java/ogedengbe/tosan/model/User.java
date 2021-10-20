@@ -160,7 +160,7 @@ public class User {
      */
     public void addConcept(Concept newConcept) {
         conceptSet.add(newConcept);
-        //newConcept.setUserId(this);
+        newConcept.setUser(this);
     }
 
     /**
@@ -169,7 +169,7 @@ public class User {
      */
     public void removeConcept(Concept newConcept) {
         conceptSet.remove(newConcept);
-        //newConcept.setUserId(null);
+        newConcept.setUser(null);
     }
 
     @Override

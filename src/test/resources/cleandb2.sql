@@ -15,4 +15,4 @@ INSERT INTO concept VALUES (1, 1, 'Jedi', 'Abstracts', 9, 'An ancient religion w
                            (14, 6, 'Lightsaber', 'Weapons', 4, 'Also referred to as a laser sword, this was a weapon usually used by the Jedi, the Sith, and other Force-sensitives.'),
                            (15, 6, 'Scanner Pack', 'Accessories', 5, 'Scanner packs are larger portable scanners commonly used to detect technology and lifeforms.'),
                            (16, 7, 'Hyperdrive', 'Accessories', 5, 'A propulsion system that allowed a starship to reach lightspeed and travel in the alternate dimension of hyperspace.'),
-                           (17, 7, 'Kyber Crystal', 'Resources', 6, 'These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.');
+
