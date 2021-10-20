@@ -34,28 +34,26 @@ Enterprise Java Fall 2021 - Individual Project - Project Plan
 [x]	Weekly Journal Entries
 
 **WEEK 6: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 1:**  
-	Complete creating the Java classes for the project  
-	Complete creating the Java classes and DAO  
-	Complete creating all necessary unit tests for each Java class  
-	Design the project to follow the MVC design pattern  
-	Weekly Journal Entries
+[x]	Complete creating the Java classes for the project  
+[x]	Complete creating the Java classes and DAO  
+[x]	Complete creating all necessary unit tests for each Java class  
+[x]	Design the project to follow the MVC design pattern  
+[x]	Weekly Journal Entries
 
 **WEEK 7: CREATE THE CORE JAVA COMPONENTS OF THE APPLICATION 2:**  
-	Design the project to follow the MVC design pattern  
-	Determine the necessary Java classes for the project  
-	Create these Java classes and DAO  
-	Create all necessary unit tests for each Java class  
-	Weekly Journal Entries
+[x]	Design the project to follow the MVC design pattern  
+[x]	Determine the necessary Java classes for the project  
+[x]	Create these Java classes and DAO  
+[x]	Create all necessary unit tests for each Java class  
+[x]	Weekly Journal Entries
 
 **WEEK 8: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 1:**  
-	Complete creating the Java classes for the project  
-	Complete creating the Java classes and DAO  
-	Complete creating all necessary unit tests for each Java class  
-	Design the project to follow the MVC design pattern  
+[x]	Complete creating the Java classes for the project  
+[x]	Complete creating the Java classes and DAO  
+	Complete verification of all the necessary unit tests for each Java class  
 	Weekly Journal Entries
 
 **WEEK 9: CREATE THE ONLINE JAVA COMPONENTS OF THE APPLICATION 2:**  
-	Design the project to follow the MVC design pattern  
 	Complete work on all HTML page conversion to JSPs  
 	Complete adding and verify button functionality for these JSPs  
 	Weekly Journal Entries
