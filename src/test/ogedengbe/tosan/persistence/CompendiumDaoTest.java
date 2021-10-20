@@ -147,9 +147,9 @@ class CompendiumDaoTest {
      */
     @Test
     void deleteUserSuccess() {
-        User deletedUser = (User) dao.getById(16);
-        dao.delete(dao.getById(16));
-        assertNull(dao.getById(16));
+        User deletedUser = (User) dao.getById(3);
+        dao.delete(dao.getById(3));
+        assertNull(dao.getById(3));
     }
 
 

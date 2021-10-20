@@ -10,7 +10,7 @@ import java.util.Set;
  * @author Tosan Ogedengbe
  */
 
-@Entity(name = "User")
+@Entity(name = "UserTest")
 @Table(name = "user")
 
 public class UserTest {
@@ -33,8 +33,10 @@ public class UserTest {
     private String password;
 
     @OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Concept> conceptSet = new HashSet<>();
+    private Set<ConceptTest> conceptSet = new HashSet<>();
 
+    //@OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<RoleTest> roleSet = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -142,7 +144,7 @@ public class UserTest {
      * Gets concepts.
      * @return the concepts
      */
-    public Set<Concept> getConceptSet() {
+    public Set<ConceptTest> getConceptSet() {
         return conceptSet;
     }
 
@@ -150,7 +152,7 @@ public class UserTest {
      * Sets concepts.
      * @return conceptSet the concepts
      */
-    public void setConceptSet(Set<Concept> conceptSet) {
+    public void setConceptSet(Set<ConceptTest> conceptSet) {
         this.conceptSet = conceptSet;
     }
 

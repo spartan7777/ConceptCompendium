@@ -32,7 +32,7 @@ public class ConceptTest {
     private String description;
 
     @ManyToOne
-    private User userOne;
+    private UserTest userOne;
 
     /**
      * Instantiates a new Concept.
@@ -124,7 +124,7 @@ public class ConceptTest {
      * Gets the user.
      * @return the user
      */
-    public User getUser() {
+    public UserTest getUser() {
         return userOne;
     }
 
@@ -132,7 +132,7 @@ public class ConceptTest {
      * Sets the User.
      * @param userOne the user tied to the concept
      */
-    public void setUser(User userOne) {
+    public void setUser(UserTest userOne) {
         this.userOne = userOne;
     }
 

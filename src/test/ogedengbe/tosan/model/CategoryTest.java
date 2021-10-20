@@ -25,8 +25,8 @@ public class CategoryTest {
     @Column(name = "definition")
     private String definition;
 
-    @ManyToOne
-    private Concept concept;
+    @OneToOne
+    private ConceptTest concept;
 
     /**
      * Instantiates a new Category.
@@ -42,7 +42,6 @@ public class CategoryTest {
 
      */
     public CategoryTest(int categoryId, String categoryName, String definition) {
-        this.concept = concept;
         this.categoryId = categoryId;
         this.categoryName = categoryName;
         this.definition = definition;

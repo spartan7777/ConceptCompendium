@@ -10,7 +10,7 @@ import java.util.Set;
  * @author Tosan Ogedengbe
  */
 
-@Entity(name = "Role")
+@Entity(name = "RoleTest")
 @Table(name = "role")
 
 public class RoleTest {
@@ -26,8 +26,11 @@ public class RoleTest {
     @Column(name = "username")
     private String userName;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Role> roleSet = new HashSet<>();
+    @ManyToOne
+    private UserTest userOne;
+
+    //@OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<RoleTest> roleSet = new HashSet<>();
 
 
     /**
@@ -102,7 +105,7 @@ public class RoleTest {
      * Gets roles.
      * @return the roles
      */
-    public Set<Role> getRoleSet() {
+    public Set<RoleTest> getRoleSet() {
         return roleSet;
     }
 
@@ -110,7 +113,7 @@ public class RoleTest {
      * Sets roles.
      * @return roleSet the roles
      */
-    public void setRoleSet(Set<Role> roleSet) {
+    public void setRoleSet(Set<RoleTest> roleSet) {
         this.roleSet = roleSet;
     }
 
@@ -118,7 +121,7 @@ public class RoleTest {
      * Add roles.
      * @param newRole the role
      */
-    public void addRole(Role newRole) {
+    public void addRole(RoleTest newRole) {
         roleSet.add(newRole);
         //newConcept.setUserId(this);
     }
@@ -127,7 +130,7 @@ public class RoleTest {
      * Remove roles.
      * @param newRole the role
      */
-    public void removeRole(Role newRole) {
+    public void removeRole(RoleTest newRole) {
         roleSet.remove(newRole);
         //newConcept.setUserId(null);
     }
