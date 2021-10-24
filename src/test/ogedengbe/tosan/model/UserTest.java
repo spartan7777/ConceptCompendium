@@ -32,11 +32,11 @@ public class UserTest {
     @Column(name = "password")
     private String password;
 
-    @OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<ConceptTest> conceptSet = new HashSet<>();
-
     //@OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<RoleTest> roleSet = new HashSet<>();
+    //private Set<ConceptTest> conceptSet = new HashSet<>();
+
+    //@OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER);
+
 
     /**
      * Instantiates a new User.
@@ -144,17 +144,17 @@ public class UserTest {
      * Gets concepts.
      * @return the concepts
      */
-    public Set<ConceptTest> getConceptSet() {
-        return conceptSet;
-    }
+    //public Set<ConceptTest> getConceptSet() {
+    //    return conceptSet;
+    //}
 
     /**
      * Sets concepts.
      * @return conceptSet the concepts
      */
-    public void setConceptSet(Set<ConceptTest> conceptSet) {
-        this.conceptSet = conceptSet;
-    }
+    //public void setConceptSet(Set<ConceptTest> conceptSet) {
+    //    this.conceptSet = conceptSet;
+    //}
 
     @Override
     public String toString() {
@@ -167,3 +167,4 @@ public class UserTest {
                 '}';
     }
 }
+

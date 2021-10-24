@@ -26,9 +26,6 @@ public class Role {
     @Column(name = "username")
     private String userName;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Role> roleSet = new HashSet<>();
-
 
     /**
      * Instantiates a new Role.
@@ -102,35 +99,35 @@ public class Role {
      * Gets roles.
      * @return the roles
      */
-    public Set<Role> getRoleSet() {
-        return roleSet;
-    }
+    //public Set<Role> getRoleSet() {
+    //    return roleSet;
+   // }
 
     /**
      * Sets roles.
      * @return roleSet the roles
      */
-    public void setRoleSet(Set<Role> roleSet) {
-        this.roleSet = roleSet;
-    }
+    //public void setRoleSet(Set<Role> roleSet) {
+    //    this.roleSet = roleSet;
+    //}
 
     /**
      * Add roles.
      * @param newRole the role
      */
-    public void addRole(Role newRole) {
-        roleSet.add(newRole);
-        //newConcept.setUserId(this);
-    }
+   // public void addRole(Role newRole) {
+    //    roleSet.add(newRole);
+   //     //newConcept.setUserId(this);
+   // }
 
     /**
      * Remove roles.
      * @param newRole the role
      */
-    public void removeRole(Role newRole) {
-        roleSet.remove(newRole);
-        //newConcept.setUserId(null);
-    }
+  //  public void removeRole(Role newRole) {
+  //      roleSet.remove(newRole);
+    //    //newConcept.setUserId(null);
+  //  }
 
     @Override
     public String toString() {

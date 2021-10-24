@@ -106,7 +106,8 @@ public class Database {
                 if (sql == null) {
                     break;
                 }
-                stmt.executeUpdate(sql);
+                logger.info(sql);
+                    stmt.executeUpdate(sql);
 
             }
 
