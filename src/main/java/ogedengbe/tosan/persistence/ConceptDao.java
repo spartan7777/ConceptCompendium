@@ -34,9 +34,9 @@ public class ConceptDao {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Concept> query = builder.createQuery(Concept.class);
         Root<Concept> root = query.from(Concept.class);
-        List<Concept> users = session.createQuery(query).getResultList();
+        List<Concept> concepts = session.createQuery(query).getResultList();
         session.close();
-        return users;
+        return concepts;
     }
 
     /**

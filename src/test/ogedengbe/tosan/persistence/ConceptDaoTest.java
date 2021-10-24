@@ -27,8 +27,9 @@ class ConceptDaoTest {
         dao = new ConceptDao();
 
         Database database = Database.getInstance();
-        database.runSQL("cleandb.sql");
-        database.runSQL("cleandb2.sql");
+        //database.runSQL("cleandb.sql");
+       // database.runSQL("cleandb2.sql");
+        database.runSQL("cleandb3.sql");
     }
 
 

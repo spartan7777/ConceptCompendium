@@ -32,8 +32,8 @@ public class User {
     @Column(name = "password")
     private String password;
 
-    //@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    //private Set<Concept> conceptSet = new HashSet<>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Concept> concepts = new HashSet<>();
 
 
     /**

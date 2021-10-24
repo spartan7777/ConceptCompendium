@@ -19,6 +19,9 @@ public class ConceptTest {
     @GenericGenerator(name = "native", strategy = "native")
     private int conceptId;
 
+    @Column(name = "user_id")
+    private int userId;
+
     @Column(name = "name")
     private String conceptName;
 
@@ -32,7 +35,7 @@ public class ConceptTest {
     private String description;
 
     @ManyToOne
-    private UserTest userOne;
+    private UserTest user;
 
     /**
      * Instantiates a new Concept.
@@ -43,13 +46,15 @@ public class ConceptTest {
     /**
      * Instantiates a new Concept.
      * @param conceptId     the concept id
+     * @param userId       the user id
      * @param conceptName   the concept name
      * @param category      the concept category
      * @param categoryId    the concept category id
      * @param description   the concept description
      */
-    public ConceptTest(int conceptId, String conceptName, String category, int categoryId, String description) {
+    public ConceptTest(int conceptId, int userId, String conceptName, String category, int categoryId, String description) {
         this.conceptId = conceptId;
+        this.userId = userId;
         this.conceptName = conceptName;
         this.category = category;
         this.categoryId = categoryId;
@@ -125,15 +130,15 @@ public class ConceptTest {
      * @return the user
      */
     public UserTest getUser() {
-        return userOne;
+        return user;
     }
 
     /**
      * Sets the User.
-     * @param userOne the user tied to the concept
+     * @param user the user tied to the concept
      */
-    public void setUser(UserTest userOne) {
-        this.userOne = userOne;
+    public void setUser(UserTest user) {
+        this.user = user;
     }
 
     @Override
