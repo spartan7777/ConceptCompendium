@@ -28,6 +28,7 @@ class UserDaoTest {
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
+        database.runSQL("cleandb2.sql");
     }
 
 
@@ -37,7 +38,7 @@ class UserDaoTest {
     @Test
     void getAllUsersSuccess() {
         List<User> users = dao.getAll();
-        assertEquals(6, users.size());
+        assertEquals(7, users.size());
     }
 
 
@@ -47,7 +48,7 @@ class UserDaoTest {
     @Test
     void getUsersByLastNameSuccess() {
         List<User> users = dao.getByPropertyLike("lastName", "c");
-        assertEquals(0, users.size());
+        assertEquals(2, users.size());
     }
 
     /**
@@ -55,9 +56,9 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(3);
+        User retrievedUser = dao.getById(7);
         assertNotNull(retrievedUser);
-        assertEquals("Barney", retrievedUser.getFirstName());
+        assertEquals("Carter", retrievedUser.getFirstName());
     }
 
 
@@ -66,11 +67,12 @@ class UserDaoTest {
      */
     @Test
     void insertUserSuccess() {
-        User newUser = new User(7,"Bruce", "Banner", "bbanner", "hulksecret7");
-        //int testId = dao.saveOrUpdate(newUser);
-        assertNotEquals(0,dao.getById(7));
-        User insertedUser = (User) dao.getById(7);
-        assertEquals("Bruce", insertedUser.getFirstName());
+        User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
+        int userId = dao.insert(newUser);
+        assertNotEquals(0, userId);
+        User insertedUser = (User) dao.getById(userId);
+        assertEquals("Peter", insertedUser.getFirstName());
+        assertEquals("Parker", insertedUser.getLastName());
     }
 
 
