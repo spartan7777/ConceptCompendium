@@ -107,7 +107,7 @@ public class Database {
                     break;
                 }
                 logger.info(sql);
-                    stmt.executeUpdate(sql);
+                stmt.executeUpdate(sql);
 
             }
 
@@ -121,3 +121,4 @@ public class Database {
 
     }
 }
+
