@@ -112,12 +112,15 @@ class UserDaoTest {
      */
     @Test
     void updateUserSuccess() {
-        String newLastName = "Davis";
-        User userToUpdate = (User) dao.getById(3);
+        String newFirstName = "John";
+        String newLastName = "Stewart";
+        User userToUpdate = (User) dao.getById(5);
+        userToUpdate.setFirstName(newFirstName);
         userToUpdate.setLastName(newLastName);
         dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = (User) dao.getById(3);
-        assertEquals(newLastName, retrievedUser.getLastName());
+        User retrievedUser = (User) dao.getById(5);
+        assertEquals("John", retrievedUser.getFirstName());
+        assertEquals("Stewart", retrievedUser.getLastName());
     }
 
 
@@ -126,7 +129,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> resultSet = dao.getByPropertyEqual("lastName", "Vader");
+        List<User> resultSet = dao.getByPropertyEqual("lastName", "Kent");
         assertEquals(1, resultSet.size());
         //assertEquals(6, resultSet.get(0).getById());
     }
@@ -137,7 +140,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("firstName", "t");
+        List<User> users = dao.getByPropertyLike("lastName", "a");
         assertEquals(4, users.size());
     }
 
