@@ -20,10 +20,8 @@
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
-        <mapping class="ogedengbe.tosan.model.UserTest"/>
-        <mapping class="ogedengbe.tosan.model.RoleTest"/>
-        <mapping class="ogedengbe.tosan.model.ConceptTest"/>
-        <mapping class="ogedengbe.tosan.model.CategoryTest"/>
+        <mapping class="ogedengbe.tosan.model.User"/>
+
     </session-factory>
 
 </hibernate-configuration>

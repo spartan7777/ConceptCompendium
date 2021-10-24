@@ -2,6 +2,7 @@ package ogedengbe.tosan.persistence;
 
 import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
+//import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.LogManager;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -25,9 +26,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDao {
 
-    UserDao dao;
+    //UserDao dao;
 
-    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
+    //private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**

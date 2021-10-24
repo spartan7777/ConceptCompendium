@@ -32,8 +32,8 @@ public class User {
     @Column(name = "password")
     private String password;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Concept> conceptSet = new HashSet<>();
+    //@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    //private Set<Concept> conceptSet = new HashSet<>();
 
 
     /**
@@ -138,39 +138,6 @@ public class User {
         this.password = password;
     }
 
-    /**
-     * Gets concepts.
-     * @return the concepts
-     */
-    public Set<Concept> getConceptSet() {
-        return conceptSet;
-    }
-
-    /**
-     * Sets concepts.
-     * @param conceptSet the concepts
-     */
-    public void setConceptSet(Set<Concept> conceptSet) {
-        this.conceptSet = conceptSet;
-    }
-
-    /**
-     * Add concepts.
-     * @param newConcept the concept
-     */
-    public void addConcept(Concept newConcept) {
-        conceptSet.add(newConcept);
-        newConcept.setUser(this);
-    }
-
-    /**
-     * Remove concepts.
-     * @param newConcept the concept
-     */
-    public void removeConcept(Concept newConcept) {
-        conceptSet.remove(newConcept);
-        newConcept.setUser(null);
-    }
 
     @Override
     public String toString() {

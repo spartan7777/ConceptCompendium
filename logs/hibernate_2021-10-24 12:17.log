@@ -1,0 +1,148 @@
+[DEBUG] 2021-10-24 12:17:15.382 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-10-24 12:17:15.395 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-10-24 12:17:15.428 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-10-24 12:17:15.747 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-10-24 12:17:15.757 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-10-24 12:17:16.509 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2021-10-24 12:17:16.510 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2021-10-24 12:17:16.523 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-10-24 12:17:17.686 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-10-24 12:17:17.790 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-10-24 12:17:17.801 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-10-24 12:17:17.843 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-10-24 12:17:17.954 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1517f633
+[DEBUG] 2021-10-24 12:17:17.961 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@1517f633
+[DEBUG] 2021-10-24 12:17:17.961 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1517f633
+[DEBUG] 2021-10-24 12:17:17.962 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4565a70a
+[DEBUG] 2021-10-24 12:17:17.962 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@599f571f
+[DEBUG] 2021-10-24 12:17:17.964 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@466d49f0
+[DEBUG] 2021-10-24 12:17:17.965 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@36bc415e
+[DEBUG] 2021-10-24 12:17:17.965 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@36bc415e
+[DEBUG] 2021-10-24 12:17:17.965 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@36bc415e
+[DEBUG] 2021-10-24 12:17:17.966 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@4ebadd3d
+[DEBUG] 2021-10-24 12:17:17.967 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@4ebadd3d
+[DEBUG] 2021-10-24 12:17:17.968 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4ebadd3d
+[DEBUG] 2021-10-24 12:17:17.969 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4a699efa
+[DEBUG] 2021-10-24 12:17:17.969 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4a699efa
+[DEBUG] 2021-10-24 12:17:17.969 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4a699efa
+[DEBUG] 2021-10-24 12:17:17.973 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@66434cc8
+[DEBUG] 2021-10-24 12:17:17.973 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@66434cc8
+[DEBUG] 2021-10-24 12:17:17.973 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@66434cc8
+[DEBUG] 2021-10-24 12:17:17.974 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6d467c87
+[DEBUG] 2021-10-24 12:17:17.979 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6d467c87
+[DEBUG] 2021-10-24 12:17:17.979 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6d467c87
+[DEBUG] 2021-10-24 12:17:17.981 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@511d5d04
+[DEBUG] 2021-10-24 12:17:17.981 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@511d5d04
+[DEBUG] 2021-10-24 12:17:17.981 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@511d5d04
+[DEBUG] 2021-10-24 12:17:17.983 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@11653e3b
+[DEBUG] 2021-10-24 12:17:17.983 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@11653e3b
+[DEBUG] 2021-10-24 12:17:17.984 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@11653e3b
+[DEBUG] 2021-10-24 12:17:17.985 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7c974942
+[DEBUG] 2021-10-24 12:17:17.989 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7c974942
+[DEBUG] 2021-10-24 12:17:17.990 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@6b580b88
+[DEBUG] 2021-10-24 12:17:17.990 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@6b580b88
+[DEBUG] 2021-10-24 12:17:17.991 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@6f8f8a80
+[DEBUG] 2021-10-24 12:17:17.991 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f8f8a80
+[DEBUG] 2021-10-24 12:17:17.991 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@27f1bbe0
+[DEBUG] 2021-10-24 12:17:17.992 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2d84cb86
+[DEBUG] 2021-10-24 12:17:17.993 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@4482469c
+[DEBUG] 2021-10-24 12:17:17.993 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@4482469c
+[DEBUG] 2021-10-24 12:17:18.000 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@4b1abd11
+[DEBUG] 2021-10-24 12:17:18.000 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4b1abd11
+[DEBUG] 2021-10-24 12:17:18.018 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@55ea2d70
+[DEBUG] 2021-10-24 12:17:18.021 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@55ea2d70
+[DEBUG] 2021-10-24 12:17:18.022 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@67a056f1
+[DEBUG] 2021-10-24 12:17:18.025 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@67a056f1
+[DEBUG] 2021-10-24 12:17:18.026 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7fedfe27
+[DEBUG] 2021-10-24 12:17:18.026 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7fedfe27
+[DEBUG] 2021-10-24 12:17:18.027 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2d66530f
+[DEBUG] 2021-10-24 12:17:18.033 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2d66530f
+[DEBUG] 2021-10-24 12:17:18.034 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1869f114
+[DEBUG] 2021-10-24 12:17:18.034 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1869f114
+[DEBUG] 2021-10-24 12:17:18.075 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6872f9c8
+[DEBUG] 2021-10-24 12:17:18.075 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6872f9c8
+[DEBUG] 2021-10-24 12:17:18.076 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@52a36910
+[DEBUG] 2021-10-24 12:17:18.077 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@52a36910
+[DEBUG] 2021-10-24 12:17:18.078 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@66bfd864
+[DEBUG] 2021-10-24 12:17:18.078 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@66bfd864
+[DEBUG] 2021-10-24 12:17:18.079 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@5226e402
+[DEBUG] 2021-10-24 12:17:18.079 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5226e402
+[DEBUG] 2021-10-24 12:17:18.080 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@37c5fc56
+[DEBUG] 2021-10-24 12:17:18.080 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@37c5fc56
+[DEBUG] 2021-10-24 12:17:18.080 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@37c5fc56
+[DEBUG] 2021-10-24 12:17:18.083 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@703feacd
+[DEBUG] 2021-10-24 12:17:18.084 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@2b97cc1f
+[DEBUG] 2021-10-24 12:17:18.084 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2b97cc1f
+[DEBUG] 2021-10-24 12:17:18.084 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2b97cc1f
+[DEBUG] 2021-10-24 12:17:18.085 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@ff6077
+[DEBUG] 2021-10-24 12:17:18.086 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@29be7749
+[DEBUG] 2021-10-24 12:17:18.086 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@29be7749
+[DEBUG] 2021-10-24 12:17:18.088 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@79767781
+[DEBUG] 2021-10-24 12:17:18.088 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@79767781
+[DEBUG] 2021-10-24 12:17:18.089 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@16c3ca31
+[DEBUG] 2021-10-24 12:17:18.092 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@16c3ca31
+[DEBUG] 2021-10-24 12:17:18.094 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@48ea2003
+[DEBUG] 2021-10-24 12:17:18.094 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@48ea2003
+[DEBUG] 2021-10-24 12:17:18.095 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@56de6d6b
+[DEBUG] 2021-10-24 12:17:18.096 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@56de6d6b
+[DEBUG] 2021-10-24 12:17:18.097 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1473b8c0
+[DEBUG] 2021-10-24 12:17:18.098 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@997d532
+[DEBUG] 2021-10-24 12:17:18.098 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@997d532
+[DEBUG] 2021-10-24 12:17:18.098 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@997d532
+[DEBUG] 2021-10-24 12:17:18.100 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@bb095
+[DEBUG] 2021-10-24 12:17:18.101 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@bb095
+[DEBUG] 2021-10-24 12:17:18.101 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@bb095
+[DEBUG] 2021-10-24 12:17:18.102 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@5f14a673
+[DEBUG] 2021-10-24 12:17:18.103 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@76911385
+[DEBUG] 2021-10-24 12:17:18.104 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@53093491
+[DEBUG] 2021-10-24 12:17:18.104 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@53093491
+[DEBUG] 2021-10-24 12:17:18.104 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@53093491
+[DEBUG] 2021-10-24 12:17:18.105 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@368d5c00
+[DEBUG] 2021-10-24 12:17:18.105 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@368d5c00
+[DEBUG] 2021-10-24 12:17:18.105 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@368d5c00
+[DEBUG] 2021-10-24 12:17:18.105 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@37095ded
+[DEBUG] 2021-10-24 12:17:18.105 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7923f5b3
+[DEBUG] 2021-10-24 12:17:18.107 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@4c0884e8
+[DEBUG] 2021-10-24 12:17:18.107 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4c0884e8
+[DEBUG] 2021-10-24 12:17:18.107 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7b208b45
+[DEBUG] 2021-10-24 12:17:18.108 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4443ef6f
+[DEBUG] 2021-10-24 12:17:18.111 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4443ef6f
+[DEBUG] 2021-10-24 12:17:18.114 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@d1a10ac
+[DEBUG] 2021-10-24 12:17:18.114 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@d1a10ac
+[DEBUG] 2021-10-24 12:17:18.115 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2cfbeac4
+[DEBUG] 2021-10-24 12:17:18.115 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@a7f0ab6
+[DEBUG] 2021-10-24 12:17:18.117 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@3013909b
+[DEBUG] 2021-10-24 12:17:18.121 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@6de30571
+[DEBUG] 2021-10-24 12:17:18.121 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6de30571
+[DEBUG] 2021-10-24 12:17:18.122 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3df978b9
+[DEBUG] 2021-10-24 12:17:18.123 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7906578e
+[DEBUG] 2021-10-24 12:17:18.129 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@8a62297
+[DEBUG] 2021-10-24 12:17:18.129 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@61a91912
+[DEBUG] 2021-10-24 12:17:18.129 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1763992e
+[DEBUG] 2021-10-24 12:17:18.129 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5c92166b
+[DEBUG] 2021-10-24 12:17:18.129 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@659925f4
+[DEBUG] 2021-10-24 12:17:18.129 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4cd1c1dc
+[DEBUG] 2021-10-24 12:17:18.235 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-10-24 12:17:18.236 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-10-24 12:17:18.237 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-10-24 12:17:18.238 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-10-24 12:17:18.240 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-10-24 12:17:18.242 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-10-24 12:17:18.242 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-10-24 12:17:18.244 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-10-24 12:17:18.245 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-10-24 12:17:18.246 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-10-24 12:17:18.247 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-10-24 12:17:18.247 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-10-24 12:17:18.247 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-10-24 12:17:18.249 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-10-24 12:17:18.254 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_compendium
+[INFO ] 2021-10-24 12:17:18.254 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-10-24 12:17:18.254 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-10-24 12:17:18.628 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[WARN ] 2021-10-24 12:17:52.364 [main] JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : Connections could not be acquired from the underlying database!
+[INFO ] 2021-10-24 12:17:52.421 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[DEBUG] 2021-10-24 12:17:52.449 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-10-24 12:17:52.455 [main] LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+[DEBUG] 2021-10-24 12:17:52.462 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-10-24 12:17:52.467 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7c29adc8] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4b2e3e8f]
