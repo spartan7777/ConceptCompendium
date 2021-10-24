@@ -48,25 +48,6 @@ class UserDao {
     }
 
     /**
-     * Gets all users by last name.
-     * @param lastName the last name to search by
-     * @return the all users
-     */
-    public List<User> getUsersByLastName(String lastName) {
-
-        Session session = sessionFactory.openSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("lastName");
-        query.where(builder.like(propertyPath, "%" + lastName + "%"));
-        List<User> users = session.createQuery(query).getResultList();
-        session.close();
-        return users;
-    }
-
-    /**
      * Gets a user by id
      * @param userId users id to search by
      * @return a user
@@ -94,8 +75,8 @@ class UserDao {
     }
 
     /**
-     * create or update user
-     * @param user  User to be inserted or updated
+     * update user
+     * @param user  User to be updated
      */
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
@@ -116,6 +97,26 @@ class UserDao {
         session.delete(user);
         transaction.commit();
         session.close();
+    }
+
+
+    /**
+     * Gets all users by last name.
+     * @param lastName the last name to search by
+     * @return the all users
+     */
+    public List<User> getUsersByLastName(String lastName) {
+
+        Session session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery(User.class);
+        Root<User> root = query.from(User.class);
+        Expression<String> propertyPath = root.get("lastName");
+        query.where(builder.like(propertyPath, "%" + lastName + "%"));
+        List<User> users = session.createQuery(query).getResultList();
+        session.close();
+        return users;
     }
 
 
