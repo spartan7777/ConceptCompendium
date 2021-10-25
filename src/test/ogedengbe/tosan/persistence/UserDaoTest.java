@@ -27,8 +27,7 @@ class UserDaoTest {
         dao = new UserDao();
 
         Database database = Database.getInstance();
-        database.runSQL("cleandb.sql");
-        database.runSQL("cleandb2.sql");
+        database.runSQL("cleandb3.sql");
     }
 
 
@@ -83,11 +82,8 @@ class UserDaoTest {
     //void insertWithConceptSuccess() {
         //User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
         //String conceptDescription = "Concept 1";
-
         //Concept concept = new Concept(17, 7, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
-
         //newUser.addConcept(concept);
-
         //userId = dao.saveOrUpdate(newUser);
         //assertNotEquals(0,userId);
         //User insertedUser = (User) dao.getById(userId);

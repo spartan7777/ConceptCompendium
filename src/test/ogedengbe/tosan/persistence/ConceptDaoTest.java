@@ -27,8 +27,6 @@ class ConceptDaoTest {
         dao = new ConceptDao();
 
         Database database = Database.getInstance();
-        //database.runSQL("cleandb.sql");
-       // database.runSQL("cleandb2.sql");
         database.runSQL("cleandb3.sql");
     }
 
@@ -41,7 +39,6 @@ class ConceptDaoTest {
         List<Concept> concepts = dao.getAll();
         assertEquals(16, concepts.size());
     }
-
 
     /**
      * Verifies gets concepts by category successfully.
