@@ -20,6 +20,7 @@ public class Concept {
     private int conceptId;
 
     @Column(name = "user_id")
+    @JoinColumn(name = "user_id")
     private int userId;
 
     @Column(name = "name")
@@ -127,13 +128,13 @@ public class Concept {
     }
 
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+    //public void setUser(User user) {
+     //   this.user = user;
+  //  }
 
-    public User getUser() {
-        return user;
-    }
+    //public User getUser() {
+     //   return user;
+   // }
 
     @Override
     public String toString() {

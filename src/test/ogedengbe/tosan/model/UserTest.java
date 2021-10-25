@@ -33,6 +33,7 @@ public class UserTest {
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    //@JoinColumn(name = "user_id", referencedColumnName = "user_id")
     private Set<ConceptTest> concepts = new HashSet<>();
 
     //@OneToMany(mappedBy = "userOne", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER);

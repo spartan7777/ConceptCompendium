@@ -9,7 +9,7 @@ import javax.persistence.*;
  * @author Tosan Ogedengbe
  **/
 
-@Entity(name = "Concept")
+@Entity(name = "ConceptTest")
 @Table(name = "concept")
 
 public class ConceptTest {
@@ -20,6 +20,7 @@ public class ConceptTest {
     private int conceptId;
 
     @Column(name = "user_id")
+    @JoinColumn(name = "user_id")
     private int userId;
 
     @Column(name = "name")
@@ -35,7 +36,8 @@ public class ConceptTest {
     private String description;
 
     @ManyToOne
-    private UserTest user;
+    @JoinColumn(name = "user_id", referencedColumnName = "user_id")
+    private User user;
 
     /**
      * Instantiates a new Concept.
@@ -129,15 +131,15 @@ public class ConceptTest {
      * Gets the user.
      * @return the user
      */
-    public UserTest getUser() {
-        return user;
+    public User getUser() {
+       return user;
     }
 
     /**
      * Sets the User.
      * @param user the user tied to the concept
      */
-    public void setUser(UserTest user) {
+    public void setUser(User user) {
         this.user = user;
     }
 
