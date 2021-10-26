@@ -23,7 +23,12 @@ RELEVANT ITEMS:
 
 ACCOMPLISHMENTS:  
 Went over all of the Week 4 and Week 5 videos once again to complete all of the DAO and classes in the test part of the project. Was able to get the cleandb.sql file added
-into the project, and got the sql in that file to work after troubleshooting assistance during the class period. Changed the data in the test database and made that more conducive to testing and using the cleandb.sql files. Cleaned up a lot of the code and worked out a lot of the errors and warnings that hibernate was noticing. Removed two columns (the keyword columns) from the databases and the code as I found that these were counterproductive to the concept creation process when adding in sample data. It seemed too difficult to know what keywords to use to reference linked ideas with when starting to create the ideas. I decided that in order to be able to better reference and link ideas after the fact, it would be best if people could just search for any keyword they need in the concept descriptions, and then update them as needed after the fact to keep linked ideas together.
+into the project, and got the sql in that file to work after troubleshooting assistance during the class period. Changed the data in the test database and made that more 
+conducive to testing and using the cleandb.sql files. Cleaned up a lot of the code and worked out a lot of the errors and warnings that hibernate was noticing. Removed two 
+columns (the keyword columns) from the databases and the code as I found that these were counterproductive to the concept creation process when adding in sample data. It
+seemed too difficult to know what keywords to use to reference linked ideas with when starting to create the ideas. I decided that in order to be able to better reference 
+and link ideas after the fact, it would be best if people could just search for any keyword they need in the concept descriptions, and then update them as needed after the
+fact to keep linked ideas together.
 
 
 Was able to get some of the tests to run on the User entity, meaning I was able to clear up the code in the project using a UserDao just enough that the code would run. Got a lot of test failures for various reasons that required little fixes and code refactoring throughout the project. Worked on this in order to get the unit tests to pass. Debugged this in class and realized that making the jump to the Generic DAO without having anything working through entity specific DAOs was not a good idea and was the main reason for my test failures. Went back to basics and re-worked all the DAOs in the project to get the unit tests to pass. Completed all work and got passing tests for the User DAO. 
