@@ -4,20 +4,16 @@ import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
 //import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
-import java.util.logging.Logger;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * The type UserDao.
@@ -28,7 +24,7 @@ class UserDao {
 
     //UserDao dao;
 
-    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
@@ -74,16 +70,19 @@ class UserDao {
         return id;
     }
 
+
     /**
      * update user
-     * @param user  User to be updated
+     * @param user User to be updated
+     * @return user
      */
-    public void saveOrUpdate(User user) {
+    public User saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(user);
         transaction.commit();
         session.close();
+        return user;
     }
 
 

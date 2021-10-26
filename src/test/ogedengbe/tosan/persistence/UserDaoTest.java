@@ -22,9 +22,6 @@ class UserDaoTest {
 
     UserDao dao;
 
-    private final Logger logger = LogManager.getLogger(this.getClass());
-    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
-
     /**
      * Creating the dao.
      */
@@ -86,17 +83,19 @@ class UserDaoTest {
     @Test
     void insertUserWithConceptSuccess() {
         User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
-        Concept newConcept = new Concept(newUser, 7, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
+        Concept newConcept = new Concept(newUser, 17, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
+
         newUser.addConcept(newConcept);
 
         int userId = dao.insert(newUser);
+        User insertedUserTwo = dao.saveOrUpdate(newUser);
 
         assertNotEquals(0,userId);
         User insertedUser = dao.getById(userId);
         assertEquals("Peter", insertedUser.getFirstName());
-        assertEquals(17, insertedUser.getConcepts().size());
+        assertEquals(8, insertedUser.getUserId());
+        assertEquals(17, insertedUserTwo.getConcepts().size());
     }
-
 
     /**
      * Verify successful delete of user
