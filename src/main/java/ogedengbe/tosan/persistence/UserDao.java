@@ -28,7 +28,7 @@ class UserDao {
 
     //UserDao dao;
 
-    //private final Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**

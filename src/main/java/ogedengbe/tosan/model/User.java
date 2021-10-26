@@ -70,7 +70,7 @@ public class User {
      * Sets user id.
      * @param userId the user id
      */
-    public void setId(int userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -138,6 +138,39 @@ public class User {
         this.password = password;
     }
 
+    /**
+     * Gets concepts.
+     * @return the concepts
+     */
+    public Set<Concept> getConcepts() {
+        return concepts;
+    }
+
+    /**
+     * Sets concepts.
+     * @param concepts the concepts
+     */
+    public void SetConcepts(Set<Concept> concepts) {
+        this.concepts = concepts;
+    }
+
+    /**
+     * Adds a concept.
+     * @param concept the concepts
+     */
+    public void addConcept(Concept concept) {
+        concepts.add(concept);
+        concept.setUser(this);
+    }
+
+    /**
+     * Removes a concept.
+     * @param concept the concepts
+     */
+    public void removeConcept(Concept concept) {
+        concepts.remove(concept);
+        concept.setUser(null);
+    }
 
     @Override
     public String toString() {
@@ -149,5 +182,7 @@ public class User {
                 ", password=" + password +
                 '}';
     }
+
+
 
 }

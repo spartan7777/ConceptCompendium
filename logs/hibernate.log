@@ -1,344 +1,336 @@
-[DEBUG] 2021-10-24 22:08:01.149 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
-[DEBUG] 2021-10-24 22:08:01.157 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
-[DEBUG] 2021-10-24 22:08:01.169 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
-[INFO ] 2021-10-24 22:08:01.389 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
-[DEBUG] 2021-10-24 22:08:01.393 [main] Environment - HHH000206: hibernate.properties not found
-[DEBUG] 2021-10-24 22:08:01.945 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
-[DEBUG] 2021-10-24 22:08:01.946 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
-[DEBUG] 2021-10-24 22:08:01.965 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
-[DEBUG] 2021-10-24 22:08:02.945 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
-[DEBUG] 2021-10-24 22:08:03.017 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
-[DEBUG] 2021-10-24 22:08:03.019 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
-[INFO ] 2021-10-24 22:08:03.073 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[DEBUG] 2021-10-24 22:08:03.122 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@35c09b94
-[DEBUG] 2021-10-24 22:08:03.122 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@35c09b94
-[DEBUG] 2021-10-24 22:08:03.122 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@35c09b94
-[DEBUG] 2021-10-24 22:08:03.122 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4a699efa
-[DEBUG] 2021-10-24 22:08:03.123 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1136b469
-[DEBUG] 2021-10-24 22:08:03.123 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@42f22995
-[DEBUG] 2021-10-24 22:08:03.124 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@57bd802b
-[DEBUG] 2021-10-24 22:08:03.124 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@57bd802b
-[DEBUG] 2021-10-24 22:08:03.124 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@57bd802b
-[DEBUG] 2021-10-24 22:08:03.125 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@27068a50
-[DEBUG] 2021-10-24 22:08:03.126 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@27068a50
-[DEBUG] 2021-10-24 22:08:03.126 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@27068a50
-[DEBUG] 2021-10-24 22:08:03.127 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1b9c1b51
-[DEBUG] 2021-10-24 22:08:03.127 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1b9c1b51
-[DEBUG] 2021-10-24 22:08:03.127 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1b9c1b51
-[DEBUG] 2021-10-24 22:08:03.128 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@60921b21
-[DEBUG] 2021-10-24 22:08:03.128 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@60921b21
-[DEBUG] 2021-10-24 22:08:03.128 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@60921b21
-[DEBUG] 2021-10-24 22:08:03.129 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6e6fce47
-[DEBUG] 2021-10-24 22:08:03.129 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6e6fce47
-[DEBUG] 2021-10-24 22:08:03.129 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6e6fce47
-[DEBUG] 2021-10-24 22:08:03.130 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@72805168
-[DEBUG] 2021-10-24 22:08:03.131 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@72805168
-[DEBUG] 2021-10-24 22:08:03.131 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@72805168
-[DEBUG] 2021-10-24 22:08:03.131 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@71a3a190
-[DEBUG] 2021-10-24 22:08:03.131 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@71a3a190
-[DEBUG] 2021-10-24 22:08:03.134 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@71a3a190
-[DEBUG] 2021-10-24 22:08:03.135 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3703bf3c
-[DEBUG] 2021-10-24 22:08:03.136 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3703bf3c
-[DEBUG] 2021-10-24 22:08:03.136 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3f36b447
-[DEBUG] 2021-10-24 22:08:03.136 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3f36b447
-[DEBUG] 2021-10-24 22:08:03.137 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@4bdcaf36
-[DEBUG] 2021-10-24 22:08:03.137 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@4bdcaf36
-[DEBUG] 2021-10-24 22:08:03.138 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@847f3e7
-[DEBUG] 2021-10-24 22:08:03.138 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6ad6fa53
-[DEBUG] 2021-10-24 22:08:03.139 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@30af7377
-[DEBUG] 2021-10-24 22:08:03.139 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@30af7377
-[DEBUG] 2021-10-24 22:08:03.139 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@5c20ffa8
-[DEBUG] 2021-10-24 22:08:03.140 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5c20ffa8
-[DEBUG] 2021-10-24 22:08:03.145 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@18a645fd
-[DEBUG] 2021-10-24 22:08:03.146 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@18a645fd
-[DEBUG] 2021-10-24 22:08:03.147 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@bdecc21
-[DEBUG] 2021-10-24 22:08:03.147 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@bdecc21
-[DEBUG] 2021-10-24 22:08:03.148 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4f20a5e0
-[DEBUG] 2021-10-24 22:08:03.148 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4f20a5e0
-[DEBUG] 2021-10-24 22:08:03.149 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2fe88a09
-[DEBUG] 2021-10-24 22:08:03.149 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2fe88a09
-[DEBUG] 2021-10-24 22:08:03.150 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@30cecdca
-[DEBUG] 2021-10-24 22:08:03.151 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@30cecdca
-[DEBUG] 2021-10-24 22:08:03.151 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1ddd3478
-[DEBUG] 2021-10-24 22:08:03.152 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1ddd3478
-[DEBUG] 2021-10-24 22:08:03.153 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@68809cc7
-[DEBUG] 2021-10-24 22:08:03.154 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@68809cc7
-[DEBUG] 2021-10-24 22:08:03.155 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@18324f97
-[DEBUG] 2021-10-24 22:08:03.155 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@18324f97
-[DEBUG] 2021-10-24 22:08:03.156 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2687f956
-[DEBUG] 2021-10-24 22:08:03.156 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2687f956
-[DEBUG] 2021-10-24 22:08:03.157 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@53dfacba
-[DEBUG] 2021-10-24 22:08:03.157 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@53dfacba
-[DEBUG] 2021-10-24 22:08:03.157 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@53dfacba
-[DEBUG] 2021-10-24 22:08:03.158 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@245a060f
-[DEBUG] 2021-10-24 22:08:03.159 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@29314cc9
-[DEBUG] 2021-10-24 22:08:03.159 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@29314cc9
-[DEBUG] 2021-10-24 22:08:03.159 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@29314cc9
-[DEBUG] 2021-10-24 22:08:03.161 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@63e5e5b4
-[DEBUG] 2021-10-24 22:08:03.162 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@4fcc0416
-[DEBUG] 2021-10-24 22:08:03.162 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4fcc0416
-[DEBUG] 2021-10-24 22:08:03.164 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@6ef81f31
-[DEBUG] 2021-10-24 22:08:03.165 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6ef81f31
-[DEBUG] 2021-10-24 22:08:03.165 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@3028e50e
-[DEBUG] 2021-10-24 22:08:03.165 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@3028e50e
-[DEBUG] 2021-10-24 22:08:03.169 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@5d1e09bc
-[DEBUG] 2021-10-24 22:08:03.171 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5d1e09bc
-[DEBUG] 2021-10-24 22:08:03.172 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@76911385
-[DEBUG] 2021-10-24 22:08:03.172 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@76911385
-[DEBUG] 2021-10-24 22:08:03.172 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@40ab8a8
-[DEBUG] 2021-10-24 22:08:03.173 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@57b9e423
-[DEBUG] 2021-10-24 22:08:03.174 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@57b9e423
-[DEBUG] 2021-10-24 22:08:03.174 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@57b9e423
-[DEBUG] 2021-10-24 22:08:03.174 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2eb79cbe
-[DEBUG] 2021-10-24 22:08:03.175 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2eb79cbe
-[DEBUG] 2021-10-24 22:08:03.175 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2eb79cbe
-[DEBUG] 2021-10-24 22:08:03.176 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@56da52a7
-[DEBUG] 2021-10-24 22:08:03.176 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@30404dba
-[DEBUG] 2021-10-24 22:08:03.176 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@5bfc257
-[DEBUG] 2021-10-24 22:08:03.177 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@5bfc257
-[DEBUG] 2021-10-24 22:08:03.177 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@5bfc257
-[DEBUG] 2021-10-24 22:08:03.178 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@c446b14
-[DEBUG] 2021-10-24 22:08:03.178 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@c446b14
-[DEBUG] 2021-10-24 22:08:03.178 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@c446b14
-[DEBUG] 2021-10-24 22:08:03.178 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@51751e5f
-[DEBUG] 2021-10-24 22:08:03.178 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@41aaedaa
-[DEBUG] 2021-10-24 22:08:03.179 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@4078695f
-[DEBUG] 2021-10-24 22:08:03.179 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4078695f
-[DEBUG] 2021-10-24 22:08:03.180 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@42c2f48c
-[DEBUG] 2021-10-24 22:08:03.181 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@66596a88
-[DEBUG] 2021-10-24 22:08:03.182 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@66596a88
-[DEBUG] 2021-10-24 22:08:03.183 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@4bee18dc
-[DEBUG] 2021-10-24 22:08:03.183 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4bee18dc
-[DEBUG] 2021-10-24 22:08:03.188 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7a6ebe1e
-[DEBUG] 2021-10-24 22:08:03.188 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6de30571
-[DEBUG] 2021-10-24 22:08:03.191 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@659925f4
-[DEBUG] 2021-10-24 22:08:03.193 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@3a91d146
-[DEBUG] 2021-10-24 22:08:03.194 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3a91d146
-[DEBUG] 2021-10-24 22:08:03.194 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6d4a65c6
-[DEBUG] 2021-10-24 22:08:03.194 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@aa004a0
-[DEBUG] 2021-10-24 22:08:03.198 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4c98a6d5
-[DEBUG] 2021-10-24 22:08:03.198 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@392a04e7
-[DEBUG] 2021-10-24 22:08:03.198 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7f02251
-[DEBUG] 2021-10-24 22:08:03.198 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@dffa30b
-[DEBUG] 2021-10-24 22:08:03.198 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4d8126f
-[DEBUG] 2021-10-24 22:08:03.198 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6d3c232f
-[DEBUG] 2021-10-24 22:08:03.269 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
-[DEBUG] 2021-10-24 22:08:03.270 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
-[DEBUG] 2021-10-24 22:08:03.271 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
-[DEBUG] 2021-10-24 22:08:03.271 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
-[DEBUG] 2021-10-24 22:08:03.271 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
-[DEBUG] 2021-10-24 22:08:03.272 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
-[DEBUG] 2021-10-24 22:08:03.274 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
-[DEBUG] 2021-10-24 22:08:03.276 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-[DEBUG] 2021-10-24 22:08:03.276 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
-[DEBUG] 2021-10-24 22:08:03.277 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
-[DEBUG] 2021-10-24 22:08:03.277 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
-[DEBUG] 2021-10-24 22:08:03.277 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
-[DEBUG] 2021-10-24 22:08:03.277 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-[DEBUG] 2021-10-24 22:08:03.278 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
-[INFO ] 2021-10-24 22:08:03.283 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_compendium
-[INFO ] 2021-10-24 22:08:03.283 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
-[INFO ] 2021-10-24 22:08:03.283 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
-[INFO ] 2021-10-24 22:08:03.542 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
-[DEBUG] 2021-10-24 22:08:04.445 [main] JdbcEnvironmentInitiator - Database ->
+[DEBUG] 2021-10-25 23:12:32.766 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-10-25 23:12:32.777 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-10-25 23:12:32.783 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-10-25 23:12:32.997 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-10-25 23:12:33.006 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-10-25 23:12:33.599 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2021-10-25 23:12:33.608 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2021-10-25 23:12:33.622 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-10-25 23:12:34.656 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-10-25 23:12:34.723 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-10-25 23:12:34.733 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-10-25 23:12:34.787 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-10-25 23:12:34.866 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@35c09b94
+[DEBUG] 2021-10-25 23:12:34.867 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@35c09b94
+[DEBUG] 2021-10-25 23:12:34.867 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@35c09b94
+[DEBUG] 2021-10-25 23:12:34.867 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4a699efa
+[DEBUG] 2021-10-25 23:12:34.868 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1136b469
+[DEBUG] 2021-10-25 23:12:34.876 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@42f22995
+[DEBUG] 2021-10-25 23:12:34.877 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@57bd802b
+[DEBUG] 2021-10-25 23:12:34.877 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@57bd802b
+[DEBUG] 2021-10-25 23:12:34.878 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@57bd802b
+[DEBUG] 2021-10-25 23:12:34.878 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@27068a50
+[DEBUG] 2021-10-25 23:12:34.880 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@27068a50
+[DEBUG] 2021-10-25 23:12:34.880 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@27068a50
+[DEBUG] 2021-10-25 23:12:34.881 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1b9c1b51
+[DEBUG] 2021-10-25 23:12:34.881 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1b9c1b51
+[DEBUG] 2021-10-25 23:12:34.881 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1b9c1b51
+[DEBUG] 2021-10-25 23:12:34.882 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@60921b21
+[DEBUG] 2021-10-25 23:12:34.882 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@60921b21
+[DEBUG] 2021-10-25 23:12:34.882 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@60921b21
+[DEBUG] 2021-10-25 23:12:34.883 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6e6fce47
+[DEBUG] 2021-10-25 23:12:34.883 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6e6fce47
+[DEBUG] 2021-10-25 23:12:34.889 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6e6fce47
+[DEBUG] 2021-10-25 23:12:34.892 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@72805168
+[DEBUG] 2021-10-25 23:12:34.892 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@72805168
+[DEBUG] 2021-10-25 23:12:34.892 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@72805168
+[DEBUG] 2021-10-25 23:12:34.893 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@71a3a190
+[DEBUG] 2021-10-25 23:12:34.893 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@71a3a190
+[DEBUG] 2021-10-25 23:12:34.896 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@71a3a190
+[DEBUG] 2021-10-25 23:12:34.897 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3703bf3c
+[DEBUG] 2021-10-25 23:12:34.898 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3703bf3c
+[DEBUG] 2021-10-25 23:12:34.899 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3f36b447
+[DEBUG] 2021-10-25 23:12:34.899 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3f36b447
+[DEBUG] 2021-10-25 23:12:34.900 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@4bdcaf36
+[DEBUG] 2021-10-25 23:12:34.900 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@4bdcaf36
+[DEBUG] 2021-10-25 23:12:34.908 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@847f3e7
+[DEBUG] 2021-10-25 23:12:34.909 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6ad6fa53
+[DEBUG] 2021-10-25 23:12:34.910 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@30af7377
+[DEBUG] 2021-10-25 23:12:34.910 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@30af7377
+[DEBUG] 2021-10-25 23:12:34.911 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@5c20ffa8
+[DEBUG] 2021-10-25 23:12:34.911 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5c20ffa8
+[DEBUG] 2021-10-25 23:12:34.916 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@18a645fd
+[DEBUG] 2021-10-25 23:12:34.919 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@18a645fd
+[DEBUG] 2021-10-25 23:12:34.920 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@bdecc21
+[DEBUG] 2021-10-25 23:12:34.920 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@bdecc21
+[DEBUG] 2021-10-25 23:12:34.921 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4f20a5e0
+[DEBUG] 2021-10-25 23:12:34.921 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4f20a5e0
+[DEBUG] 2021-10-25 23:12:34.922 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2fe88a09
+[DEBUG] 2021-10-25 23:12:34.922 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2fe88a09
+[DEBUG] 2021-10-25 23:12:34.923 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@30cecdca
+[DEBUG] 2021-10-25 23:12:34.923 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@30cecdca
+[DEBUG] 2021-10-25 23:12:34.924 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1ddd3478
+[DEBUG] 2021-10-25 23:12:34.924 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1ddd3478
+[DEBUG] 2021-10-25 23:12:34.925 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@68809cc7
+[DEBUG] 2021-10-25 23:12:34.926 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@68809cc7
+[DEBUG] 2021-10-25 23:12:34.927 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@18324f97
+[DEBUG] 2021-10-25 23:12:34.927 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@18324f97
+[DEBUG] 2021-10-25 23:12:34.927 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2687f956
+[DEBUG] 2021-10-25 23:12:34.928 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2687f956
+[DEBUG] 2021-10-25 23:12:34.933 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@53dfacba
+[DEBUG] 2021-10-25 23:12:34.933 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@53dfacba
+[DEBUG] 2021-10-25 23:12:34.933 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@53dfacba
+[DEBUG] 2021-10-25 23:12:34.935 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@245a060f
+[DEBUG] 2021-10-25 23:12:34.936 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@29314cc9
+[DEBUG] 2021-10-25 23:12:34.936 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@29314cc9
+[DEBUG] 2021-10-25 23:12:34.936 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@29314cc9
+[DEBUG] 2021-10-25 23:12:34.937 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@63e5e5b4
+[DEBUG] 2021-10-25 23:12:34.938 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@4fcc0416
+[DEBUG] 2021-10-25 23:12:34.939 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4fcc0416
+[DEBUG] 2021-10-25 23:12:34.940 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@6ef81f31
+[DEBUG] 2021-10-25 23:12:34.940 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6ef81f31
+[DEBUG] 2021-10-25 23:12:34.941 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@3028e50e
+[DEBUG] 2021-10-25 23:12:34.941 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@3028e50e
+[DEBUG] 2021-10-25 23:12:34.942 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@5d1e09bc
+[DEBUG] 2021-10-25 23:12:34.942 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5d1e09bc
+[DEBUG] 2021-10-25 23:12:34.943 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@76911385
+[DEBUG] 2021-10-25 23:12:34.943 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@76911385
+[DEBUG] 2021-10-25 23:12:34.943 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@40ab8a8
+[DEBUG] 2021-10-25 23:12:34.944 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@57b9e423
+[DEBUG] 2021-10-25 23:12:34.945 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@57b9e423
+[DEBUG] 2021-10-25 23:12:34.945 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@57b9e423
+[DEBUG] 2021-10-25 23:12:34.945 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2eb79cbe
+[DEBUG] 2021-10-25 23:12:34.946 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2eb79cbe
+[DEBUG] 2021-10-25 23:12:34.946 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2eb79cbe
+[DEBUG] 2021-10-25 23:12:34.947 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@56da52a7
+[DEBUG] 2021-10-25 23:12:34.947 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@30404dba
+[DEBUG] 2021-10-25 23:12:34.948 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@5bfc257
+[DEBUG] 2021-10-25 23:12:34.948 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@5bfc257
+[DEBUG] 2021-10-25 23:12:34.948 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@5bfc257
+[DEBUG] 2021-10-25 23:12:34.949 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@c446b14
+[DEBUG] 2021-10-25 23:12:34.949 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@c446b14
+[DEBUG] 2021-10-25 23:12:34.949 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@c446b14
+[DEBUG] 2021-10-25 23:12:34.950 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@51751e5f
+[DEBUG] 2021-10-25 23:12:34.950 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@41aaedaa
+[DEBUG] 2021-10-25 23:12:34.951 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@4078695f
+[DEBUG] 2021-10-25 23:12:34.951 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4078695f
+[DEBUG] 2021-10-25 23:12:34.956 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@42c2f48c
+[DEBUG] 2021-10-25 23:12:34.958 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@66596a88
+[DEBUG] 2021-10-25 23:12:34.960 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@66596a88
+[DEBUG] 2021-10-25 23:12:34.962 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@4bee18dc
+[DEBUG] 2021-10-25 23:12:34.962 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4bee18dc
+[DEBUG] 2021-10-25 23:12:34.963 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7a6ebe1e
+[DEBUG] 2021-10-25 23:12:34.963 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6de30571
+[DEBUG] 2021-10-25 23:12:34.964 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@659925f4
+[DEBUG] 2021-10-25 23:12:34.997 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@3a91d146
+[DEBUG] 2021-10-25 23:12:34.997 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3a91d146
+[DEBUG] 2021-10-25 23:12:34.998 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6d4a65c6
+[DEBUG] 2021-10-25 23:12:34.998 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@aa004a0
+[DEBUG] 2021-10-25 23:12:35.000 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4c98a6d5
+[DEBUG] 2021-10-25 23:12:35.000 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@392a04e7
+[DEBUG] 2021-10-25 23:12:35.000 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7f02251
+[DEBUG] 2021-10-25 23:12:35.000 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@dffa30b
+[DEBUG] 2021-10-25 23:12:35.001 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4d8126f
+[DEBUG] 2021-10-25 23:12:35.001 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6d3c232f
+[DEBUG] 2021-10-25 23:12:35.053 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-10-25 23:12:35.054 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-10-25 23:12:35.055 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-10-25 23:12:35.058 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-10-25 23:12:35.058 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-10-25 23:12:35.059 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-10-25 23:12:35.059 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-10-25 23:12:35.060 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-10-25 23:12:35.062 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-10-25 23:12:35.065 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-10-25 23:12:35.066 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-10-25 23:12:35.066 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-10-25 23:12:35.066 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-10-25 23:12:35.067 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-10-25 23:12:35.071 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_compendium
+[INFO ] 2021-10-25 23:12:35.072 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-10-25 23:12:35.072 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-10-25 23:12:35.326 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-10-25 23:12:36.283 [main] JdbcEnvironmentInitiator - Database ->
        name : MySQL
     version : 8.0.22
       major : 8
       minor : 0
-[DEBUG] 2021-10-24 22:08:04.465 [main] JdbcEnvironmentInitiator - Driver ->
+[DEBUG] 2021-10-25 23:12:36.292 [main] JdbcEnvironmentInitiator - Driver ->
        name : MySQL Connector/J
     version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
       major : 8
       minor : 0
-[DEBUG] 2021-10-24 22:08:04.465 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
-[INFO ] 2021-10-24 22:08:04.512 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-[DEBUG] 2021-10-24 22:08:04.564 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
-[DEBUG] 2021-10-24 22:08:04.620 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-[DEBUG] 2021-10-24 22:08:04.687 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
-[DEBUG] 2021-10-24 22:08:04.691 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ffaaaf0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1dc76fa1]
-[DEBUG] 2021-10-24 22:08:04.782 [main] AnnotationBinder - Binding entity from annotated class: ogedengbe.tosan.model.User
-[DEBUG] 2021-10-24 22:08:04.817 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
-[DEBUG] 2021-10-24 22:08:04.828 [main] EntityBinder - Import with entity name User
-[DEBUG] 2021-10-24 22:08:04.830 [main] EntityBinder - Bind entity ogedengbe.tosan.model.User on table user
-[DEBUG] 2021-10-24 22:08:04.875 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.882 [main] PropertyBinder - MetadataSourceProcessor property userId with lazy=false
-[DEBUG] 2021-10-24 22:08:04.883 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:userId]
-[DEBUG] 2021-10-24 22:08:04.889 [main] SimpleValueBinder - building SimpleValue for userId
-[DEBUG] 2021-10-24 22:08:04.894 [main] PropertyBinder - Building property userId
-[DEBUG] 2021-10-24 22:08:04.901 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(user_id)]), userId, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
-[DEBUG] 2021-10-24 22:08:04.909 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
-[DEBUG] 2021-10-24 22:08:04.911 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=concepts, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.913 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.928 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.928 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=concepts_KEY, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.929 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='concepts_KEY', referencedColumn='null', mappedBy='null'}
-[DEBUG] 2021-10-24 22:08:04.930 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
-[DEBUG] 2021-10-24 22:08:04.930 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
-[DEBUG] 2021-10-24 22:08:04.931 [main] CollectionBinder - Collection role: ogedengbe.tosan.model.User.concepts
-[DEBUG] 2021-10-24 22:08:04.932 [main] PropertyBinder - Building property concepts
-[DEBUG] 2021-10-24 22:08:04.933 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.936 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
-[DEBUG] 2021-10-24 22:08:04.937 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:firstName]
-[DEBUG] 2021-10-24 22:08:04.937 [main] SimpleValueBinder - building SimpleValue for firstName
-[DEBUG] 2021-10-24 22:08:04.939 [main] PropertyBinder - Building property firstName
-[DEBUG] 2021-10-24 22:08:04.940 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.940 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
-[DEBUG] 2021-10-24 22:08:04.940 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:lastName]
-[DEBUG] 2021-10-24 22:08:04.940 [main] SimpleValueBinder - building SimpleValue for lastName
-[DEBUG] 2021-10-24 22:08:04.940 [main] PropertyBinder - Building property lastName
-[DEBUG] 2021-10-24 22:08:04.940 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.940 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
-[DEBUG] 2021-10-24 22:08:04.940 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:password]
-[DEBUG] 2021-10-24 22:08:04.943 [main] SimpleValueBinder - building SimpleValue for password
-[DEBUG] 2021-10-24 22:08:04.944 [main] PropertyBinder - Building property password
-[DEBUG] 2021-10-24 22:08:04.944 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=username, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.944 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
-[DEBUG] 2021-10-24 22:08:04.944 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:userName]
-[DEBUG] 2021-10-24 22:08:04.944 [main] SimpleValueBinder - building SimpleValue for userName
-[DEBUG] 2021-10-24 22:08:04.944 [main] PropertyBinder - Building property userName
-[DEBUG] 2021-10-24 22:08:04.945 [main] AnnotationBinder - Binding entity from annotated class: ogedengbe.tosan.model.Concept
-[DEBUG] 2021-10-24 22:08:04.946 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
-[DEBUG] 2021-10-24 22:08:04.946 [main] EntityBinder - Import with entity name Concept
-[DEBUG] 2021-10-24 22:08:04.946 [main] EntityBinder - Bind entity ogedengbe.tosan.model.Concept on table concept
-[DEBUG] 2021-10-24 22:08:04.960 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=concept_id, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.961 [main] PropertyBinder - MetadataSourceProcessor property conceptId with lazy=false
-[DEBUG] 2021-10-24 22:08:04.961 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:conceptId]
-[DEBUG] 2021-10-24 22:08:04.961 [main] SimpleValueBinder - building SimpleValue for conceptId
-[DEBUG] 2021-10-24 22:08:04.961 [main] PropertyBinder - Building property conceptId
-[DEBUG] 2021-10-24 22:08:04.962 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(concept_id)]), conceptId, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
-[DEBUG] 2021-10-24 22:08:04.963 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=category, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.964 [main] PropertyBinder - MetadataSourceProcessor property category with lazy=false
-[DEBUG] 2021-10-24 22:08:04.964 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:category]
-[DEBUG] 2021-10-24 22:08:04.964 [main] SimpleValueBinder - building SimpleValue for category
-[DEBUG] 2021-10-24 22:08:04.964 [main] PropertyBinder - Building property category
-[DEBUG] 2021-10-24 22:08:04.965 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=category_id, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.965 [main] PropertyBinder - MetadataSourceProcessor property categoryId with lazy=false
-[DEBUG] 2021-10-24 22:08:04.965 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:categoryId]
-[DEBUG] 2021-10-24 22:08:04.965 [main] SimpleValueBinder - building SimpleValue for categoryId
-[DEBUG] 2021-10-24 22:08:04.968 [main] PropertyBinder - Building property categoryId
-[DEBUG] 2021-10-24 22:08:04.968 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=name, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.969 [main] PropertyBinder - MetadataSourceProcessor property conceptName with lazy=false
-[DEBUG] 2021-10-24 22:08:04.969 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:conceptName]
-[DEBUG] 2021-10-24 22:08:04.969 [main] SimpleValueBinder - building SimpleValue for conceptName
-[DEBUG] 2021-10-24 22:08:04.969 [main] PropertyBinder - Building property conceptName
-[DEBUG] 2021-10-24 22:08:04.969 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=description, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.969 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
-[DEBUG] 2021-10-24 22:08:04.970 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:description]
-[DEBUG] 2021-10-24 22:08:04.970 [main] SimpleValueBinder - building SimpleValue for description
-[DEBUG] 2021-10-24 22:08:04.970 [main] PropertyBinder - Building property description
-[DEBUG] 2021-10-24 22:08:04.970 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
-[DEBUG] 2021-10-24 22:08:04.970 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=user, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.971 [main] PropertyBinder - Building property user
-[DEBUG] 2021-10-24 22:08:04.971 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
-[DEBUG] 2021-10-24 22:08:04.971 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
-[DEBUG] 2021-10-24 22:08:04.972 [main] PropertyBinder - MetadataSourceProcessor property userId with lazy=false
-[DEBUG] 2021-10-24 22:08:04.972 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:userId]
-[DEBUG] 2021-10-24 22:08:04.972 [main] SimpleValueBinder - building SimpleValue for userId
-[DEBUG] 2021-10-24 22:08:04.972 [main] PropertyBinder - Building property userId
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for userId
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for password
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for userName
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for conceptId
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for category
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for categoryId
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for conceptName
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for description
-[DEBUG] 2021-10-24 22:08:04.981 [main] SimpleValueBinder - Starting fillSimpleValue for userId
-[DEBUG] 2021-10-24 22:08:04.993 [main] PrimaryKey - Forcing column [user_id] to be non-null as it is part of the primary key for table [user]
-[DEBUG] 2021-10-24 22:08:04.993 [main] PrimaryKey - Forcing column [concept_id] to be non-null as it is part of the primary key for table [concept]
-[DEBUG] 2021-10-24 22:08:04.993 [main] CollectionSecondPass - Second pass for collection: ogedengbe.tosan.model.User.concepts
-[DEBUG] 2021-10-24 22:08:04.994 [main] CollectionBinder - Binding a OneToMany: ogedengbe.tosan.model.User.concepts through a foreign key
-[DEBUG] 2021-10-24 22:08:04.994 [main] CollectionBinder - Mapping collection: ogedengbe.tosan.model.User.concepts -> concept
-[DEBUG] 2021-10-24 22:08:04.995 [main] TableBinder - Retrieving property ogedengbe.tosan.model.Concept.user
-[DEBUG] 2021-10-24 22:08:04.995 [main] CollectionSecondPass - Mapped collection key: user_user_id, one-to-many: ogedengbe.tosan.model.Concept
-[DEBUG] 2021-10-24 22:08:05.001 [main] InFlightMetadataCollectorImpl - Resolving reference to class: ogedengbe.tosan.model.User
-[DEBUG] 2021-10-24 22:08:05.004 [main] InFlightMetadataCollectorImpl - Resolving reference to class: ogedengbe.tosan.model.User
-[DEBUG] 2021-10-24 22:08:05.058 [main] SessionFactoryImpl - Building session factory
-[DEBUG] 2021-10-24 22:08:05.061 [main] Settings - SessionFactory name : null
-[DEBUG] 2021-10-24 22:08:05.061 [main] Settings - Automatic flush during beforeCompletion(): enabled
-[DEBUG] 2021-10-24 22:08:05.062 [main] Settings - Automatic session close at end of transaction: disabled
-[DEBUG] 2021-10-24 22:08:05.063 [main] Settings - Statistics: disabled
-[DEBUG] 2021-10-24 22:08:05.064 [main] Settings - Deleted entity synthetic identifier rollback: disabled
-[DEBUG] 2021-10-24 22:08:05.064 [main] Settings - Default entity-mode: pojo
-[DEBUG] 2021-10-24 22:08:05.065 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
-[DEBUG] 2021-10-24 22:08:05.065 [main] Settings - Allow initialization of lazy state outside session : disabled
-[DEBUG] 2021-10-24 22:08:05.065 [main] Settings - Using BatchFetchStyle : LEGACY
-[DEBUG] 2021-10-24 22:08:05.072 [main] Settings - Default batch fetch size: -1
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Maximum outer join fetch depth: 2
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Default null ordering: NONE
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Order SQL updates by primary key: disabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Order SQL inserts for batching: disabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - multi-tenancy strategy : NONE
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - JTA Track by Thread: enabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Query language substitutions: {}
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Named query checking : enabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Second-level cache: disabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Second-level query cache: disabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Second-level query cache factory: null
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Second-level cache region prefix: null
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Optimize second-level cache for minimal puts: disabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Structured second-level cache entries: disabled
-[DEBUG] 2021-10-24 22:08:05.073 [main] Settings - Second-level cache direct-reference entries: disabled
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - Automatic eviction of collection cache: disabled
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JDBC batch size: 15
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JDBC batch updates for versioned data: enabled
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - Scrollable result sets: enabled
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - Wrap result sets: disabled
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JDBC3 getGeneratedKeys(): enabled
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JDBC result set fetch size: null
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - Connection release mode: AFTER_TRANSACTION
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - Generate SQL with comments: disabled
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JPA compliance - query : 
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JPA compliance - closed-handling : 
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JPA compliance - lists : 
-[DEBUG] 2021-10-24 22:08:05.074 [main] Settings - JPA compliance - transactions : 
-[INFO ] 2021-10-24 22:08:05.162 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-[DEBUG] 2021-10-24 22:08:05.194 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
-[DEBUG] 2021-10-24 22:08:05.194 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, dialect=org.hibernate.dialect.MySQLDialect, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/IdeaProjects/ConceptCompendium/target/test-classes:/home/student/IdeaProjects/ConceptCompendium/target/classes:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 ogedengbe.tosan.persistence.ConceptDaoTest,insertConceptSuccess, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-04-20, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
-, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.11+9-Ubuntu-0ubuntu2.20.04, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.4.0-89-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_compendium, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.11, user.dir=/home/student/IdeaProjects/ConceptCompendium, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@28bdbe88, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.11+9-Ubuntu-0ubuntu2.20.04, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_compendium, java.class.version=55.0}
-[DEBUG] 2021-10-24 22:08:05.230 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
-[DEBUG] 2021-10-24 22:08:05.230 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
-[DEBUG] 2021-10-24 22:08:05.231 [main] SessionFactoryImpl - Instantiated session factory
-[DEBUG] 2021-10-24 22:08:05.231 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ffaaaf0] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6add8e3f]
-[DEBUG] 2021-10-24 22:08:05.362 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.Concept] is safe
-[DEBUG] 2021-10-24 22:08:05.368 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.Concept
-[DEBUG] 2021-10-24 22:08:05.397 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.Concept] is safe
-[DEBUG] 2021-10-24 22:08:05.397 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.Concept
-[DEBUG] 2021-10-24 22:08:05.818 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.User] is safe
-[DEBUG] 2021-10-24 22:08:05.818 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.User
-[DEBUG] 2021-10-24 22:08:05.819 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.User] is safe
-[DEBUG] 2021-10-24 22:08:05.819 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.User
-[DEBUG] 2021-10-24 22:08:05.886 [main] AbstractCollectionPersister - Static SQL for collection: ogedengbe.tosan.model.User.concepts
-[DEBUG] 2021-10-24 22:08:05.886 [main] AbstractCollectionPersister -  Row insert: update concept set user_user_id=? where concept_id=?
-[DEBUG] 2021-10-24 22:08:05.886 [main] AbstractCollectionPersister -  Row update: update concept set  where concept_id=?
-[DEBUG] 2021-10-24 22:08:05.887 [main] AbstractCollectionPersister -  Row delete: update concept set user_user_id=null where user_user_id=? and concept_id=?
-[DEBUG] 2021-10-24 22:08:05.887 [main] AbstractCollectionPersister -  One-shot delete: update concept set user_user_id=null where user_user_id=?
-[DEBUG] 2021-10-24 22:08:05.897 [main] AbstractEntityPersister - Static SQL for entity: ogedengbe.tosan.model.Concept
-[DEBUG] 2021-10-24 22:08:05.898 [main] AbstractEntityPersister -  Version select: select concept_id from concept where concept_id =?
-[DEBUG] 2021-10-24 22:08:05.898 [main] AbstractEntityPersister -  Snapshot select: select concept_.concept_id, concept_.category as category2_0_, concept_.category_id as category3_0_, concept_.name as name4_0_, concept_.description as descript5_0_, concept_.user_user_id as user_use7_0_, concept_.user_id as user_id6_0_ from concept concept_ where concept_.concept_id=?
-[DEBUG] 2021-10-24 22:08:05.898 [main] AbstractEntityPersister -  Insert 0: insert into concept (category, category_id, name, description, user_user_id, user_id, concept_id) values (?, ?, ?, ?, ?, ?, ?)
-[DEBUG] 2021-10-24 22:08:05.898 [main] AbstractEntityPersister -  Update 0: update concept set category=?, category_id=?, name=?, description=?, user_user_id=?, user_id=? where concept_id=?
-[DEBUG] 2021-10-24 22:08:05.898 [main] AbstractEntityPersister -  Delete 0: delete from concept where concept_id=?
-[DEBUG] 2021-10-24 22:08:05.898 [main] AbstractEntityPersister -  Identity insert: insert into concept (category, category_id, name, description, user_user_id, user_id) values (?, ?, ?, ?, ?, ?)
-[DEBUG] 2021-10-24 22:08:05.936 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@29896529]
-[DEBUG] 2021-10-24 22:08:05.937 [main] MetamodelGraphWalker - Visiting attribute path : category
-[DEBUG] 2021-10-24 22:08:05.937 [main] MetamodelGraphWalker - Visiting attribute path : categoryId
-[DEBUG] 2021-10-24 22:08:05.937 [main] MetamodelGraphWalker - Visiting attribute path : conceptName
-[DEBUG] 2021-10-24 22:08:05.938 [main] MetamodelGraphWalker - Visiting attribute path : description
-[DEBUG] 2021-10-24 22:08:05.938 [main] MetamodelGraphWalker - Visiting attribute path : user
-[DEBUG] 2021-10-24 22:08:05.947 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19fd43da]
-[DEBUG] 2021-10-24 22:08:05.949 [main] MetamodelGraphWalker - Visiting attribute path : user.concepts
-[DEBUG] 2021-10-24 22:08:05.949 [main] MetamodelGraphWalker - Property path deemed to be circular : user.concepts
-[DEBUG] 2021-10-24 22:08:05.949 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
-[DEBUG] 2021-10-24 22:08:05.949 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
-[DEBUG] 2021-10-24 22:08:05.949 [main] MetamodelGraphWalker - Visiting attribute path : user.password
-[DEBUG] 2021-10-24 22:08:05.949 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
-[DEBUG] 2021-10-24 22:08:05.950 [main] MetamodelGraphWalker - Visiting attribute path : userId
-[DEBUG] 2021-10-24 22:08:05.951 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2021-10-24 22:08:05.972 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2021-10-24 22:08:05.981 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.Concept)
+[DEBUG] 2021-10-25 23:12:36.292 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-10-25 23:12:36.347 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[DEBUG] 2021-10-25 23:12:36.401 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-10-25 23:12:36.451 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-10-25 23:12:36.522 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-10-25 23:12:36.530 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ffaaaf0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1dc76fa1]
+[DEBUG] 2021-10-25 23:12:36.622 [main] AnnotationBinder - Binding entity from annotated class: ogedengbe.tosan.model.User
+[DEBUG] 2021-10-25 23:12:36.659 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-10-25 23:12:36.668 [main] EntityBinder - Import with entity name User
+[DEBUG] 2021-10-25 23:12:36.670 [main] EntityBinder - Bind entity ogedengbe.tosan.model.User on table user
+[DEBUG] 2021-10-25 23:12:36.716 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.725 [main] PropertyBinder - MetadataSourceProcessor property userId with lazy=false
+[DEBUG] 2021-10-25 23:12:36.727 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:userId]
+[DEBUG] 2021-10-25 23:12:36.735 [main] SimpleValueBinder - building SimpleValue for userId
+[DEBUG] 2021-10-25 23:12:36.739 [main] PropertyBinder - Building property userId
+[DEBUG] 2021-10-25 23:12:36.746 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(user_id)]), userId, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-10-25 23:12:36.748 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2021-10-25 23:12:36.753 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=concepts, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.754 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.767 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.767 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=concepts_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.767 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='concepts_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-10-25 23:12:36.768 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2021-10-25 23:12:36.769 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2021-10-25 23:12:36.769 [main] CollectionBinder - Collection role: ogedengbe.tosan.model.User.concepts
+[DEBUG] 2021-10-25 23:12:36.771 [main] PropertyBinder - Building property concepts
+[DEBUG] 2021-10-25 23:12:36.771 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.773 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2021-10-25 23:12:36.773 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:firstName]
+[DEBUG] 2021-10-25 23:12:36.773 [main] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2021-10-25 23:12:36.776 [main] PropertyBinder - Building property firstName
+[DEBUG] 2021-10-25 23:12:36.777 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.780 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2021-10-25 23:12:36.780 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:lastName]
+[DEBUG] 2021-10-25 23:12:36.780 [main] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2021-10-25 23:12:36.781 [main] PropertyBinder - Building property lastName
+[DEBUG] 2021-10-25 23:12:36.781 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.781 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2021-10-25 23:12:36.781 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:password]
+[DEBUG] 2021-10-25 23:12:36.781 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2021-10-25 23:12:36.781 [main] PropertyBinder - Building property password
+[DEBUG] 2021-10-25 23:12:36.781 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.781 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2021-10-25 23:12:36.782 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.User:userName]
+[DEBUG] 2021-10-25 23:12:36.782 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2021-10-25 23:12:36.782 [main] PropertyBinder - Building property userName
+[DEBUG] 2021-10-25 23:12:36.783 [main] AnnotationBinder - Binding entity from annotated class: ogedengbe.tosan.model.Concept
+[DEBUG] 2021-10-25 23:12:36.783 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-10-25 23:12:36.783 [main] EntityBinder - Import with entity name Concept
+[DEBUG] 2021-10-25 23:12:36.783 [main] EntityBinder - Bind entity ogedengbe.tosan.model.Concept on table concept
+[DEBUG] 2021-10-25 23:12:36.785 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=concept_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.785 [main] PropertyBinder - MetadataSourceProcessor property conceptId with lazy=false
+[DEBUG] 2021-10-25 23:12:36.785 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:conceptId]
+[DEBUG] 2021-10-25 23:12:36.786 [main] SimpleValueBinder - building SimpleValue for conceptId
+[DEBUG] 2021-10-25 23:12:36.786 [main] PropertyBinder - Building property conceptId
+[DEBUG] 2021-10-25 23:12:36.786 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(concept_id)]), conceptId, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-10-25 23:12:36.786 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=category, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.786 [main] PropertyBinder - MetadataSourceProcessor property category with lazy=false
+[DEBUG] 2021-10-25 23:12:36.786 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:category]
+[DEBUG] 2021-10-25 23:12:36.786 [main] SimpleValueBinder - building SimpleValue for category
+[DEBUG] 2021-10-25 23:12:36.786 [main] PropertyBinder - Building property category
+[DEBUG] 2021-10-25 23:12:36.786 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=category_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.787 [main] PropertyBinder - MetadataSourceProcessor property categoryId with lazy=false
+[DEBUG] 2021-10-25 23:12:36.787 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:categoryId]
+[DEBUG] 2021-10-25 23:12:36.796 [main] SimpleValueBinder - building SimpleValue for categoryId
+[DEBUG] 2021-10-25 23:12:36.798 [main] PropertyBinder - Building property categoryId
+[DEBUG] 2021-10-25 23:12:36.798 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.799 [main] PropertyBinder - MetadataSourceProcessor property conceptName with lazy=false
+[DEBUG] 2021-10-25 23:12:36.799 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:conceptName]
+[DEBUG] 2021-10-25 23:12:36.799 [main] SimpleValueBinder - building SimpleValue for conceptName
+[DEBUG] 2021-10-25 23:12:36.799 [main] PropertyBinder - Building property conceptName
+[DEBUG] 2021-10-25 23:12:36.800 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.800 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2021-10-25 23:12:36.800 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ogedengbe.tosan.model.Concept:description]
+[DEBUG] 2021-10-25 23:12:36.800 [main] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2021-10-25 23:12:36.801 [main] PropertyBinder - Building property description
+[DEBUG] 2021-10-25 23:12:36.801 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-10-25 23:12:36.801 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(concept), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-10-25 23:12:36.804 [main] PropertyBinder - Building property user
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for userId
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for conceptId
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for category
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for categoryId
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for conceptName
+[DEBUG] 2021-10-25 23:12:36.808 [main] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2021-10-25 23:12:36.813 [main] PrimaryKey - Forcing column [user_id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2021-10-25 23:12:36.813 [main] PrimaryKey - Forcing column [concept_id] to be non-null as it is part of the primary key for table [concept]
+[DEBUG] 2021-10-25 23:12:36.817 [main] CollectionSecondPass - Second pass for collection: ogedengbe.tosan.model.User.concepts
+[DEBUG] 2021-10-25 23:12:36.817 [main] CollectionBinder - Binding a OneToMany: ogedengbe.tosan.model.User.concepts through a foreign key
+[DEBUG] 2021-10-25 23:12:36.820 [main] CollectionBinder - Mapping collection: ogedengbe.tosan.model.User.concepts -> concept
+[DEBUG] 2021-10-25 23:12:36.821 [main] TableBinder - Retrieving property ogedengbe.tosan.model.Concept.user
+[DEBUG] 2021-10-25 23:12:36.821 [main] CollectionSecondPass - Mapped collection key: user_user_id, one-to-many: ogedengbe.tosan.model.Concept
+[DEBUG] 2021-10-25 23:12:36.822 [main] InFlightMetadataCollectorImpl - Resolving reference to class: ogedengbe.tosan.model.User
+[DEBUG] 2021-10-25 23:12:36.829 [main] InFlightMetadataCollectorImpl - Resolving reference to class: ogedengbe.tosan.model.User
+[DEBUG] 2021-10-25 23:12:36.867 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - SessionFactory name : null
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - Statistics: disabled
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2021-10-25 23:12:36.868 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2021-10-25 23:12:36.869 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2021-10-25 23:12:36.869 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2021-10-25 23:12:36.870 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2021-10-25 23:12:36.871 [main] Settings - Default null ordering: NONE
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - Query language substitutions: {}
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - Named query checking : enabled
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - Second-level cache: disabled
+[DEBUG] 2021-10-25 23:12:36.873 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - JDBC batch size: 15
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2021-10-25 23:12:36.874 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2021-10-25 23:12:36.876 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2021-10-25 23:12:36.876 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2021-10-25 23:12:36.876 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2021-10-25 23:12:36.876 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2021-10-25 23:12:36.876 [main] Settings - JPA compliance - query : 
+[DEBUG] 2021-10-25 23:12:36.877 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2021-10-25 23:12:36.877 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2021-10-25 23:12:36.877 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2021-10-25 23:12:36.940 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2021-10-25 23:12:36.976 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2021-10-25 23:12:36.976 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, dialect=org.hibernate.dialect.MySQLDialect, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/IdeaProjects/ConceptCompendium/target/test-classes:/home/student/IdeaProjects/ConceptCompendium/target/classes:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 ogedengbe.tosan.persistence.UserDaoTest,getAllUsersSuccess, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2021-04-20, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.11+9-Ubuntu-0ubuntu2.20.04, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.4.0-89-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_compendium, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.11, user.dir=/home/student/IdeaProjects/ConceptCompendium, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@3e4e4c1, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.11+9-Ubuntu-0ubuntu2.20.04, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_compendium, java.class.version=55.0}
+[DEBUG] 2021-10-25 23:12:37.010 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2021-10-25 23:12:37.010 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2021-10-25 23:12:37.011 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2021-10-25 23:12:37.011 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ffaaaf0] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4a37191a]
+[DEBUG] 2021-10-25 23:12:37.185 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.Concept] is safe
+[DEBUG] 2021-10-25 23:12:37.192 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.Concept
+[DEBUG] 2021-10-25 23:12:37.260 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.Concept] is safe
+[DEBUG] 2021-10-25 23:12:37.261 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.Concept
+[DEBUG] 2021-10-25 23:12:37.735 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.User] is safe
+[DEBUG] 2021-10-25 23:12:37.735 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.User
+[DEBUG] 2021-10-25 23:12:37.740 [main] ClassLoaderAccessImpl - Not known whether passed class name [ogedengbe.tosan.model.User] is safe
+[DEBUG] 2021-10-25 23:12:37.740 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ogedengbe.tosan.model.User
+[DEBUG] 2021-10-25 23:12:37.813 [main] AbstractCollectionPersister - Static SQL for collection: ogedengbe.tosan.model.User.concepts
+[DEBUG] 2021-10-25 23:12:37.813 [main] AbstractCollectionPersister -  Row insert: update concept set user_user_id=? where concept_id=?
+[DEBUG] 2021-10-25 23:12:37.813 [main] AbstractCollectionPersister -  Row update: update concept set  where concept_id=?
+[DEBUG] 2021-10-25 23:12:37.813 [main] AbstractCollectionPersister -  Row delete: update concept set user_user_id=null where user_user_id=? and concept_id=?
+[DEBUG] 2021-10-25 23:12:37.813 [main] AbstractCollectionPersister -  One-shot delete: update concept set user_user_id=null where user_user_id=?
+[DEBUG] 2021-10-25 23:12:37.821 [main] AbstractEntityPersister - Static SQL for entity: ogedengbe.tosan.model.Concept
+[DEBUG] 2021-10-25 23:12:37.821 [main] AbstractEntityPersister -  Version select: select concept_id from concept where concept_id =?
+[DEBUG] 2021-10-25 23:12:37.821 [main] AbstractEntityPersister -  Snapshot select: select concept_.concept_id, concept_.category as category2_0_, concept_.category_id as category3_0_, concept_.name as name4_0_, concept_.description as descript5_0_, concept_.user_user_id as user_use6_0_ from concept concept_ where concept_.concept_id=?
+[DEBUG] 2021-10-25 23:12:37.821 [main] AbstractEntityPersister -  Insert 0: insert into concept (category, category_id, name, description, user_user_id, concept_id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2021-10-25 23:12:37.821 [main] AbstractEntityPersister -  Update 0: update concept set category=?, category_id=?, name=?, description=?, user_user_id=? where concept_id=?
+[DEBUG] 2021-10-25 23:12:37.821 [main] AbstractEntityPersister -  Delete 0: delete from concept where concept_id=?
+[DEBUG] 2021-10-25 23:12:37.821 [main] AbstractEntityPersister -  Identity insert: insert into concept (category, category_id, name, description, user_user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2021-10-25 23:12:37.857 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@671d03bb]
+[DEBUG] 2021-10-25 23:12:37.859 [main] MetamodelGraphWalker - Visiting attribute path : category
+[DEBUG] 2021-10-25 23:12:37.859 [main] MetamodelGraphWalker - Visiting attribute path : categoryId
+[DEBUG] 2021-10-25 23:12:37.859 [main] MetamodelGraphWalker - Visiting attribute path : conceptName
+[DEBUG] 2021-10-25 23:12:37.859 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2021-10-25 23:12:37.859 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2021-10-25 23:12:37.867 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f347d7]
+[DEBUG] 2021-10-25 23:12:37.874 [main] MetamodelGraphWalker - Visiting attribute path : user.concepts
+[DEBUG] 2021-10-25 23:12:37.874 [main] MetamodelGraphWalker - Property path deemed to be circular : user.concepts
+[DEBUG] 2021-10-25 23:12:37.874 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2021-10-25 23:12:37.874 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2021-10-25 23:12:37.874 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2021-10-25 23:12:37.874 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2021-10-25 23:12:37.874 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-25 23:12:37.906 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-25 23:12:37.915 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.Concept)
     - Returns
        - EntityReturnImpl(entity=ogedengbe.tosan.model.Concept, querySpaceUid=<gen:0>, path=ogedengbe.tosan.model.Concept)
           - EntityAttributeFetchImpl(entity=ogedengbe.tosan.model.User, querySpaceUid=<gen:1>, path=ogedengbe.tosan.model.Concept.user)
@@ -353,24 +345,23 @@
                 - alias suffix - 1_
                 - suffixed key columns - {user_id1_1_1_}
 
-[DEBUG] 2021-10-24 22:08:05.982 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.Concept [NONE]: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use7_0_0_, concept0_.user_id as user_id6_0_0_, user1_.user_id as user_id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.last_name as last_nam3_1_1_, user1_.password as password4_1_1_, user1_.username as username5_1_1_ from concept concept0_ left outer join user user1_ on concept0_.user_user_id=user1_.user_id where concept0_.concept_id=?
-[DEBUG] 2021-10-24 22:08:05.983 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5d318e91]
-[DEBUG] 2021-10-24 22:08:05.983 [main] MetamodelGraphWalker - Visiting attribute path : category
-[DEBUG] 2021-10-24 22:08:05.983 [main] MetamodelGraphWalker - Visiting attribute path : categoryId
-[DEBUG] 2021-10-24 22:08:05.983 [main] MetamodelGraphWalker - Visiting attribute path : conceptName
-[DEBUG] 2021-10-24 22:08:05.988 [main] MetamodelGraphWalker - Visiting attribute path : description
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Visiting attribute path : user
-[DEBUG] 2021-10-24 22:08:05.989 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@740b6628]
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Visiting attribute path : user.concepts
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Property path deemed to be circular : user.concepts
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Visiting attribute path : user.password
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
-[DEBUG] 2021-10-24 22:08:05.989 [main] MetamodelGraphWalker - Visiting attribute path : userId
-[DEBUG] 2021-10-24 22:08:05.989 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2021-10-24 22:08:05.990 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2021-10-24 22:08:05.990 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.Concept)
+[DEBUG] 2021-10-25 23:12:37.921 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.Concept [NONE]: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use6_0_0_, user1_.user_id as user_id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.last_name as last_nam3_1_1_, user1_.password as password4_1_1_, user1_.username as username5_1_1_ from concept concept0_ left outer join user user1_ on concept0_.user_user_id=user1_.user_id where concept0_.concept_id=?
+[DEBUG] 2021-10-25 23:12:37.921 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@33feda48]
+[DEBUG] 2021-10-25 23:12:37.921 [main] MetamodelGraphWalker - Visiting attribute path : category
+[DEBUG] 2021-10-25 23:12:37.921 [main] MetamodelGraphWalker - Visiting attribute path : categoryId
+[DEBUG] 2021-10-25 23:12:37.921 [main] MetamodelGraphWalker - Visiting attribute path : conceptName
+[DEBUG] 2021-10-25 23:12:37.922 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2021-10-25 23:12:37.924 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2021-10-25 23:12:37.925 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@15a3b42]
+[DEBUG] 2021-10-25 23:12:37.925 [main] MetamodelGraphWalker - Visiting attribute path : user.concepts
+[DEBUG] 2021-10-25 23:12:37.925 [main] MetamodelGraphWalker - Property path deemed to be circular : user.concepts
+[DEBUG] 2021-10-25 23:12:37.925 [main] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2021-10-25 23:12:37.925 [main] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2021-10-25 23:12:37.925 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2021-10-25 23:12:37.925 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2021-10-25 23:12:37.925 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-25 23:12:37.925 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-25 23:12:37.929 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.Concept)
     - Returns
        - EntityReturnImpl(entity=ogedengbe.tosan.model.Concept, querySpaceUid=<gen:0>, path=ogedengbe.tosan.model.Concept)
           - EntityAttributeFetchImpl(entity=ogedengbe.tosan.model.User, querySpaceUid=<gen:1>, path=ogedengbe.tosan.model.Concept.user)
@@ -385,34 +376,33 @@
                 - alias suffix - 1_
                 - suffixed key columns - {user_id1_1_1_}
 
-[DEBUG] 2021-10-24 22:08:05.990 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.Concept [READ]: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use7_0_0_, concept0_.user_id as user_id6_0_0_, user1_.user_id as user_id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.last_name as last_nam3_1_1_, user1_.password as password4_1_1_, user1_.username as username5_1_1_ from concept concept0_ left outer join user user1_ on concept0_.user_user_id=user1_.user_id where concept0_.concept_id=?
-[DEBUG] 2021-10-24 22:08:06.009 [main] Loader - Static select for action ACTION_MERGE on entity ogedengbe.tosan.model.Concept: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use7_0_0_, concept0_.user_id as user_id6_0_0_ from concept concept0_ where concept0_.concept_id=?
-[DEBUG] 2021-10-24 22:08:06.010 [main] Loader - Static select for action ACTION_REFRESH on entity ogedengbe.tosan.model.Concept: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use7_0_0_, concept0_.user_id as user_id6_0_0_ from concept concept0_ where concept0_.concept_id=?
-[DEBUG] 2021-10-24 22:08:06.011 [main] AbstractEntityPersister - Static SQL for entity: ogedengbe.tosan.model.User
-[DEBUG] 2021-10-24 22:08:06.011 [main] AbstractEntityPersister -  Version select: select user_id from user where user_id =?
-[DEBUG] 2021-10-24 22:08:06.011 [main] AbstractEntityPersister -  Snapshot select: select user_.user_id, user_.first_name as first_na2_1_, user_.last_name as last_nam3_1_, user_.password as password4_1_, user_.username as username5_1_ from user user_ where user_.user_id=?
-[DEBUG] 2021-10-24 22:08:06.011 [main] AbstractEntityPersister -  Insert 0: insert into user (first_name, last_name, password, username, user_id) values (?, ?, ?, ?, ?)
-[DEBUG] 2021-10-24 22:08:06.011 [main] AbstractEntityPersister -  Update 0: update user set first_name=?, last_name=?, password=?, username=? where user_id=?
-[DEBUG] 2021-10-24 22:08:06.011 [main] AbstractEntityPersister -  Delete 0: delete from user where user_id=?
-[DEBUG] 2021-10-24 22:08:06.011 [main] AbstractEntityPersister -  Identity insert: insert into user (first_name, last_name, password, username) values (?, ?, ?, ?)
-[DEBUG] 2021-10-24 22:08:06.011 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@122635ef]
-[DEBUG] 2021-10-24 22:08:06.011 [main] MetamodelGraphWalker - Visiting attribute path : concepts
-[DEBUG] 2021-10-24 22:08:06.012 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@262a1fad]
-[DEBUG] 2021-10-24 22:08:06.017 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@59a2388e]
-[DEBUG] 2021-10-24 22:08:06.018 [main] MetamodelGraphWalker - Visiting attribute path : concepts.category
-[DEBUG] 2021-10-24 22:08:06.018 [main] MetamodelGraphWalker - Visiting attribute path : concepts.categoryId
-[DEBUG] 2021-10-24 22:08:06.018 [main] MetamodelGraphWalker - Visiting attribute path : concepts.conceptName
-[DEBUG] 2021-10-24 22:08:06.018 [main] MetamodelGraphWalker - Visiting attribute path : concepts.description
-[DEBUG] 2021-10-24 22:08:06.018 [main] MetamodelGraphWalker - Visiting attribute path : concepts.user
-[DEBUG] 2021-10-24 22:08:06.019 [main] MetamodelGraphWalker - Property path deemed to be circular : concepts.user
-[DEBUG] 2021-10-24 22:08:06.019 [main] MetamodelGraphWalker - Visiting attribute path : concepts.userId
-[DEBUG] 2021-10-24 22:08:06.019 [main] MetamodelGraphWalker - Visiting attribute path : firstName
-[DEBUG] 2021-10-24 22:08:06.019 [main] MetamodelGraphWalker - Visiting attribute path : lastName
-[DEBUG] 2021-10-24 22:08:06.019 [main] MetamodelGraphWalker - Visiting attribute path : password
-[DEBUG] 2021-10-24 22:08:06.019 [main] MetamodelGraphWalker - Visiting attribute path : userName
-[DEBUG] 2021-10-24 22:08:06.019 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2021-10-24 22:08:06.020 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2021-10-24 22:08:06.028 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.User)
+[DEBUG] 2021-10-25 23:12:37.929 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.Concept [READ]: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use6_0_0_, user1_.user_id as user_id1_1_1_, user1_.first_name as first_na2_1_1_, user1_.last_name as last_nam3_1_1_, user1_.password as password4_1_1_, user1_.username as username5_1_1_ from concept concept0_ left outer join user user1_ on concept0_.user_user_id=user1_.user_id where concept0_.concept_id=?
+[DEBUG] 2021-10-25 23:12:37.955 [main] Loader - Static select for action ACTION_MERGE on entity ogedengbe.tosan.model.Concept: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use6_0_0_ from concept concept0_ where concept0_.concept_id=?
+[DEBUG] 2021-10-25 23:12:37.960 [main] Loader - Static select for action ACTION_REFRESH on entity ogedengbe.tosan.model.Concept: select concept0_.concept_id as concept_1_0_0_, concept0_.category as category2_0_0_, concept0_.category_id as category3_0_0_, concept0_.name as name4_0_0_, concept0_.description as descript5_0_0_, concept0_.user_user_id as user_use6_0_0_ from concept concept0_ where concept0_.concept_id=?
+[DEBUG] 2021-10-25 23:12:37.961 [main] AbstractEntityPersister - Static SQL for entity: ogedengbe.tosan.model.User
+[DEBUG] 2021-10-25 23:12:37.961 [main] AbstractEntityPersister -  Version select: select user_id from user where user_id =?
+[DEBUG] 2021-10-25 23:12:37.961 [main] AbstractEntityPersister -  Snapshot select: select user_.user_id, user_.first_name as first_na2_1_, user_.last_name as last_nam3_1_, user_.password as password4_1_, user_.username as username5_1_ from user user_ where user_.user_id=?
+[DEBUG] 2021-10-25 23:12:37.961 [main] AbstractEntityPersister -  Insert 0: insert into user (first_name, last_name, password, username, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2021-10-25 23:12:37.961 [main] AbstractEntityPersister -  Update 0: update user set first_name=?, last_name=?, password=?, username=? where user_id=?
+[DEBUG] 2021-10-25 23:12:37.961 [main] AbstractEntityPersister -  Delete 0: delete from user where user_id=?
+[DEBUG] 2021-10-25 23:12:37.961 [main] AbstractEntityPersister -  Identity insert: insert into user (first_name, last_name, password, username) values (?, ?, ?, ?)
+[DEBUG] 2021-10-25 23:12:37.961 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5ad6cc21]
+[DEBUG] 2021-10-25 23:12:37.961 [main] MetamodelGraphWalker - Visiting attribute path : concepts
+[DEBUG] 2021-10-25 23:12:37.972 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4293e066]
+[DEBUG] 2021-10-25 23:12:37.974 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6be6931f]
+[DEBUG] 2021-10-25 23:12:37.975 [main] MetamodelGraphWalker - Visiting attribute path : concepts.category
+[DEBUG] 2021-10-25 23:12:37.975 [main] MetamodelGraphWalker - Visiting attribute path : concepts.categoryId
+[DEBUG] 2021-10-25 23:12:37.980 [main] MetamodelGraphWalker - Visiting attribute path : concepts.conceptName
+[DEBUG] 2021-10-25 23:12:37.981 [main] MetamodelGraphWalker - Visiting attribute path : concepts.description
+[DEBUG] 2021-10-25 23:12:37.981 [main] MetamodelGraphWalker - Visiting attribute path : concepts.user
+[DEBUG] 2021-10-25 23:12:37.981 [main] MetamodelGraphWalker - Property path deemed to be circular : concepts.user
+[DEBUG] 2021-10-25 23:12:37.982 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2021-10-25 23:12:37.982 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2021-10-25 23:12:37.982 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-10-25 23:12:37.982 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2021-10-25 23:12:37.982 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-25 23:12:37.987 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-25 23:12:38.007 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.User)
     - Returns
        - EntityReturnImpl(entity=ogedengbe.tosan.model.User, querySpaceUid=<gen:0>, path=ogedengbe.tosan.model.User)
           - CollectionAttributeFetchImpl(collection=ogedengbe.tosan.model.User.concepts, querySpaceUid=<gen:1>, path=ogedengbe.tosan.model.User.concepts)
@@ -426,7 +416,7 @@
              - CollectionQuerySpaceImpl(uid=<gen:1>, collection=ogedengbe.tosan.model.User.concepts)
                 - SQL table alias mapping - concepts1_
                 - alias suffix - 1_
-                - suffixed key columns - {user_use7_0_1_}
+                - suffixed key columns - {user_use6_0_1_}
                 - entity-element alias suffix - 2_
                 - 2_entity-element suffixed key columns - concept_1_0_2_
                 - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
@@ -435,25 +425,24 @@
                       - alias suffix - 2_
                       - suffixed key columns - {concept_1_0_2_}
 
-[DEBUG] 2021-10-24 22:08:06.028 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.User [NONE]: select user0_.user_id as user_id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_, concepts1_.user_user_id as user_use7_0_1_, concepts1_.concept_id as concept_1_0_1_, concepts1_.concept_id as concept_1_0_2_, concepts1_.category as category2_0_2_, concepts1_.category_id as category3_0_2_, concepts1_.name as name4_0_2_, concepts1_.description as descript5_0_2_, concepts1_.user_user_id as user_use7_0_2_, concepts1_.user_id as user_id6_0_2_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
-[DEBUG] 2021-10-24 22:08:06.028 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@58f2466c]
-[DEBUG] 2021-10-24 22:08:06.032 [main] MetamodelGraphWalker - Visiting attribute path : concepts
-[DEBUG] 2021-10-24 22:08:06.034 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@64763e49]
-[DEBUG] 2021-10-24 22:08:06.034 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23468512]
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : concepts.category
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : concepts.categoryId
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : concepts.conceptName
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : concepts.description
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : concepts.user
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Property path deemed to be circular : concepts.user
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : concepts.userId
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : firstName
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : lastName
-[DEBUG] 2021-10-24 22:08:06.034 [main] MetamodelGraphWalker - Visiting attribute path : password
-[DEBUG] 2021-10-24 22:08:06.035 [main] MetamodelGraphWalker - Visiting attribute path : userName
-[DEBUG] 2021-10-24 22:08:06.035 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2021-10-24 22:08:06.035 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2021-10-24 22:08:06.035 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.User)
+[DEBUG] 2021-10-25 23:12:38.007 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.User [NONE]: select user0_.user_id as user_id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_, concepts1_.user_user_id as user_use6_0_1_, concepts1_.concept_id as concept_1_0_1_, concepts1_.concept_id as concept_1_0_2_, concepts1_.category as category2_0_2_, concepts1_.category_id as category3_0_2_, concepts1_.name as name4_0_2_, concepts1_.description as descript5_0_2_, concepts1_.user_user_id as user_use6_0_2_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
+[DEBUG] 2021-10-25 23:12:38.007 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@590765c4]
+[DEBUG] 2021-10-25 23:12:38.007 [main] MetamodelGraphWalker - Visiting attribute path : concepts
+[DEBUG] 2021-10-25 23:12:38.008 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@626d2016]
+[DEBUG] 2021-10-25 23:12:38.008 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2d5a1588]
+[DEBUG] 2021-10-25 23:12:38.008 [main] MetamodelGraphWalker - Visiting attribute path : concepts.category
+[DEBUG] 2021-10-25 23:12:38.008 [main] MetamodelGraphWalker - Visiting attribute path : concepts.categoryId
+[DEBUG] 2021-10-25 23:12:38.008 [main] MetamodelGraphWalker - Visiting attribute path : concepts.conceptName
+[DEBUG] 2021-10-25 23:12:38.008 [main] MetamodelGraphWalker - Visiting attribute path : concepts.description
+[DEBUG] 2021-10-25 23:12:38.008 [main] MetamodelGraphWalker - Visiting attribute path : concepts.user
+[DEBUG] 2021-10-25 23:12:38.008 [main] MetamodelGraphWalker - Property path deemed to be circular : concepts.user
+[DEBUG] 2021-10-25 23:12:38.008 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2021-10-25 23:12:38.010 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2021-10-25 23:12:38.011 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-10-25 23:12:38.011 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2021-10-25 23:12:38.014 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-25 23:12:38.014 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-25 23:12:38.015 [main] LoadPlanTreePrinter - LoadPlan(entity=ogedengbe.tosan.model.User)
     - Returns
        - EntityReturnImpl(entity=ogedengbe.tosan.model.User, querySpaceUid=<gen:0>, path=ogedengbe.tosan.model.User)
           - CollectionAttributeFetchImpl(collection=ogedengbe.tosan.model.User.concepts, querySpaceUid=<gen:1>, path=ogedengbe.tosan.model.User.concepts)
@@ -467,7 +456,7 @@
              - CollectionQuerySpaceImpl(uid=<gen:1>, collection=ogedengbe.tosan.model.User.concepts)
                 - SQL table alias mapping - concepts1_
                 - alias suffix - 1_
-                - suffixed key columns - {user_use7_0_1_}
+                - suffixed key columns - {user_use6_0_1_}
                 - entity-element alias suffix - 2_
                 - 2_entity-element suffixed key columns - concept_1_0_2_
                 - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
@@ -476,21 +465,20 @@
                       - alias suffix - 2_
                       - suffixed key columns - {concept_1_0_2_}
 
-[DEBUG] 2021-10-24 22:08:06.035 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.User [READ]: select user0_.user_id as user_id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_, concepts1_.user_user_id as user_use7_0_1_, concepts1_.concept_id as concept_1_0_1_, concepts1_.concept_id as concept_1_0_2_, concepts1_.category as category2_0_2_, concepts1_.category_id as category3_0_2_, concepts1_.name as name4_0_2_, concepts1_.description as descript5_0_2_, concepts1_.user_user_id as user_use7_0_2_, concepts1_.user_id as user_id6_0_2_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
-[DEBUG] 2021-10-24 22:08:06.036 [main] Loader - Static select for action ACTION_MERGE on entity ogedengbe.tosan.model.User: select user0_.user_id as user_id1_1_1_, user0_.first_name as first_na2_1_1_, user0_.last_name as last_nam3_1_1_, user0_.password as password4_1_1_, user0_.username as username5_1_1_, concepts1_.user_user_id as user_use7_0_3_, concepts1_.concept_id as concept_1_0_3_, concepts1_.concept_id as concept_1_0_0_, concepts1_.category as category2_0_0_, concepts1_.category_id as category3_0_0_, concepts1_.name as name4_0_0_, concepts1_.description as descript5_0_0_, concepts1_.user_user_id as user_use7_0_0_, concepts1_.user_id as user_id6_0_0_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
-[DEBUG] 2021-10-24 22:08:06.037 [main] Loader - Static select for action ACTION_REFRESH on entity ogedengbe.tosan.model.User: select user0_.user_id as user_id1_1_1_, user0_.first_name as first_na2_1_1_, user0_.last_name as last_nam3_1_1_, user0_.password as password4_1_1_, user0_.username as username5_1_1_, concepts1_.user_user_id as user_use7_0_3_, concepts1_.concept_id as concept_1_0_3_, concepts1_.concept_id as concept_1_0_0_, concepts1_.category as category2_0_0_, concepts1_.category_id as category3_0_0_, concepts1_.name as name4_0_0_, concepts1_.description as descript5_0_0_, concepts1_.user_user_id as user_use7_0_0_, concepts1_.user_id as user_id6_0_0_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
-[DEBUG] 2021-10-24 22:08:06.045 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2213639b]
-[DEBUG] 2021-10-24 22:08:06.049 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c26ba07]
-[DEBUG] 2021-10-24 22:08:06.050 [main] MetamodelGraphWalker - Visiting attribute path : category
-[DEBUG] 2021-10-24 22:08:06.050 [main] MetamodelGraphWalker - Visiting attribute path : categoryId
-[DEBUG] 2021-10-24 22:08:06.050 [main] MetamodelGraphWalker - Visiting attribute path : conceptName
-[DEBUG] 2021-10-24 22:08:06.050 [main] MetamodelGraphWalker - Visiting attribute path : description
-[DEBUG] 2021-10-24 22:08:06.050 [main] MetamodelGraphWalker - Visiting attribute path : user
-[DEBUG] 2021-10-24 22:08:06.050 [main] MetamodelGraphWalker - Property path deemed to be circular : user
-[DEBUG] 2021-10-24 22:08:06.050 [main] MetamodelGraphWalker - Visiting attribute path : userId
-[DEBUG] 2021-10-24 22:08:06.050 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2021-10-24 22:08:06.052 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2021-10-24 22:08:06.057 [main] LoadPlanTreePrinter - LoadPlan(collection=ogedengbe.tosan.model.User.concepts)
+[DEBUG] 2021-10-25 23:12:38.015 [main] EntityLoader - Static select for entity ogedengbe.tosan.model.User [READ]: select user0_.user_id as user_id1_1_0_, user0_.first_name as first_na2_1_0_, user0_.last_name as last_nam3_1_0_, user0_.password as password4_1_0_, user0_.username as username5_1_0_, concepts1_.user_user_id as user_use6_0_1_, concepts1_.concept_id as concept_1_0_1_, concepts1_.concept_id as concept_1_0_2_, concepts1_.category as category2_0_2_, concepts1_.category_id as category3_0_2_, concepts1_.name as name4_0_2_, concepts1_.description as descript5_0_2_, concepts1_.user_user_id as user_use6_0_2_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
+[DEBUG] 2021-10-25 23:12:38.016 [main] Loader - Static select for action ACTION_MERGE on entity ogedengbe.tosan.model.User: select user0_.user_id as user_id1_1_1_, user0_.first_name as first_na2_1_1_, user0_.last_name as last_nam3_1_1_, user0_.password as password4_1_1_, user0_.username as username5_1_1_, concepts1_.user_user_id as user_use6_0_3_, concepts1_.concept_id as concept_1_0_3_, concepts1_.concept_id as concept_1_0_0_, concepts1_.category as category2_0_0_, concepts1_.category_id as category3_0_0_, concepts1_.name as name4_0_0_, concepts1_.description as descript5_0_0_, concepts1_.user_user_id as user_use6_0_0_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
+[DEBUG] 2021-10-25 23:12:38.017 [main] Loader - Static select for action ACTION_REFRESH on entity ogedengbe.tosan.model.User: select user0_.user_id as user_id1_1_1_, user0_.first_name as first_na2_1_1_, user0_.last_name as last_nam3_1_1_, user0_.password as password4_1_1_, user0_.username as username5_1_1_, concepts1_.user_user_id as user_use6_0_3_, concepts1_.concept_id as concept_1_0_3_, concepts1_.concept_id as concept_1_0_0_, concepts1_.category as category2_0_0_, concepts1_.category_id as category3_0_0_, concepts1_.name as name4_0_0_, concepts1_.description as descript5_0_0_, concepts1_.user_user_id as user_use6_0_0_ from user user0_ left outer join concept concepts1_ on user0_.user_id=concepts1_.user_user_id where user0_.user_id=?
+[DEBUG] 2021-10-25 23:12:38.028 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4bc6da03]
+[DEBUG] 2021-10-25 23:12:38.029 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4f59a516]
+[DEBUG] 2021-10-25 23:12:38.029 [main] MetamodelGraphWalker - Visiting attribute path : category
+[DEBUG] 2021-10-25 23:12:38.029 [main] MetamodelGraphWalker - Visiting attribute path : categoryId
+[DEBUG] 2021-10-25 23:12:38.029 [main] MetamodelGraphWalker - Visiting attribute path : conceptName
+[DEBUG] 2021-10-25 23:12:38.029 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2021-10-25 23:12:38.029 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2021-10-25 23:12:38.029 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2021-10-25 23:12:38.029 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-10-25 23:12:38.031 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-10-25 23:12:38.031 [main] LoadPlanTreePrinter - LoadPlan(collection=ogedengbe.tosan.model.User.concepts)
     - Returns
        - CollectionReturnImpl(collection=ogedengbe.tosan.model.User.concepts, querySpaceUid=<gen:0>, path=[ogedengbe.tosan.model.User.concepts])
           - (collection element) CollectionFetchableElementEntityGraph(entity=ogedengbe.tosan.model.Concept, querySpaceUid=<gen:1>, path=[ogedengbe.tosan.model.User.concepts].<elements>)
@@ -498,7 +486,7 @@
        - CollectionQuerySpaceImpl(uid=<gen:0>, collection=ogedengbe.tosan.model.User.concepts)
           - SQL table alias mapping - concepts0_
           - alias suffix - 0_
-          - suffixed key columns - {user_use7_0_0_}
+          - suffixed key columns - {user_use6_0_0_}
           - entity-element alias suffix - 1_
           - 1_entity-element suffixed key columns - concept_1_0_1_
           - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
@@ -507,57 +495,195 @@
                 - alias suffix - 1_
                 - suffixed key columns - {concept_1_0_1_}
 
-[DEBUG] 2021-10-24 22:08:06.058 [main] CollectionLoader - Static select for collection ogedengbe.tosan.model.User.concepts: select concepts0_.user_user_id as user_use7_0_0_, concepts0_.concept_id as concept_1_0_0_, concepts0_.concept_id as concept_1_0_1_, concepts0_.category as category2_0_1_, concepts0_.category_id as category3_0_1_, concepts0_.name as name4_0_1_, concepts0_.description as descript5_0_1_, concepts0_.user_user_id as user_use7_0_1_, concepts0_.user_id as user_id6_0_1_ from concept concepts0_ where concepts0_.user_user_id=?
-[DEBUG] 2021-10-24 22:08:06.090 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
-[DEBUG] 2021-10-24 22:08:06.091 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
-[DEBUG] 2021-10-24 22:08:06.091 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
-[DEBUG] 2021-10-24 22:08:06.095 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2021-10-24 22:08:06.095 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[DEBUG] 2021-10-24 22:08:06.095 [main] NamedQueryRepository - Checking 0 named HQL queries
-[DEBUG] 2021-10-24 22:08:06.096 [main] NamedQueryRepository - Checking 0 named SQL queries
-[DEBUG] 2021-10-24 22:08:06.097 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1283ca23
-[DEBUG] 2021-10-24 22:08:06.098 [main] SessionFactoryRegistry - Registering SessionFactory: fa090652-a5a4-454b-8ba5-5eeee070a954 (<unnamed>)
-[DEBUG] 2021-10-24 22:08:06.098 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
-[DEBUG] 2021-10-24 22:08:06.346 [main] StatisticsInitiator - Statistics initialized [enabled=false]
-[DEBUG] 2021-10-24 22:08:06.360 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-[DEBUG] 2021-10-24 22:08:06.360 [main] TransactionImpl - begin
-[DEBUG] 2021-10-24 22:08:06.370 [main] ActionQueue - Executing identity-insert immediately
-[DEBUG] 2021-10-24 22:08:06.377 [main] SQL - insert into concept (category, category_id, name, description, user_user_id, user_id) values (?, ?, ?, ?, ?, ?)
-[DEBUG] 2021-10-24 22:08:06.419 [main] SqlExceptionHelper - could not execute statement [n/a]
-java.sql.SQLSyntaxErrorException: Unknown column 'user_user_id' in 'field list'
+[DEBUG] 2021-10-25 23:12:38.032 [main] CollectionLoader - Static select for collection ogedengbe.tosan.model.User.concepts: select concepts0_.user_user_id as user_use6_0_0_, concepts0_.concept_id as concept_1_0_0_, concepts0_.concept_id as concept_1_0_1_, concepts0_.category as category2_0_1_, concepts0_.category_id as category3_0_1_, concepts0_.name as name4_0_1_, concepts0_.description as descript5_0_1_, concepts0_.user_user_id as user_use6_0_1_ from concept concepts0_ where concepts0_.user_user_id=?
+[DEBUG] 2021-10-25 23:12:38.113 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2021-10-25 23:12:38.117 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2021-10-25 23:12:38.118 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2021-10-25 23:12:38.128 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-10-25 23:12:38.128 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2021-10-25 23:12:38.133 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2021-10-25 23:12:38.133 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2021-10-25 23:12:38.135 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2c1f8dbd
+[DEBUG] 2021-10-25 23:12:38.140 [main] SessionFactoryRegistry - Registering SessionFactory: f0e49316-1803-4be2-89bb-05b68518ac1f (<unnamed>)
+[DEBUG] 2021-10-25 23:12:38.140 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2021-10-25 23:12:38.525 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2021-10-25 23:12:38.570 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2021-10-25 23:12:38.592 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7436364d
+[DEBUG] 2021-10-25 23:12:38.636 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from ogedengbe.tosan.model.User as generatedAlias0
+[DEBUG] 2021-10-25 23:12:38.640 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-10-25 23:12:38.659 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'ogedengbe'
+       |     |  |  |  \-[IDENT] Node: 'tosan'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2021-10-25 23:12:38.687 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-10-25 23:12:38.714 [main] FromElement - FromClause{level=1} : ogedengbe.tosan.model.User (generatedAlias0) -> user0_
+[DEBUG] 2021-10-25 23:12:38.715 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.user_id
+[DEBUG] 2021-10-25 23:12:38.721 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-10-25 23:12:38.722 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.user_id ) ( FromClause{level=1} user user0_ ) )
+[DEBUG] 2021-10-25 23:12:38.731 [main] JoinProcessor - Using FROM fragment [user user0_]
+[DEBUG] 2021-10-25 23:12:38.732 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-10-25 23:12:38.734 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (user)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.user_id as user_id1_1_' {alias=generatedAlias0, className=ogedengbe.tosan.model.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.first_name as first_na2_1_, user0_.last_name as last_nam3_1_, user0_.password as password4_1_, user0_.username as username5_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'user user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=user,tableAlias=user0_,origin=null,columns={,className=ogedengbe.tosan.model.User}}
+
+[DEBUG] 2021-10-25 23:12:38.736 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-10-25 23:12:38.745 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from ogedengbe.tosan.model.User as generatedAlias0
+[DEBUG] 2021-10-25 23:12:38.745 [main] QueryTranslatorImpl - SQL: select user0_.user_id as user_id1_1_, user0_.first_name as first_na2_1_, user0_.last_name as last_nam3_1_, user0_.password as password4_1_, user0_.username as username5_1_ from user user0_
+[DEBUG] 2021-10-25 23:12:38.745 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-10-25 23:12:38.771 [main] SQL - select user0_.user_id as user_id1_1_, user0_.first_name as first_na2_1_, user0_.last_name as last_nam3_1_, user0_.password as password4_1_, user0_.username as username5_1_ from user user0_
+[DEBUG] 2021-10-25 23:12:38.796 [main] Loader - Result set row: 0
+[DEBUG] 2021-10-25 23:12:38.798 [main] Loader - Result row: EntityKey[ogedengbe.tosan.model.User#1]
+[DEBUG] 2021-10-25 23:12:38.813 [main] Loader - Result set row: 1
+[DEBUG] 2021-10-25 23:12:38.813 [main] Loader - Result row: EntityKey[ogedengbe.tosan.model.User#2]
+[DEBUG] 2021-10-25 23:12:38.813 [main] Loader - Result set row: 2
+[DEBUG] 2021-10-25 23:12:38.813 [main] Loader - Result row: EntityKey[ogedengbe.tosan.model.User#3]
+[DEBUG] 2021-10-25 23:12:38.813 [main] Loader - Result set row: 3
+[DEBUG] 2021-10-25 23:12:38.813 [main] Loader - Result row: EntityKey[ogedengbe.tosan.model.User#4]
+[DEBUG] 2021-10-25 23:12:38.814 [main] Loader - Result set row: 4
+[DEBUG] 2021-10-25 23:12:38.814 [main] Loader - Result row: EntityKey[ogedengbe.tosan.model.User#5]
+[DEBUG] 2021-10-25 23:12:38.814 [main] Loader - Result set row: 5
+[DEBUG] 2021-10-25 23:12:38.814 [main] Loader - Result row: EntityKey[ogedengbe.tosan.model.User#6]
+[DEBUG] 2021-10-25 23:12:38.814 [main] Loader - Result set row: 6
+[DEBUG] 2021-10-25 23:12:38.814 [main] Loader - Result row: EntityKey[ogedengbe.tosan.model.User#7]
+[DEBUG] 2021-10-25 23:12:38.815 [main] TwoPhaseLoad - Resolving attributes for [ogedengbe.tosan.model.User#1]
+[DEBUG] 2021-10-25 23:12:38.815 [main] TwoPhaseLoad - Processing attribute `concepts` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-25 23:12:38.815 [main] TwoPhaseLoad - Attribute (`concepts`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.825 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Bruce
+[DEBUG] 2021-10-25 23:12:38.825 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.825 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Wayne
+[DEBUG] 2021-10-25 23:12:38.825 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.825 [main] TwoPhaseLoad - Processing attribute `password` : value = gothamcity1
+[DEBUG] 2021-10-25 23:12:38.826 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.826 [main] TwoPhaseLoad - Processing attribute `userName` : value = bbatman
+[DEBUG] 2021-10-25 23:12:38.826 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.831 [main] TwoPhaseLoad - Done materializing entity [ogedengbe.tosan.model.User#1]
+[DEBUG] 2021-10-25 23:12:38.832 [main] TwoPhaseLoad - Resolving attributes for [ogedengbe.tosan.model.User#2]
+[DEBUG] 2021-10-25 23:12:38.832 [main] TwoPhaseLoad - Processing attribute `concepts` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-25 23:12:38.835 [main] TwoPhaseLoad - Attribute (`concepts`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.835 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Clark
+[DEBUG] 2021-10-25 23:12:38.835 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.835 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Kent
+[DEBUG] 2021-10-25 23:12:38.835 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.835 [main] TwoPhaseLoad - Processing attribute `password` : value = metropolis1
+[DEBUG] 2021-10-25 23:12:38.835 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.836 [main] TwoPhaseLoad - Processing attribute `userName` : value = supermn
+[DEBUG] 2021-10-25 23:12:38.836 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Done materializing entity [ogedengbe.tosan.model.User#2]
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Resolving attributes for [ogedengbe.tosan.model.User#3]
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Processing attribute `concepts` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Attribute (`concepts`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Diana
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Prince
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Processing attribute `password` : value = paradiseis1
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Processing attribute `userName` : value = wnwoman
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Done materializing entity [ogedengbe.tosan.model.User#3]
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Resolving attributes for [ogedengbe.tosan.model.User#4]
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Processing attribute `concepts` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-25 23:12:38.838 [main] TwoPhaseLoad - Attribute (`concepts`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.839 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Barry
+[DEBUG] 2021-10-25 23:12:38.839 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.839 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Allen
+[DEBUG] 2021-10-25 23:12:38.839 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.842 [main] TwoPhaseLoad - Processing attribute `password` : value = speedster1
+[DEBUG] 2021-10-25 23:12:38.842 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.842 [main] TwoPhaseLoad - Processing attribute `userName` : value = fflash
+[DEBUG] 2021-10-25 23:12:38.842 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.842 [main] TwoPhaseLoad - Done materializing entity [ogedengbe.tosan.model.User#4]
+[DEBUG] 2021-10-25 23:12:38.842 [main] TwoPhaseLoad - Resolving attributes for [ogedengbe.tosan.model.User#5]
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `concepts` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`concepts`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Hal
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Jordan
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `password` : value = lanterns1
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `userName` : value = glantern
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Done materializing entity [ogedengbe.tosan.model.User#5]
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Resolving attributes for [ogedengbe.tosan.model.User#6]
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `concepts` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`concepts`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Arthur
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Curry
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.843 [main] TwoPhaseLoad - Processing attribute `password` : value = altantis1
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Processing attribute `userName` : value = aquamn
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Done materializing entity [ogedengbe.tosan.model.User#6]
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Resolving attributes for [ogedengbe.tosan.model.User#7]
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Processing attribute `concepts` : value = NOT NULL COLLECTION
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Attribute (`concepts`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.844 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Carter
+[DEBUG] 2021-10-25 23:12:38.848 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.848 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Hall
+[DEBUG] 2021-10-25 23:12:38.848 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.848 [main] TwoPhaseLoad - Processing attribute `password` : value = thanagar1
+[DEBUG] 2021-10-25 23:12:38.848 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.848 [main] TwoPhaseLoad - Processing attribute `userName` : value = hawkmn
+[DEBUG] 2021-10-25 23:12:38.849 [main] TwoPhaseLoad - Attribute (`userName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-10-25 23:12:38.849 [main] TwoPhaseLoad - Done materializing entity [ogedengbe.tosan.model.User#7]
+[DEBUG] 2021-10-25 23:12:38.858 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [ogedengbe.tosan.model.User.concepts#7]
+[DEBUG] 2021-10-25 23:12:38.858 [main] SQL - select concepts0_.user_user_id as user_use6_0_0_, concepts0_.concept_id as concept_1_0_0_, concepts0_.concept_id as concept_1_0_1_, concepts0_.category as category2_0_1_, concepts0_.category_id as category3_0_1_, concepts0_.name as name4_0_1_, concepts0_.description as descript5_0_1_, concepts0_.user_user_id as user_use6_0_1_ from concept concepts0_ where concepts0_.user_user_id=?
+[DEBUG] 2021-10-25 23:12:38.885 [main] SqlExceptionHelper - could not extract ResultSet [n/a]
+java.sql.SQLSyntaxErrorException: Unknown column 'concepts0_.user_user_id' in 'field list'
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
-	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:410) ~[c3p0-0.9.5.3.jar:0.9.5.3]
-	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3112) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3705) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:335) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:292) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:198) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:193) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:178) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:697) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:689) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:684) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
-	at ogedengbe.tosan.persistence.ConceptDao.insert(ConceptDao.java:64) [classes/:?]
-	at ogedengbe.tosan.persistence.ConceptDaoTest.insertConceptSuccess(ConceptDaoTest.java:72) [test-classes/:?]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1005) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeQuery(NewProxyPreparedStatement.java:379) ~[c3p0-0.9.5.3.jar:0.9.5.3]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:60) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.getResultSet(AbstractLoadPlanBasedLoader.java:418) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:191) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:121) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:86) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer.initialize(AbstractLoadPlanBasedCollectionInitializer.java:87) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.persister.collection.AbstractCollectionPersister.initialize(AbstractCollectionPersister.java:706) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.DefaultInitializeCollectionEventListener.onInitializeCollection(DefaultInitializeCollectionEventListener.java:76) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.initializeCollection(SessionImpl.java:2295) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection$4.doWork(AbstractPersistentCollection.java:589) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:264) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:585) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.forceInitialization(AbstractPersistentCollection.java:777) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.internal.StatefulPersistenceContext.initializeNonLazyCollections(StatefulPersistenceContext.java:952) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:359) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2810) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2792) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2624) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2619) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:396) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1547) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1557) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1525) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at ogedengbe.tosan.persistence.UserDao.getAll(UserDao.java:45) [classes/:?]
+	at ogedengbe.tosan.persistence.UserDaoTest.getAllUsersSuccess(UserDaoTest.java:38) [test-classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
@@ -609,5 +735,7 @@ java.sql.SQLSyntaxErrorException: Unknown column 'user_user_id' in 'field list'
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:?]
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220) [junit-rt.jar:?]
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53) [junit-rt.jar:?]
-[WARN ] 2021-10-24 22:08:06.437 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
-[ERROR] 2021-10-24 22:08:06.437 [main] SqlExceptionHelper - Unknown column 'user_user_id' in 'field list'
+[WARN ] 2021-10-25 23:12:38.897 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+[ERROR] 2021-10-25 23:12:38.897 [main] SqlExceptionHelper - Unknown column 'concepts0_.user_user_id' in 'field list'
+[DEBUG] 2021-10-25 23:12:38.898 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-10-25 23:12:38.902 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false

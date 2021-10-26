@@ -3,6 +3,9 @@ package ogedengbe.tosan.persistence;
 import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
 import ogedengbe.tosan.test.util.Database;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -18,6 +21,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDaoTest {
 
     UserDao dao;
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
      * Creating the dao.
@@ -51,7 +57,7 @@ class UserDaoTest {
     }
 
     /**
-     * Verify successful retrival of user by Id.
+     * Verify successful retrieval of user by Id.
      */
     @Test
     void getByIdSuccess() {
@@ -69,27 +75,27 @@ class UserDaoTest {
         User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
         int userId = dao.insert(newUser);
         assertNotEquals(0, userId);
-        User insertedUser = (User) dao.getById(userId);
+        User insertedUser = dao.getById(userId);
         assertEquals("Peter", insertedUser.getFirstName());
         assertEquals("Parker", insertedUser.getLastName());
     }
 
-
     /**
      * Verify successful insert of a user and concept
      */
-    //@Test
-    //void insertWithConceptSuccess() {
-        //User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
-        //String conceptDescription = "Concept 1";
-        //Concept concept = new Concept(17, 7, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
-        //newUser.addConcept(concept);
-        //userId = dao.saveOrUpdate(newUser);
-        //assertNotEquals(0,userId);
-        //User insertedUser = (User) dao.getById(userId);
-        //assertEquals("Peter", insertedUser.getFirstName());
-        //assertEquals(17, insertedUser.getConceptSet().size());
-    //}
+    @Test
+    void insertUserWithConceptSuccess() {
+        User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
+        Concept newConcept = new Concept(newUser, 7, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
+        newUser.addConcept(newConcept);
+
+        int userId = dao.insert(newUser);
+
+        assertNotEquals(0,userId);
+        User insertedUser = dao.getById(userId);
+        assertEquals("Peter", insertedUser.getFirstName());
+        assertEquals(17, insertedUser.getConcepts().size());
+    }
 
 
     /**
@@ -97,7 +103,6 @@ class UserDaoTest {
      */
     @Test
     void deleteUserSuccess() {
-        User deletedUser = (User) dao.getById(3);
         dao.delete(dao.getById(3));
         assertNull(dao.getById(3));
     }
@@ -110,11 +115,11 @@ class UserDaoTest {
     void updateUserSuccess() {
         String newFirstName = "John";
         String newLastName = "Stewart";
-        User userToUpdate = (User) dao.getById(5);
+        User userToUpdate = dao.getById(5);
         userToUpdate.setFirstName(newFirstName);
         userToUpdate.setLastName(newLastName);
         dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = (User) dao.getById(5);
+        User retrievedUser = dao.getById(5);
         assertEquals("John", retrievedUser.getFirstName());
         assertEquals("Stewart", retrievedUser.getLastName());
     }

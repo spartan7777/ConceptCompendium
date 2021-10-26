@@ -19,10 +19,6 @@ public class Concept {
     @GenericGenerator(name = "native", strategy = "native")
     private int conceptId;
 
-    @Column(name = "user_id")
-    @JoinColumn(name = "user_id")
-    private int userId;
-
     @Column(name = "name")
     private String conceptName;
 
@@ -36,7 +32,7 @@ public class Concept {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "user_id")
+    //@JoinColumn(name = "user_id", referencedColumnName = "user_id")
     private User user;
 
     /**
@@ -48,16 +44,15 @@ public class Concept {
     /**
      * Instantiates a new Concept.
      * @param conceptId     the concept id
-     * @param userId        the user id
+
      * @param conceptName   the concept name
      * @param category      the concept category
      * @param categoryId    the concept category id
      * @param description   the concept description
      */
-    public Concept(int conceptId, int userId, String conceptName, String category, int categoryId, String description) {
-        //this.user = user;
+    public Concept(User user, int conceptId, String conceptName, String category, int categoryId, String description) {
+        this.user = user;
         this.conceptId = conceptId;
-        this.userId = userId;
         this.conceptName = conceptName;
         this.category = category;
         this.categoryId = categoryId;
@@ -129,18 +124,19 @@ public class Concept {
     }
 
 
-    //public void setUser(User user) {
-     //   this.user = user;
-  //  }
+    public void setUser(User user) {
+       this.user = user;
+    }
 
-    //public User getUser() {
-     //   return user;
-   // }
+    public User getUser() {
+       return user;
+    }
 
     @Override
     public String toString() {
         return "Concept{" +
-                "id=" + conceptId +
+                "User=" + user +
+                "id=" + conceptId + '\'' +
                 ", Concept Name='" + conceptName + '\'' +
                 ", Category='" + category + '\'' +
                 ", Category Id='" + categoryId + '\''+

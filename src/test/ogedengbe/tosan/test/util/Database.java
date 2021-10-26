@@ -24,7 +24,7 @@ public class Database {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     // create an object of the class Database
-    private static Database instance = new Database();
+    private static final Database instance = new Database();
 
     private Properties properties;
 
@@ -95,22 +95,25 @@ public class Database {
         Statement stmt = null;
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream inputStream = classloader.getResourceAsStream(sqlFile);
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
+        try {
+            assert inputStream != null;
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
 
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connect();
-            stmt = connection.createStatement();
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                connect();
+                stmt = connection.createStatement();
 
-            while (true) {
-                String sql = br.readLine();
-                if (sql == null) {
-                    break;
+                while (true) {
+                    String sql = br.readLine();
+                    if (sql == null) {
+                        break;
+                    }
+                    logger.info(sql);
+                    stmt.executeUpdate(sql);
+
                 }
-                logger.info(sql);
-                stmt.executeUpdate(sql);
 
             }
-
         } catch (SQLException se) {
             logger.error(se);
         } catch (Exception e) {
