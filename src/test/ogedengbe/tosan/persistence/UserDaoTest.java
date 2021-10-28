@@ -3,9 +3,6 @@ package ogedengbe.tosan.persistence;
 import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
 import ogedengbe.tosan.test.util.Database;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -21,6 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDaoTest {
 
     UserDao dao;
+    ConceptDao daoTwo;
 
     /**
      * Creating the dao.
@@ -28,6 +26,7 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
         dao = new UserDao();
+        daoTwo = new ConceptDao();
 
         Database database = Database.getInstance();
         database.runSQL("cleandb3.sql");
@@ -70,7 +69,7 @@ class UserDaoTest {
     @Test
     void insertUserSuccess() {
         //User newUser = null;
-        User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
+        User newUser = new User("Peter", "Parker", "spidermn", "dailybugle1");
         int userId = dao.insert(newUser);
         assertNotEquals(0, userId);
         User insertedUser = dao.getById(userId);
@@ -83,8 +82,9 @@ class UserDaoTest {
      */
     @Test
     void insertUserWithConceptSuccess() {
-        User newUser = new User(8,"Peter", "Parker", "spidermn", "dailybugle1");
-        Concept newConcept = new Concept(newUser, 17, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
+
+        User newUser = new User("Peter", "Parker", "spidermn", "dailybugle1");
+        Concept newConcept = new Concept(newUser, "Kyber Crystal", "Resources", 6, "These are rare Force-attuned crystals that grow throughout the galaxy. They concentrate energy in a unique manner through resonating with the Force, and as such are used in the creation of lightsaber and other laser bladed weapons.");
 
         newUser.addConcept(newConcept);
 
@@ -94,8 +94,10 @@ class UserDaoTest {
         assertNotEquals(0,userId);
         User insertedUser = dao.getById(userId);
         assertEquals("Peter", insertedUser.getFirstName());
-        assertEquals(8, insertedUser.getUserId());
-        assertEquals(17, insertedUserTwo.getConcepts().size());
+        //assertEquals(8, insertedUser.getUserId());
+        assertEquals(17, daoTwo.getAll().size());
+        assertEquals(1, insertedUserTwo.getConcepts().size());
+
     }
 
     /**

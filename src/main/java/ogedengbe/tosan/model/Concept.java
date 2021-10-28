@@ -59,6 +59,14 @@ public class Concept {
         this.description = description;
     }
 
+    public Concept(User newUser, String conceptName, String category, int categoryId, String description) {
+        this.conceptId = conceptId;
+        this.conceptName = conceptName;
+        this.category = category;
+        this.categoryId = categoryId;
+        this.description = description;
+    }
+
     /**
      * Gets concept id.
      * @return the concept id
