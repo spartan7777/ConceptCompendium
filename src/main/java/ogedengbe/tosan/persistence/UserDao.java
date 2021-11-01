@@ -1,8 +1,6 @@
 package ogedengbe.tosan.persistence;
 
-import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.User;
-//import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -22,14 +20,11 @@ import java.util.List;
 
 class UserDao {
 
-    //UserDao dao;
-
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     /**
      * Gets all users.
-     *
      * @return the all users
      */
     public List<User> getAll() {
@@ -61,7 +56,7 @@ class UserDao {
      * @return id of the inserted user
      */
     public int insert(User user) {
-        int id = 0;
+        int id;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(user);
@@ -96,26 +91,6 @@ class UserDao {
         session.delete(user);
         transaction.commit();
         session.close();
-    }
-
-
-    /**
-     * Gets all users by last name.
-     * @param lastName the last name to search by
-     * @return the all users
-     */
-    public List<User> getUsersByLastName(String lastName) {
-
-        Session session = sessionFactory.openSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("lastName");
-        query.where(builder.like(propertyPath, "%" + lastName + "%"));
-        List<User> users = session.createQuery(query).getResultList();
-        session.close();
-        return users;
     }
 
 

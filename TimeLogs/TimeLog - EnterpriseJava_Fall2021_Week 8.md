@@ -1,11 +1,11 @@
-Tosan Ogedengbe
-Enterprise Java Fall 2021: Weekly Reflection - Time Logs
+### Tosan Ogedengbe
+#### Enterprise Java Fall 2021: Weekly Reflection
 
-Week 8
-10/18/2021 - 10/24/2021 - 26 hours
+#### Week 8
+#### 10/18/2021 - 10/24/2021 - *26 Hours*
 
 
-RELEVANT ITEMS:
+#### RELEVANT ITEMS:
 1. Reviewed all Week 4 Videos
 2. Worked on all the Hibernate Demos to get the materials covered in the Week 4 Videos into the Concept Compendium
 3. Reviewed all Week 5 Videos
@@ -21,8 +21,7 @@ RELEVANT ITEMS:
 13. Worked towards completion of all required materials for the submission for Checkpoint 2
 
 
-ACCOMPLISHMENTS:  
-Went over all of the Week 4 and Week 5 videos once again to complete all of the DAO and classes in the test part of the project. Was able to get the cleandb.sql file added
+**ACCOMPLISHMENTS:** Went over all of the Week 4 and Week 5 videos once again to complete all of the DAO and classes in the test part of the project. Was able to get the cleandb.sql file added
 into the project, and got the sql in that file to work after troubleshooting assistance during the class period. Changed the data in the test database and made that more 
 conducive to testing and using the cleandb.sql files. Cleaned up a lot of the code and worked out a lot of the errors and warnings that hibernate was noticing. Removed two 
 columns (the keyword columns) from the databases and the code as I found that these were counterproductive to the concept creation process when adding in sample data. It
@@ -38,8 +37,7 @@ reason for my test failures. Went back to basics and re-worked all the DAOs in t
 User DAO. 
 
 
-SETBACKS:  
-I found myself needing to do a lot of additional research and study to make sure I could get the DAOs to work. I needed to go back and take a real deep look at the code and
+**SETBACKS:** I found myself needing to do a lot of additional research and study to make sure I could get the DAOs to work. I needed to go back and take a real deep look at the code and
 the process of that the DAOs do, and how they transition to a Generic one. This was the major setback this week as I failed to see the connections to how the generic DAO
 works because I ignored the steps before trying to implement it. I am still not in an optimal place in terms of progress, as I continue to make up time that life takes away
 from me, and I have compounded that with trying to basically jump over vital steps. I still need to complete Checkpoint 2 so I can move on to Checkpoint 3. In order to get
