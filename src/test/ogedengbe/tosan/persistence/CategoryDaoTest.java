@@ -2,10 +2,11 @@ package ogedengbe.tosan.persistence;
 
 import ogedengbe.tosan.model.Category;
 import ogedengbe.tosan.test.util.Database;
-import org.junit.jupiter.api.Assertions;
+
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 
 
@@ -34,7 +35,7 @@ public class CategoryDaoTest {
     @Test
     void getAllCategorySuccess() {
         List<Category> categories = dao.getAll();
-        Assertions.assertEquals(9, categories.size());
+        assertEquals(9, categories.size());
     }
 
     /**
@@ -43,7 +44,7 @@ public class CategoryDaoTest {
     @Test
     void getCategoryByCategorySuccess() {
         List<Category> categories = dao.getByPropertyLike("categoryName", "Weapons");
-        Assertions.assertEquals(1, categories.size());
+        assertEquals(1, categories.size());
     }
 
 
@@ -53,8 +54,8 @@ public class CategoryDaoTest {
     @Test
     void getByIdSuccess() {
         Category retrievedCategory = dao.getById(6);
-        Assertions.assertNotNull(retrievedCategory);
-        Assertions.assertEquals("Resources", retrievedCategory.getCategoryName());
+        assertNotNull(retrievedCategory);
+        assertEquals("Resources", retrievedCategory.getCategoryName());
     }
 
     /**
@@ -63,7 +64,7 @@ public class CategoryDaoTest {
     @Test
     void getByPropertyEqualSuccess() {
         List<Category> resultSetOne = dao.getByPropertyEqual("categoryName", "Vehicles");
-        Assertions.assertEquals(1, resultSetOne.size());
+        assertEquals(1, resultSetOne.size());
     }
 
     /**
@@ -72,7 +73,7 @@ public class CategoryDaoTest {
     @Test
     void getByPropertyLikeSuccess() {
         List<Category> categories = dao.getByPropertyLike("categoryName", "a");
-        Assertions.assertEquals(6, categories.size());
+        assertEquals(6, categories.size());
     }
 
 }

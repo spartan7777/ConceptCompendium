@@ -1,12 +1,10 @@
 package ogedengbe.tosan.persistence;
 
-import ogedengbe.tosan.model.Concept;
 import ogedengbe.tosan.model.Category;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
