@@ -57,6 +57,12 @@ public class Role {
     }
 
 
+    public Role(int roleId, String roleName, String userName) {
+        this.roleId = roleId;
+        this.roleName = roleName;
+        this.userName = userName;
+    }
+
     /**
      * Gets id.
      * @return the id
@@ -121,6 +127,7 @@ public class Role {
     public void setUser(User user) {
         this.user = user;
     }
+
 
     @Override
     public String toString() {

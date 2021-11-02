@@ -4,6 +4,8 @@ import ogedengbe.tosan.model.Role;
 import ogedengbe.tosan.model.User;
 import ogedengbe.tosan.test.util.Database;
 
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -52,26 +54,6 @@ class RoleDaoTest {
         Role retrievedRole = dao.getById(7);
         assertNotNull(retrievedRole);
         assertEquals("Admin", retrievedRole.getRoleName());
-    }
-
-    /**
-     * Verify successful insert of a user and role
-     */
-    @Test
-    void insertUserWithRoleSuccess() {
-        User newUser = new User("Peter", "Parker", "spidermn", "dailybugle1");
-        Role newRole = new Role(newUser, "admin", "spidermn");
-
-        newUser.addRole(newRole);
-        int userId = daoTwo.insert(newUser);
-        int roleId = dao.insert(newRole);
-        User insertedUserTwo = daoTwo.saveOrUpdate(newUser);
-        assertNotEquals(0,userId);
-        User insertedUser = daoTwo.getById(userId);
-        Role insertedRole = dao.getById(roleId);
-        assertEquals("Peter", insertedUser.getUserName());
-        assertEquals(8, dao.getAll().size());
-        assertEquals("Admin", insertedRole.getRoleName());
     }
 
     /**
