@@ -51,7 +51,7 @@ class RoleDaoTest {
     void getByIdSuccess() {
         Role retrievedRole = dao.getById(7);
         assertNotNull(retrievedRole);
-        assertEquals("Carter", retrievedRole.getRoleName());
+        assertEquals("Admin", retrievedRole.getRoleName());
     }
 
     /**
@@ -63,16 +63,15 @@ class RoleDaoTest {
         Role newRole = new Role(newUser, "admin", "spidermn");
 
         newUser.addRole(newRole);
-
-        int userId = dao.insert(newUser);
-        User insertedUserTwo = dao.saveOrUpdate(newUser);
-
+        int userId = daoTwo.insert(newUser);
+        int roleId = dao.insert(newRole);
+        User insertedUserTwo = daoTwo.saveOrUpdate(newUser);
         assertNotEquals(0,userId);
-        assertNotEquals(0,roleId);
-        User insertedUser = dao.getById(userId);
+        User insertedUser = daoTwo.getById(userId);
+        Role insertedRole = dao.getById(roleId);
         assertEquals("Peter", insertedUser.getUserName());
-        assertEquals(17, daoTwo.getAll().size());
-        assertEquals(1, insertedUserTwo.getRole().size());
+        assertEquals(8, dao.getAll().size());
+        assertEquals("Admin", insertedRole.getRoleName());
     }
 
     /**

@@ -12,6 +12,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -93,6 +94,13 @@ class RoleDao {
         session.close();
     }
 
+    public String getRoleName(String roleName) {
+        Session session = sessionFactory.openSession();
+        Role role = session.get(Role.class, roleName);
+        session.close();
+        return roleName;
+    }
 }
+
 
 
