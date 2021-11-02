@@ -34,7 +34,7 @@ public class CategoryDaoTest {
     @Test
     void getAllCategorySuccess() {
         List<Category> categories = dao.getAll();
-        Assertions.assertEquals(16, categories.size());
+        Assertions.assertEquals(9, categories.size());
     }
 
     /**
@@ -42,7 +42,7 @@ public class CategoryDaoTest {
      */
     @Test
     void getCategoryByCategorySuccess() {
-        List<Category> categories = dao.getByPropertyLike("category", "Weapons");
+        List<Category> categories = dao.getByPropertyLike("categoryName", "Weapons");
         Assertions.assertEquals(1, categories.size());
     }
 
@@ -54,7 +54,7 @@ public class CategoryDaoTest {
     void getByIdSuccess() {
         Category retrievedCategory = dao.getById(6);
         Assertions.assertNotNull(retrievedCategory);
-        Assertions.assertEquals("Creatures", retrievedCategory.getCategoryName());
+        Assertions.assertEquals("Resources", retrievedCategory.getCategoryName());
     }
 
     /**
@@ -71,8 +71,8 @@ public class CategoryDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Category> categories = dao.getByPropertyLike("categoryName", "abst");
-        Assertions.assertEquals(1, categories.size());
+        List<Category> categories = dao.getByPropertyLike("categoryName", "a");
+        Assertions.assertEquals(6, categories.size());
     }
 
 }

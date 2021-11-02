@@ -34,7 +34,6 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Concept> concepts = new HashSet<>();
-    private Set<Role> roles = new HashSet<>();
 
 
     /**
@@ -180,41 +179,6 @@ public class User {
         concept.setUser(null);
     }
 
-    /**
-     * Gets roles.
-     * @return the roles
-     */
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    /**
-     * Sets roles.
-     * @param roles the roles
-     */
-    public void SetRoles(Set<Role> roles) {
-        this.roles = roles;
-    }
-
-    /**
-     * Adds a role.
-     * @param role the roles
-     */
-    public void addRole(Role role) {
-        roles.add(role);
-        role.setUser(this);
-    }
-
-    /**
-     * Removes a role.
-     * @param role the roles
-     */
-    public void removeRole(Role role) {
-        roles.remove(role);
-        role.setUser(null);
-    }
-
-
     @Override
     public String toString() {
         return "User{" +
@@ -225,7 +189,5 @@ public class User {
                 ", password=" + password +
                 '}';
     }
-
-
 
 }

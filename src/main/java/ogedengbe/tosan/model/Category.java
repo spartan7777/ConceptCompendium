@@ -34,7 +34,6 @@ public class Category {
      * @param categoryId   the category id
      * @param categoryName the category name
      * @param definition   the category definition
-
      */
     public Category(int categoryId, String categoryName, String definition) {
         this.categoryId = categoryId;
@@ -48,10 +47,12 @@ public class Category {
         this.definition = definition;
     }
 
-
     public Category(String categoryName, String definition) {
         this.categoryName = categoryName;
         this.definition = definition;
+    }
+
+    public Category() {
     }
 
     /**
