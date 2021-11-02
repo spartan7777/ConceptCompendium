@@ -9,7 +9,7 @@
 1. Collected all the articles, images and data needed for the Professional Development Activity Project Ghidra
 2. Started work on the written report for the Professional Development Activity Project Ghidra
 3. Started work on the PowerPoint presentation for the Professional Development Activity Project Ghidra
-4. Completed full unit testing on all entity DAOs (User, Concept) in the Concept Compendium
+4. Completed full unit testing on several entity DAOs (User, Concept) in the Concept Compendium
 5. Successfully created and unit tested a UserDao and ConceptDao for the Concept Compendium
 6. Worked on adding and completing the final entity DAOs (Role, Category) in the Concept Compendium
 7. Did additional work on refactoring the code for all model classes in both the test and production layer for the Concept Compendium
