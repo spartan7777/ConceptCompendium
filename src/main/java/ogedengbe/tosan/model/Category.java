@@ -25,14 +25,9 @@ public class Category {
     @Column(name = "definition")
     private String definition;
 
-    @ManyToOne
+    @OneToOne
+    @JoinColumn(name = "category_id", referencedColumnName = "category_id")
     private Concept concept;
-
-    /**
-     * Instantiates a new Category.
-     */
-    public Category() {
-    }
 
     /**
      * Instantiates a new Category.
@@ -42,8 +37,19 @@ public class Category {
 
      */
     public Category(int categoryId, String categoryName, String definition) {
-        this.concept = concept;
         this.categoryId = categoryId;
+        this.categoryName = categoryName;
+        this.definition = definition;
+    }
+
+    public Category(Concept concept, String categoryName, String definition) {
+        this.concept = concept;
+        this.categoryName = categoryName;
+        this.definition = definition;
+    }
+
+
+    public Category(String categoryName, String definition) {
         this.categoryName = categoryName;
         this.definition = definition;
     }
@@ -53,7 +59,6 @@ public class Category {
      * @return the category id
      */
     public int getCategoryId() {
-
         return categoryId;
     }
 
@@ -62,7 +67,6 @@ public class Category {
      * @param categoryId the category id
      */
     public void setCategoryId(int categoryId) {
-
         this.categoryId = categoryId;
     }
 
@@ -71,7 +75,6 @@ public class Category {
      * @return the category name
      */
     public String getCategoryName() {
-
         return categoryName;
     }
 
@@ -80,7 +83,6 @@ public class Category {
      * @param categoryName the category name
      */
     public void setCategoryName(String categoryName) {
-
         this.categoryName = categoryName;
     }
 
@@ -89,7 +91,6 @@ public class Category {
      * @return the category definition
      */
     public String getCategoryDefinition() {
-
         return definition;
     }
 
@@ -98,9 +99,17 @@ public class Category {
      * @param definition the category definition
      */
     public void setCategoryDefinition(String definition) {
-
         this.definition = definition;
     }
+
+    public void setConcept(Concept concept) {
+        this.concept = concept;
+    }
+
+    public Concept getConcept() {
+        return concept;
+    }
+
 
     @Override
     public String toString() {
@@ -112,3 +121,6 @@ public class Category {
     }
 
 }
+
+
+

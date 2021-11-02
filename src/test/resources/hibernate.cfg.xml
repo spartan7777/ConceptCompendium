@@ -22,6 +22,8 @@
 
         <mapping class="ogedengbe.tosan.model.User"/>
         <mapping class="ogedengbe.tosan.model.Concept"/>
+        <mapping class="ogedengbe.tosan.model.Concept"/>
+        <mapping class="ogedengbe.tosan.model.Category"/>
 
     </session-factory>
 

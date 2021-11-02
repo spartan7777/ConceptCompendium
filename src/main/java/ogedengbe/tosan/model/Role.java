@@ -26,6 +26,11 @@ public class Role {
     @Column(name = "username")
     private String userName;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "roleId")
+    private User user;
+    private Set<Role> roleSet;
+
 
     /**
      * Instantiates a new Role.
@@ -39,8 +44,20 @@ public class Role {
      * @param roleName    the role name
      * @param userName    the user name
      */
-    public Role(int roleId, String roleName, String userName) {
+    public Role(User user, int roleId, String roleName, String userName) {
+        this.user = user;
         this.roleId = roleId;
+        this.roleName = roleName;
+        this.userName = userName;
+    }
+
+    public Role(User newUser, String roleName, String userName) {
+        this.roleId = roleId;
+        this.roleName = roleName;
+        this.userName = userName;
+    }
+
+    public Role(String roleName, String userName) {
         this.roleName = roleName;
         this.userName = userName;
     }
@@ -77,7 +94,6 @@ public class Role {
         this.roleName = roleName;
     }
 
-
     /**
      * Gets user name.
      * @return the user name
@@ -96,38 +112,53 @@ public class Role {
 
 
     /**
+     * Gets user.
+     * @return the user
+     */
+    public User getUser() {
+        return user;
+    }
+
+    /**
+     * Sets user.
+     * @param user the user
+     */
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+
+    /**
      * Gets roles.
      * @return the roles
      */
-    //public Set<Role> getRoleSet() {
-    //    return roleSet;
-   // }
+    public Set<Role> getRoleSet() {
+        return roleSet;
+    }
 
     /**
      * Sets roles.
      * @return roleSet the roles
      */
-    //public void setRoleSet(Set<Role> roleSet) {
-    //    this.roleSet = roleSet;
-    //}
+    public void setRoleSet(Set<Role> roleSet) {
+        this.roleSet = roleSet;
+    }
 
     /**
      * Add roles.
      * @param newRole the role
      */
-   // public void addRole(Role newRole) {
-    //    roleSet.add(newRole);
-   //     //newConcept.setUserId(this);
-   // }
+    public void addRole(Role newRole) {
+        roleSet.add(newRole);
+    }
 
     /**
      * Remove roles.
      * @param newRole the role
      */
-  //  public void removeRole(Role newRole) {
-  //      roleSet.remove(newRole);
-    //    //newConcept.setUserId(null);
-  //  }
+    public void removeRole(Role newRole) {
+        roleSet.remove(newRole);
+    }
 
     @Override
     public String toString() {
@@ -139,4 +170,6 @@ public class Role {
     }
 
 }
+
+
 
