@@ -32,7 +32,6 @@
 
 
 
-
 **ACCOMPLISHMENTS:** Having to switch gears allowed me to make some real headway on my Professional Development Activity on Project Ghidra. I was able to gather all the
 resources that I need to use and began work on the written report to be the basis of the presentation for the project. I was also able to get a little work done on the
 PowerPoint files that will support the written report as well. 
@@ -56,10 +55,7 @@ DAOs and the entities that I created and to complete the coding for the others t
 find more time to catch up on what I am missing or become more efficient with the time that I must make this all work and get some success on this project. Now, with my
 Professional Development Activity coming due in the next week, and the team project now being added on top of all of that I will need to find very creative ways to get things
 done as not having enough time cannot really be a viable reason for setbacks any longer. There are only seven weeks or so left to complete this course, and I must make it a
-successful journey. 
-
-
-
+successful journey.
 
 
 
