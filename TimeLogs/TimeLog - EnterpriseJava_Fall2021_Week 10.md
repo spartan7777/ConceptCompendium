@@ -33,9 +33,9 @@ Working on getting my AWS account ready, building a database in AWS, and loading
 Checkpoint 3.	
 
 Attended the second team meeting for the Team Project. 
-	* Fleshed out what the project is going to do.
-	* Had further discussions about what the project is and is not going to need to be.
-	* Further division of labor was discussed 
+* Fleshed out what the project is going to do.
+* Had further discussions about what the project is and is not going to need to be.
+* Further division of labor was discussed 
 
 From all of this, it seems as though I became the team leader without really asking for that role. I also took on the role of the team record keeper. With there being some
 uncertainty about what we supposed to build (we kept leaning towards building an app) we made sure that we would have another meeting during class time to discuss the project
