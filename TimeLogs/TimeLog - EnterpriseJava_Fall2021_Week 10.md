@@ -8,18 +8,20 @@
 #### RELEVANT ITEMS:
 1. Watched all Week 8 Videos
 2. Completed all Week 8 Readings
-3. Continued work on the written report for the Professional Development Activity Project Ghidra
-4. Continued work on the PowerPoint presentation for the Professional Development Activity Project Ghidra
-5. Completed all code for all model classes in both the test and production layer for the Concept Compendium
-6. Completed all code for all the DAOs in both the test and production layer for the Concept Compendium
-7. Successfully created and unit tested all DAOs (UserDao, ConceptDao, RoleDao, CategoryDao) for the Concept Compendium 
-8. Completed all the required work for Checkpoint 2 submission
-9. Facilitated the second Team project meeting for AegisBlue 
-10. Collaborated with the AegisBlue team for the Team Project
+3. Watched all Week 9 Videos
+4. Completed all Week 9 Readings
+5. Continued work on the written report for the Professional Development Activity Project Ghidra
+6. Continued work on the PowerPoint presentation for the Professional Development Activity Project Ghidra
+7. Completed all code for all model classes in both the test and production layer for the Concept Compendium
+8. Completed all code for all the DAOs in both the test and production layer for the Concept Compendium
+9. Successfully created and unit tested all DAOs (UserDao, ConceptDao, RoleDao, CategoryDao) for the Concept Compendium 
+10. Completed all the required work for Checkpoint 2 submission
+11. Facilitated the second Team project meeting for AegisBlue 
+12. Collaborated with the AegisBlue team for the Team Project
 	- Discussed a landing page for the project
 	- Discussed resources that we would need for the project 
 	- Assigned smaller projects to team members to research and bring back to the team
-11. Held another team collaboration using class time with the class instructor
+13. Held another team collaboration using class time with the class instructor
 	- From this meeting, determined materials that needed to be reviewed (Week 8 & Week 9) in order to complete this project 
 	- Assigned this review for all team members
 
@@ -31,9 +33,9 @@ Working on getting my AWS account ready, building a database in AWS, and loading
 Checkpoint 3.	
 
 Attended the second team meeting for the Team Project. 
-	a. Fleshed out what the project is going to do
-	b. Had further discussions about what the project is and is not going to need to be
-	c. Further division of labor was discussed 
+	- Fleshed out what the project is going to do.
+	- Had further discussions about what the project is and is not going to need to be.
+	- Further division of labor was discussed 
 
 From all of this, it seems as though I became the team leader without really asking for that role. I also took on the role of the team record keeper. With there being some
 uncertainty about what we supposed to build (we kept leaning towards building an app) we made sure that we would have another meeting during class time to discuss the project
